@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2BDC2CCE-2C7F-4FF9-8E82-5FB816861229</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreNavVC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>143381C1CCDFD93B705A1BBFF1E033A2AFB827D7</key>
+		<string>https://github.com/CharlinFeng/CoreNavVC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreNavVC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>143381C1CCDFD93B705A1BBFF1E033A2AFB827D7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CharlinFeng/CoreNavVC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>143381C1CCDFD93B705A1BBFF1E033A2AFB827D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>143381C1CCDFD93B705A1BBFF1E033A2AFB827D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreNavVC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

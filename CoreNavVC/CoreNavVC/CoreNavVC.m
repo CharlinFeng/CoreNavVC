@@ -11,13 +11,17 @@
 #import "ToolNetWorkSolveVC.h"
 #import "CoreStatus.h"
 #import "UIBarButtonItem+Appearance.h"
-
+#import "TipView.h"
 
 @interface CoreNavVC ()
 
 @property (nonatomic,strong) Reachability *readchability;
 
 @property (nonatomic,strong) NSArray *hideNetworkBarControllerArrayFull;                                //这个是最终的读取数组
+
+@property (nonatomic,strong) TipView *tipView;
+
+@property (nonatomic,assign) BOOL isShowedTipViewProperty;
 
 @end
 
@@ -33,7 +37,52 @@
     
     //背景白色
     self.view.backgroundColor=[UIColor whiteColor];
+    
+    /** 处理tipView */
+    [self handleTipView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.tipView.hidden=NO;
+    });
 }
+
+
+
+/** 处理tipView */
+-(void)handleTipView{
+    
+    self.tipView = [TipView tipView];
+    
+    __weak typeof(self) weakSelf=self;
+    
+    self.tipView.ClickDismissBtnBlock = ^{
+        
+        [UIView animateWithDuration:0.5 animations:^{
+            
+            weakSelf.tipView.alpha = 0;
+            
+        } completion:^(BOOL finished) {
+            
+            [weakSelf.tipView removeFromSuperview];
+            
+            weakSelf.tipView = nil;
+        }];
+        
+    };
+    
+    [self.view addSubview:self.tipView];
+    
+    self.tipView.translatesAutoresizingMaskIntoConstraints=NO;
+    
+    NSDictionary *views = @{@"tipView":self.tipView};
+    
+    NSArray *c_H=[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[tipView]-0-|" options:0 metrics:nil views:views];
+    NSArray *c_V=[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[tipView]-0-|" options:0 metrics:nil views:views];
+    [self.view addConstraints:c_H];
+    [self.view addConstraints:c_V];
+    self.tipView.alpha = 0;
+}
+
 
 
 #pragma mark  监听网络状态
@@ -82,21 +131,47 @@
 
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    
-    
-    
+
     [self netWorkStatusChange];
+    
     
     
     if(self.viewControllers.count >= 1 ){
         viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithTarget:self action:@selector(popAction) image:@"return" highImage:@"return"];
         
         viewController.hidesBottomBarWhenPushed = YES;
+        
+        [self checkShowedTipView];
     }
     
     [super pushViewController:viewController animated:animated];
 
 }
+
+/** 检查是否显示过了tipView */
+-(void)checkShowedTipView{
+    
+    if (!self.isShowedTipViewProperty) {
+        
+        static NSString *const tipViewKey = @"TipViewKey";
+        
+        BOOL isShowed = [[NSUserDefaults standardUserDefaults] boolForKey:tipViewKey];
+        
+        if(!isShowed){
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                self.tipView.alpha = 1;
+            }];
+            
+            //保存key
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:tipViewKey];
+            
+            self.isShowedTipViewProperty = YES;
+        }
+    }
+}
+
+
 
 
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
@@ -169,6 +244,9 @@
     }
     return _hideNetworkBarControllerArrayFull;
 }
+
+
+
 
 
 @end

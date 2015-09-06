@@ -18,7 +18,6 @@
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
 		89BD6AE81B9AEBCC00225B4B /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD21B9AEBCC00225B4B /* UIImage+NavColor.m */; };
 		89BD6AE91B9AEBCC00225B4B /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */; };
-		89BD6AEA1B9AEBCC00225B4B /* NetWork.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6AD61B9AEBCC00225B4B /* NetWork.bundle */; };
 		89BD6AEB1B9AEBCC00225B4B /* ToolNetWorkSolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */; };
 		89BD6AEC1B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */; };
 		89BD6AED1B9AEBCC00225B4B /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ADB1B9AEBCC00225B4B /* ToolNetWorkView.m */; };
@@ -29,6 +28,9 @@
 		89BD6AF21B9AEBCC00225B4B /* LCPanNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE51B9AEBCC00225B4B /* LCPanNavigationController.m */; };
 		89BD6AF31B9AEBCC00225B4B /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */; };
 		89BD6AF61B9AEC6C00225B4B /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AF51B9AEC6C00225B4B /* UIColor+NavExtend.m */; };
+		89EB30FD1B9C10DE00189412 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EB30FC1B9C10DE00189412 /* TipView.m */; };
+		89EB30FF1B9C10EB00189412 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89EB30FE1B9C10EB00189412 /* TipView.xib */; };
+		89EB31021B9C111500189412 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EB31011B9C111500189412 /* Resource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +65,6 @@
 		89BD6AD21B9AEBCC00225B4B /* UIImage+NavColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NavColor.m"; sourceTree = "<group>"; };
 		89BD6AD31B9AEBCC00225B4B /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
 		89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
-		89BD6AD61B9AEBCC00225B4B /* NetWork.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NetWork.bundle; sourceTree = "<group>"; };
 		89BD6AD71B9AEBCC00225B4B /* ToolNetWorkSolveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkSolveVC.h; sourceTree = "<group>"; };
 		89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkSolveVC.m; sourceTree = "<group>"; };
 		89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkSolveVC.xib; sourceTree = "<group>"; };
@@ -82,6 +83,10 @@
 		89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
 		89BD6AF41B9AEC6C00225B4B /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
 		89BD6AF51B9AEC6C00225B4B /* UIColor+NavExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NavExtend.m"; sourceTree = "<group>"; };
+		89EB30FB1B9C10DE00189412 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		89EB30FC1B9C10DE00189412 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
+		89EB30FE1B9C10EB00189412 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
+		89EB31011B9C111500189412 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +203,8 @@
 				89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */,
 				89BD6AD51B9AEBCC00225B4B /* NetWork */,
 				89BD6AE11B9AEBCC00225B4B /* PanNavigationController */,
+				89EB30FA1B9C10C500189412 /* TipView */,
+				89EB31001B9C111500189412 /* Resource */,
 			);
 			path = CoreNavVC;
 			sourceTree = "<group>";
@@ -216,7 +223,6 @@
 		89BD6AD51B9AEBCC00225B4B /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				89BD6AD61B9AEBCC00225B4B /* NetWork.bundle */,
 				89BD6AD71B9AEBCC00225B4B /* ToolNetWorkSolveVC.h */,
 				89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */,
 				89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */,
@@ -242,6 +248,24 @@
 				89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */,
 			);
 			path = PanNavigationController;
+			sourceTree = "<group>";
+		};
+		89EB30FA1B9C10C500189412 /* TipView */ = {
+			isa = PBXGroup;
+			children = (
+				89EB30FB1B9C10DE00189412 /* TipView.h */,
+				89EB30FC1B9C10DE00189412 /* TipView.m */,
+				89EB30FE1B9C10EB00189412 /* TipView.xib */,
+			);
+			path = TipView;
+			sourceTree = "<group>";
+		};
+		89EB31001B9C111500189412 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89EB31011B9C111500189412 /* Resource.bundle */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,12 +348,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BD6AEA1B9AEBCC00225B4B /* NetWork.bundle in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				89BD6AEC1B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
 				89BD6AEE1B9AEBCC00225B4B /* ToolNetWorkView.xib in Resources */,
+				89EB30FF1B9C10EB00189412 /* TipView.xib in Resources */,
+				89EB31021B9C111500189412 /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +384,7 @@
 				89BD6AE81B9AEBCC00225B4B /* UIImage+NavColor.m in Sources */,
 				89BD6AF11B9AEBCC00225B4B /* LCPanGestureRecognizer.m in Sources */,
 				89BD6AE91B9AEBCC00225B4B /* CoreNavVC.m in Sources */,
+				89EB30FD1B9C10DE00189412 /* TipView.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
 				89BD6AF61B9AEC6C00225B4B /* UIColor+NavExtend.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
@@ -560,6 +586,7 @@
 				89BD6AA11B9AEAAD00225B4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89BD6AA21B9AEAAD00225B4B /* Build configuration list for PBXNativeTarget "CoreNavVCTests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +595,7 @@
 				89BD6AA41B9AEAAD00225B4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
