@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LCPanNavigationController.h"
-
+#import "UINavigationController+Appearance.h"
 
 @interface CoreNavVC : LCPanNavigationController
 
