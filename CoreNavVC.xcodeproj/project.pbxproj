@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389E1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A11BBB7EDC009196B3 /* ToolNetWorkSolveVC.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */; settings = {ASSET_TAGS = (); }; };
+		89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */; settings = {ASSET_TAGS = (); }; };
+		89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */; settings = {ASSET_TAGS = (); }; };
+		89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */; settings = {ASSET_TAGS = (); }; };
+		89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */; settings = {ASSET_TAGS = (); }; };
+		89B438BB1BBB7EDC009196B3 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89B438AC1BBB7EDC009196B3 /* Resource.bundle */; settings = {ASSET_TAGS = (); }; };
+		89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438AF1BBB7EDC009196B3 /* TipView.m */; settings = {ASSET_TAGS = (); }; };
+		89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438B01BBB7EDC009196B3 /* TipView.xib */; settings = {ASSET_TAGS = (); }; };
 		89BD6A821B9AEAAD00225B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A811B9AEAAD00225B4B /* main.m */; };
 		89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A841B9AEAAD00225B4B /* AppDelegate.m */; };
 		89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A871B9AEAAD00225B4B /* ViewController.m */; };
@@ -16,21 +29,6 @@
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
 		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
-		89BD6AE81B9AEBCC00225B4B /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD21B9AEBCC00225B4B /* UIImage+NavColor.m */; };
-		89BD6AE91B9AEBCC00225B4B /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */; };
-		89BD6AEB1B9AEBCC00225B4B /* ToolNetWorkSolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */; };
-		89BD6AEC1B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */; };
-		89BD6AED1B9AEBCC00225B4B /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ADB1B9AEBCC00225B4B /* ToolNetWorkView.m */; };
-		89BD6AEE1B9AEBCC00225B4B /* ToolNetWorkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6ADC1B9AEBCC00225B4B /* ToolNetWorkView.xib */; };
-		89BD6AEF1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ADE1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.m */; };
-		89BD6AF01B9AEBCC00225B4B /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE01B9AEBCC00225B4B /* UINavigationController+Appearance.m */; };
-		89BD6AF11B9AEBCC00225B4B /* LCPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE31B9AEBCC00225B4B /* LCPanGestureRecognizer.m */; };
-		89BD6AF21B9AEBCC00225B4B /* LCPanNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE51B9AEBCC00225B4B /* LCPanNavigationController.m */; };
-		89BD6AF31B9AEBCC00225B4B /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */; };
-		89BD6AF61B9AEC6C00225B4B /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AF51B9AEC6C00225B4B /* UIColor+NavExtend.m */; };
-		89EB30FD1B9C10DE00189412 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EB30FC1B9C10DE00189412 /* TipView.m */; };
-		89EB30FF1B9C10EB00189412 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89EB30FE1B9C10EB00189412 /* TipView.xib */; };
-		89EB31021B9C111500189412 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EB31011B9C111500189412 /* Resource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +42,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89B438941BBB7EDC009196B3 /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
+		89B438951BBB7EDC009196B3 /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
+		89B438981BBB7EDC009196B3 /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
+		89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NavExtend.m"; sourceTree = "<group>"; };
+		89B4389A1BBB7EDC009196B3 /* UIImage+NavColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NavColor.h"; sourceTree = "<group>"; };
+		89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NavColor.m"; sourceTree = "<group>"; };
+		89B4389D1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		89B4389E1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		89B438A01BBB7EDC009196B3 /* ToolNetWorkSolveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkSolveVC.h; sourceTree = "<group>"; };
+		89B438A11BBB7EDC009196B3 /* ToolNetWorkSolveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkSolveVC.m; sourceTree = "<group>"; };
+		89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkSolveVC.xib; sourceTree = "<group>"; };
+		89B438A31BBB7EDC009196B3 /* ToolNetWorkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkView.h; sourceTree = "<group>"; };
+		89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkView.m; sourceTree = "<group>"; };
+		89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkView.xib; sourceTree = "<group>"; };
+		89B438A61BBB7EDC009196B3 /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
+		89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
+		89B438A81BBB7EDC009196B3 /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
+		89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
+		89B438AC1BBB7EDC009196B3 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		89B438AE1BBB7EDC009196B3 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		89B438AF1BBB7EDC009196B3 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
+		89B438B01BBB7EDC009196B3 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
 		89BD6A7C1B9AEAAD00225B4B /* CoreNavVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNavVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD6A801B9AEAAD00225B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BD6A811B9AEAAD00225B4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,32 +81,6 @@
 		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
 		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		89BD6AD11B9AEBCC00225B4B /* UIImage+NavColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NavColor.h"; sourceTree = "<group>"; };
-		89BD6AD21B9AEBCC00225B4B /* UIImage+NavColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NavColor.m"; sourceTree = "<group>"; };
-		89BD6AD31B9AEBCC00225B4B /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
-		89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
-		89BD6AD71B9AEBCC00225B4B /* ToolNetWorkSolveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkSolveVC.h; sourceTree = "<group>"; };
-		89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkSolveVC.m; sourceTree = "<group>"; };
-		89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkSolveVC.xib; sourceTree = "<group>"; };
-		89BD6ADA1B9AEBCC00225B4B /* ToolNetWorkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkView.h; sourceTree = "<group>"; };
-		89BD6ADB1B9AEBCC00225B4B /* ToolNetWorkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkView.m; sourceTree = "<group>"; };
-		89BD6ADC1B9AEBCC00225B4B /* ToolNetWorkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkView.xib; sourceTree = "<group>"; };
-		89BD6ADD1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
-		89BD6ADE1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
-		89BD6ADF1B9AEBCC00225B4B /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
-		89BD6AE01B9AEBCC00225B4B /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
-		89BD6AE21B9AEBCC00225B4B /* LCPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPanGestureRecognizer.h; sourceTree = "<group>"; };
-		89BD6AE31B9AEBCC00225B4B /* LCPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPanGestureRecognizer.m; sourceTree = "<group>"; };
-		89BD6AE41B9AEBCC00225B4B /* LCPanNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPanNavigationController.h; sourceTree = "<group>"; };
-		89BD6AE51B9AEBCC00225B4B /* LCPanNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPanNavigationController.m; sourceTree = "<group>"; };
-		89BD6AE61B9AEBCC00225B4B /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
-		89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
-		89BD6AF41B9AEC6C00225B4B /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
-		89BD6AF51B9AEC6C00225B4B /* UIColor+NavExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NavExtend.m"; sourceTree = "<group>"; };
-		89EB30FB1B9C10DE00189412 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
-		89EB30FC1B9C10DE00189412 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
-		89EB30FE1B9C10EB00189412 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
-		89EB31011B9C111500189412 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +101,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89B438931BBB7EDC009196B3 /* CoreNavVC */ = {
+			isa = PBXGroup;
+			children = (
+				89B438941BBB7EDC009196B3 /* CoreNavVC.h */,
+				89B438951BBB7EDC009196B3 /* CoreNavVC.m */,
+				89B438961BBB7EDC009196B3 /* Lib */,
+			);
+			path = CoreNavVC;
+			sourceTree = "<group>";
+		};
+		89B438961BBB7EDC009196B3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				89B438971BBB7EDC009196B3 /* Category */,
+				89B4389C1BBB7EDC009196B3 /* FDFullscreenPopGesture */,
+				89B4389F1BBB7EDC009196B3 /* NetWork */,
+				89B438AB1BBB7EDC009196B3 /* Resource */,
+				89B438AD1BBB7EDC009196B3 /* TipView */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		89B438971BBB7EDC009196B3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				89B438981BBB7EDC009196B3 /* UIColor+NavExtend.h */,
+				89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */,
+				89B4389A1BBB7EDC009196B3 /* UIImage+NavColor.h */,
+				89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		89B4389C1BBB7EDC009196B3 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				89B4389D1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.h */,
+				89B4389E1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		89B4389F1BBB7EDC009196B3 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				89B438A01BBB7EDC009196B3 /* ToolNetWorkSolveVC.h */,
+				89B438A11BBB7EDC009196B3 /* ToolNetWorkSolveVC.m */,
+				89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */,
+				89B438A31BBB7EDC009196B3 /* ToolNetWorkView.h */,
+				89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */,
+				89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */,
+				89B438A61BBB7EDC009196B3 /* UIBarButtonItem+Appearance.h */,
+				89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */,
+				89B438A81BBB7EDC009196B3 /* UINavigationController+Appearance.h */,
+				89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		89B438AB1BBB7EDC009196B3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89B438AC1BBB7EDC009196B3 /* Resource.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		89B438AD1BBB7EDC009196B3 /* TipView */ = {
+			isa = PBXGroup;
+			children = (
+				89B438AE1BBB7EDC009196B3 /* TipView.h */,
+				89B438AF1BBB7EDC009196B3 /* TipView.m */,
+				89B438B01BBB7EDC009196B3 /* TipView.xib */,
+			);
+			path = TipView;
+			sourceTree = "<group>";
+		};
 		89BD6A731B9AEAAD00225B4B = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +199,7 @@
 		89BD6A7E1B9AEAAD00225B4B /* CoreNavVC */ = {
 			isa = PBXGroup;
 			children = (
-				89BD6ACF1B9AEBCC00225B4B /* CoreNavVC */,
+				89B438931BBB7EDC009196B3 /* CoreNavVC */,
 				89BD6AA61B9AEACC00225B4B /* Framework */,
 				89BD6A831B9AEAAD00225B4B /* AppDelegate.h */,
 				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
@@ -193,79 +264,6 @@
 				89BD6ACC1B9AEB5B00225B4B /* Reachability.m */,
 			);
 			path = Reachability;
-			sourceTree = "<group>";
-		};
-		89BD6ACF1B9AEBCC00225B4B /* CoreNavVC */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6AD01B9AEBCC00225B4B /* Category */,
-				89BD6AD31B9AEBCC00225B4B /* CoreNavVC.h */,
-				89BD6AD41B9AEBCC00225B4B /* CoreNavVC.m */,
-				89BD6AD51B9AEBCC00225B4B /* NetWork */,
-				89BD6AE11B9AEBCC00225B4B /* PanNavigationController */,
-				89EB30FA1B9C10C500189412 /* TipView */,
-				89EB31001B9C111500189412 /* Resource */,
-			);
-			path = CoreNavVC;
-			sourceTree = "<group>";
-		};
-		89BD6AD01B9AEBCC00225B4B /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6AF41B9AEC6C00225B4B /* UIColor+NavExtend.h */,
-				89BD6AF51B9AEC6C00225B4B /* UIColor+NavExtend.m */,
-				89BD6AD11B9AEBCC00225B4B /* UIImage+NavColor.h */,
-				89BD6AD21B9AEBCC00225B4B /* UIImage+NavColor.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		89BD6AD51B9AEBCC00225B4B /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6AD71B9AEBCC00225B4B /* ToolNetWorkSolveVC.h */,
-				89BD6AD81B9AEBCC00225B4B /* ToolNetWorkSolveVC.m */,
-				89BD6AD91B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib */,
-				89BD6ADA1B9AEBCC00225B4B /* ToolNetWorkView.h */,
-				89BD6ADB1B9AEBCC00225B4B /* ToolNetWorkView.m */,
-				89BD6ADC1B9AEBCC00225B4B /* ToolNetWorkView.xib */,
-				89BD6ADD1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.h */,
-				89BD6ADE1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.m */,
-				89BD6ADF1B9AEBCC00225B4B /* UINavigationController+Appearance.h */,
-				89BD6AE01B9AEBCC00225B4B /* UINavigationController+Appearance.m */,
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
-		89BD6AE11B9AEBCC00225B4B /* PanNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6AE21B9AEBCC00225B4B /* LCPanGestureRecognizer.h */,
-				89BD6AE31B9AEBCC00225B4B /* LCPanGestureRecognizer.m */,
-				89BD6AE41B9AEBCC00225B4B /* LCPanNavigationController.h */,
-				89BD6AE51B9AEBCC00225B4B /* LCPanNavigationController.m */,
-				89BD6AE61B9AEBCC00225B4B /* UIView+Snapshot.h */,
-				89BD6AE71B9AEBCC00225B4B /* UIView+Snapshot.m */,
-			);
-			path = PanNavigationController;
-			sourceTree = "<group>";
-		};
-		89EB30FA1B9C10C500189412 /* TipView */ = {
-			isa = PBXGroup;
-			children = (
-				89EB30FB1B9C10DE00189412 /* TipView.h */,
-				89EB30FC1B9C10DE00189412 /* TipView.m */,
-				89EB30FE1B9C10EB00189412 /* TipView.xib */,
-			);
-			path = TipView;
-			sourceTree = "<group>";
-		};
-		89EB31001B9C111500189412 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				89EB31011B9C111500189412 /* Resource.bundle */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,13 +347,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
-				89BD6AEC1B9AEBCC00225B4B /* ToolNetWorkSolveVC.xib in Resources */,
+				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
+				89B438BB1BBB7EDC009196B3 /* Resource.bundle in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
-				89BD6AEE1B9AEBCC00225B4B /* ToolNetWorkView.xib in Resources */,
-				89EB30FF1B9C10EB00189412 /* TipView.xib in Resources */,
-				89EB31021B9C111500189412 /* Resource.bundle in Resources */,
+				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,21 +371,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BD6AED1B9AEBCC00225B4B /* ToolNetWorkView.m in Sources */,
+				89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */,
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
-				89BD6AEB1B9AEBCC00225B4B /* ToolNetWorkSolveVC.m in Sources */,
+				89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */,
+				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
+				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
-				89BD6AEF1B9AEBCC00225B4B /* UIBarButtonItem+Appearance.m in Sources */,
-				89BD6AF01B9AEBCC00225B4B /* UINavigationController+Appearance.m in Sources */,
+				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
+				89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */,
+				89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
-				89BD6AF21B9AEBCC00225B4B /* LCPanNavigationController.m in Sources */,
-				89BD6AF31B9AEBCC00225B4B /* UIView+Snapshot.m in Sources */,
-				89BD6AE81B9AEBCC00225B4B /* UIImage+NavColor.m in Sources */,
-				89BD6AF11B9AEBCC00225B4B /* LCPanGestureRecognizer.m in Sources */,
-				89BD6AE91B9AEBCC00225B4B /* CoreNavVC.m in Sources */,
-				89EB30FD1B9C10DE00189412 /* TipView.m in Sources */,
+				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
-				89BD6AF61B9AEC6C00225B4B /* UIColor+NavExtend.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

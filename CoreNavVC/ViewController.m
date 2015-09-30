@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
 }
 
 @end

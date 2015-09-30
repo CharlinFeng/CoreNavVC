@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mj-ip-RiK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mj-ip-RiK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Core NavVC-->
@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="313" y="492"/>
         </scene>
-        <!--View Controller-->
+        <!--首页-->
         <scene sceneID="Ref-J1-icS">
             <objects>
                 <viewController id="haO-PZ-SCY" sceneMemberID="viewController">
@@ -46,16 +46,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EDd-5K-c5n"/>
+                    <navigationItem key="navigationItem" title="首页" id="EDd-5K-c5n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEW-AQ-GaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="492"/>
         </scene>
-        <!--View Controller-->
+        <!--第二页-->
         <scene sceneID="EzA-Iw-iZC">
             <objects>
-                <viewController id="wZ1-Xi-HF2" sceneMemberID="viewController">
+                <viewController id="wZ1-Xi-HF2" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wqF-d9-wyN"/>
                         <viewControllerLayoutGuide type="bottom" id="p8r-6W-Asf"/>
@@ -76,13 +76,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ofI-7j-vYp"/>
+                    <navigationItem key="navigationItem" title="第二页" id="ofI-7j-vYp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkZ-fZ-htS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1041" y="492"/>
         </scene>
-        <!--View Controller-->
+        <!--又一个页面-->
         <scene sceneID="vIO-qx-zeX">
             <objects>
                 <viewController id="zfn-IN-N7L" sceneMemberID="viewController">
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9mT-wt-GAq"/>
+                    <navigationItem key="navigationItem" title="又一个页面" id="9mT-wt-GAq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzm-XD-WK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

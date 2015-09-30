@@ -134,8 +134,6 @@
 
     [self netWorkStatusChange];
     
-    
-    
     if(self.viewControllers.count >= 1 ){
         viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithTarget:self action:@selector(popAction) image:@"Resource.bundle/navBack" highImage:@"Resource.bundle/navBackHL"];
         
@@ -156,12 +154,14 @@
         static NSString *const tipViewKey = @"TipViewKey";
         
         BOOL isShowed = [[NSUserDefaults standardUserDefaults] boolForKey:tipViewKey];
-        
+        isShowed = NO;
         if(!isShowed){
             
-            [UIView animateWithDuration:0.5 animations:^{
-                self.tipView.alpha = 1;
-            }];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [UIView animateWithDuration:0.5 animations:^{
+                    self.tipView.alpha = 1;
+                }];
+            });
             
             //保存key
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:tipViewKey];

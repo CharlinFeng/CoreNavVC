@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LCPanNavigationController.h"
 #import "UINavigationController+Appearance.h"
 
-@interface CoreNavVC : LCPanNavigationController
+@interface CoreNavVC : UINavigationController
 
 @property (nonatomic,strong) NSArray *hideNetworkBarControllerArray;                        //此数组内的控制器（名）不会显示无网络提示框
 
