@@ -154,7 +154,7 @@
         static NSString *const tipViewKey = @"TipViewKey";
         
         BOOL isShowed = [[NSUserDefaults standardUserDefaults] boolForKey:tipViewKey];
-        isShowed = NO;
+
         if(!isShowed){
             
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
