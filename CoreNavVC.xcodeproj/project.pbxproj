@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389E1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A11BBB7EDC009196B3 /* ToolNetWorkSolveVC.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */; settings = {ASSET_TAGS = (); }; };
-		89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */; settings = {ASSET_TAGS = (); }; };
-		89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */; settings = {ASSET_TAGS = (); }; };
-		89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */; settings = {ASSET_TAGS = (); }; };
-		89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */; settings = {ASSET_TAGS = (); }; };
-		89B438BB1BBB7EDC009196B3 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89B438AC1BBB7EDC009196B3 /* Resource.bundle */; settings = {ASSET_TAGS = (); }; };
-		89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438AF1BBB7EDC009196B3 /* TipView.m */; settings = {ASSET_TAGS = (); }; };
-		89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438B01BBB7EDC009196B3 /* TipView.xib */; settings = {ASSET_TAGS = (); }; };
+		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
+		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; };
+		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; };
+		89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389E1BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A11BBB7EDC009196B3 /* ToolNetWorkSolveVC.m */; };
+		89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */; };
+		89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */; };
+		89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */; };
+		89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */; };
+		89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */; };
+		89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438AF1BBB7EDC009196B3 /* TipView.m */; };
+		89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438B01BBB7EDC009196B3 /* TipView.xib */; };
 		89BD6A821B9AEAAD00225B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A811B9AEAAD00225B4B /* main.m */; };
 		89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A841B9AEAAD00225B4B /* AppDelegate.m */; };
 		89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A871B9AEAAD00225B4B /* ViewController.m */; };
@@ -29,6 +28,7 @@
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
 		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
+		89DF027E1C1BD0690068C719 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* Resource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
 		89B438A81BBB7EDC009196B3 /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
 		89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
-		89B438AC1BBB7EDC009196B3 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 		89B438AE1BBB7EDC009196B3 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
 		89B438AF1BBB7EDC009196B3 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
 		89B438B01BBB7EDC009196B3 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
 		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		89DF027D1C1BD0690068C719 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 		89B438AB1BBB7EDC009196B3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				89B438AC1BBB7EDC009196B3 /* Resource.bundle */,
+				89DF027D1C1BD0690068C719 /* Resource.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -350,9 +350,9 @@
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
-				89B438BB1BBB7EDC009196B3 /* Resource.bundle in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
+				89DF027E1C1BD0690068C719 /* Resource.bundle in Resources */,
 				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

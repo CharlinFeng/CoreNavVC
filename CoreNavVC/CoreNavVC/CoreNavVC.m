@@ -135,7 +135,7 @@
     [self netWorkStatusChange];
     
     if(self.viewControllers.count >= 1 ){
-        viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithTarget:self action:@selector(popAction) image:@"Resource.bundle/navBack" highImage:@"Resource.bundle/navBackHL"];
+        viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithTarget:self action:@selector(popAction) image:@"Resource.bundle/return" highImage:@"Resource.bundle/return_hl"];
         
         viewController.hidesBottomBarWhenPushed = YES;
         
