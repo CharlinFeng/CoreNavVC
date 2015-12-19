@@ -47,6 +47,28 @@
 }
 
 
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    if(self.navBgView != nil) return;
+    
+    [self findBgView];
+}
+
+
+-(void)findBgView{
+    
+    UIView *bgView = nil;
+    
+    for (UIView *subView in self.navigationBar.subviews) {
+        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {bgView = subView;}
+    }
+    
+    self.navBgView = bgView;
+}
+
+
 
 /** 处理tipView */
 -(void)handleTipView{

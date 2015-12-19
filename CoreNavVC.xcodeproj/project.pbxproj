@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
 		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
 		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; };
 		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
+		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
 		89B438941BBB7EDC009196B3 /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
 		89B438951BBB7EDC009196B3 /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
 		89B438981BBB7EDC009196B3 /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
 				89BD6A861B9AEAAD00225B4B /* ViewController.h */,
 				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
+				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
+				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
 				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
 				89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */,
 				89BD6A8E1B9AEAAD00225B4B /* LaunchScreen.xib */,
@@ -378,6 +383,7 @@
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
+				893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */,
 				89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */,
 				89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,

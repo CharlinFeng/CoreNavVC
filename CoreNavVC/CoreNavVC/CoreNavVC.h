@@ -13,5 +13,6 @@
 
 @property (nonatomic,strong) NSArray *hideNetworkBarControllerArray;                        //此数组内的控制器（名）不会显示无网络提示框
 
+@property (nonatomic,weak) UIView *navBgView;
 
 @end
