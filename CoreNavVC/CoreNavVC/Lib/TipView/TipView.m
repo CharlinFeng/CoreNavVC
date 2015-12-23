@@ -13,8 +13,6 @@
 -(void)awakeFromNib{
     
     [super awakeFromNib];
-    
-    [self addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:nil]];
 }
 
 
@@ -28,6 +26,7 @@
 - (IBAction)clickBtn:(id)sender {
     if(self.ClickDismissBtnBlock != nil) self.ClickDismissBtnBlock();
 }
+
 
 
 

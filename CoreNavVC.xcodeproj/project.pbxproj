@@ -29,7 +29,16 @@
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
 		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
-		89DF027E1C1BD0690068C719 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* Resource.bundle */; };
+		89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */; };
+		89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D81C2AC9DA00FF6667 /* CoreNavVC+Reachability.m */; };
+		89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14DB1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m */; };
+		89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14DE1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m */; };
+		89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14E11C2ACE8100FF6667 /* UINavigationController+Plus.m */; };
+		89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14E71C2AD16200FF6667 /* VCPopView.m */; };
+		89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DB14E91C2AD16C00FF6667 /* VCPopView.xib */; };
+		89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EC1C2AD32700FF6667 /* VC2.m */; };
+		89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */; };
+		89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +92,24 @@
 		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
 		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		89DF027D1C1BD0690068C719 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		89DB14D41C2AC93E00FF6667 /* CoreNavVC+TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+TipView.h"; sourceTree = "<group>"; };
+		89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+TipView.m"; sourceTree = "<group>"; };
+		89DB14D71C2AC9DA00FF6667 /* CoreNavVC+Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+Reachability.h"; sourceTree = "<group>"; };
+		89DB14D81C2AC9DA00FF6667 /* CoreNavVC+Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+Reachability.m"; sourceTree = "<group>"; };
+		89DB14DA1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+LifeFunc.h"; sourceTree = "<group>"; };
+		89DB14DB1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+LifeFunc.m"; sourceTree = "<group>"; };
+		89DB14DD1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+Push_Pop.h"; sourceTree = "<group>"; };
+		89DB14DE1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+Push_Pop.m"; sourceTree = "<group>"; };
+		89DB14E01C2ACE8100FF6667 /* UINavigationController+Plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Plus.h"; sourceTree = "<group>"; };
+		89DB14E11C2ACE8100FF6667 /* UINavigationController+Plus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Plus.m"; sourceTree = "<group>"; };
+		89DB14E61C2AD16200FF6667 /* VCPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPopView.h; sourceTree = "<group>"; };
+		89DB14E71C2AD16200FF6667 /* VCPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPopView.m; sourceTree = "<group>"; };
+		89DB14E91C2AD16C00FF6667 /* VCPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCPopView.xib; sourceTree = "<group>"; };
+		89DB14EB1C2AD32700FF6667 /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
+		89DB14EC1C2AD32700FF6667 /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
+		89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+scrollNavBar.h"; sourceTree = "<group>"; };
+		89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+scrollNavBar.m"; sourceTree = "<group>"; };
+		89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreNavVC.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +143,7 @@
 		89B438961BBB7EDC009196B3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				89DB14D01C2AC90800FF6667 /* Controller */,
 				89B438971BBB7EDC009196B3 /* Category */,
 				89B4389C1BBB7EDC009196B3 /* FDFullscreenPopGesture */,
 				89B4389F1BBB7EDC009196B3 /* NetWork */,
@@ -166,7 +193,7 @@
 		89B438AB1BBB7EDC009196B3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				89DF027D1C1BD0690068C719 /* Resource.bundle */,
+				89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -208,6 +235,8 @@
 				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
 				89BD6A861B9AEAAD00225B4B /* ViewController.h */,
 				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
+				89DB14EB1C2AD32700FF6667 /* VC2.h */,
+				89DB14EC1C2AD32700FF6667 /* VC2.m */,
 				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
 				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
 				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
@@ -271,6 +300,28 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		89DB14D01C2AC90800FF6667 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89DB14D41C2AC93E00FF6667 /* CoreNavVC+TipView.h */,
+				89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */,
+				89DB14D71C2AC9DA00FF6667 /* CoreNavVC+Reachability.h */,
+				89DB14D81C2AC9DA00FF6667 /* CoreNavVC+Reachability.m */,
+				89DB14DA1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.h */,
+				89DB14DB1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m */,
+				89DB14DD1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.h */,
+				89DB14DE1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m */,
+				89DB14E01C2ACE8100FF6667 /* UINavigationController+Plus.h */,
+				89DB14E11C2ACE8100FF6667 /* UINavigationController+Plus.m */,
+				89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */,
+				89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */,
+				89DB14E61C2AD16200FF6667 /* VCPopView.h */,
+				89DB14E71C2AD16200FF6667 /* VCPopView.m */,
+				89DB14E91C2AD16C00FF6667 /* VCPopView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,10 +371,11 @@
 				TargetAttributes = {
 					89BD6A7B1B9AEAAD00225B4B = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = P4URXN8X8X;
+						DevelopmentTeam = P2957GLTVA;
 					};
 					89BD6A941B9AEAAD00225B4B = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = P2957GLTVA;
 						TestTargetID = 89BD6A7B1B9AEAAD00225B4B;
 					};
 				};
@@ -353,11 +405,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
+				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
-				89DF027E1C1BD0690068C719 /* Resource.bundle in Resources */,
+				89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */,
 				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,17 +431,25 @@
 			files = (
 				89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */,
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
+				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
 				89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */,
+				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
 				893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */,
+				89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */,
+				89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */,
 				89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */,
 				89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */,
+				89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */,
+				89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
+				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
 			);
@@ -550,7 +611,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tao Xu (6GSMGRQH2S)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -562,7 +624,7 @@
 				INFOPLIST_FILE = CoreNavVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "471da9a4-398e-49ab-a66d-bbbd0cf153e5";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreNavVC.app/CoreNavVC";
 			};
 			name = Debug;
@@ -571,7 +633,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tao Xu (6GSMGRQH2S)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -579,7 +642,7 @@
 				INFOPLIST_FILE = CoreNavVCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "471da9a4-398e-49ab-a66d-bbbd0cf153e5";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreNavVC.app/CoreNavVC";
 			};
 			name = Release;

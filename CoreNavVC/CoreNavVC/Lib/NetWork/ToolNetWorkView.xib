@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A4310" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,7 +11,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resource.bundle/prompt_wifi@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="38N-HH-j6N">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="t44-qQ-DNT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items/>
+                </toolbar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoreNavVC.bundle/prompt_wifi@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="38N-HH-j6N">
                     <rect key="frame" x="12" y="9" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="T99-Ju-ZMU"/>
@@ -24,7 +28,7 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resource.bundle/NextIndicator@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOd-aO-jTi">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoreNavVC.bundle/NextIndicator@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOd-aO-jTi">
                     <rect key="frame" x="300" y="13" width="10" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="iRM-vf-66Q"/>
@@ -32,15 +36,19 @@
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="mw7-LK-aaU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DJ2-en-fp0"/>
                 <constraint firstAttribute="centerY" secondItem="pOd-aO-jTi" secondAttribute="centerY" id="Gue-ho-w2X"/>
+                <constraint firstItem="t44-qQ-DNT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PyZ-vI-eN9"/>
+                <constraint firstAttribute="trailing" secondItem="t44-qQ-DNT" secondAttribute="trailing" id="bN7-fR-eeF"/>
                 <constraint firstAttribute="trailing" secondItem="pOd-aO-jTi" secondAttribute="trailing" constant="10" id="cJo-gZ-V5X"/>
                 <constraint firstItem="mw7-LK-aaU" firstAttribute="leading" secondItem="38N-HH-j6N" secondAttribute="trailing" constant="10" id="d4t-jY-76x"/>
                 <constraint firstAttribute="centerY" secondItem="38N-HH-j6N" secondAttribute="centerY" constant="1" id="exm-9e-iTd"/>
                 <constraint firstAttribute="bottom" secondItem="mw7-LK-aaU" secondAttribute="bottom" id="hJK-OK-UuK"/>
+                <constraint firstItem="t44-qQ-DNT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rKf-3R-59i"/>
+                <constraint firstAttribute="bottom" secondItem="t44-qQ-DNT" secondAttribute="bottom" id="zPj-3X-Pox"/>
                 <constraint firstItem="38N-HH-j6N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="zfw-Yx-FIW"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -57,12 +65,7 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="Resource.bundle/NextIndicator@2x.png" width="16" height="16"/>
-        <image name="Resource.bundle/prompt_wifi@2x.png" width="16" height="16"/>
+        <image name="CoreNavVC.bundle/NextIndicator@2x.png" width="16" height="16"/>
+        <image name="CoreNavVC.bundle/prompt_wifi@2x.png" width="16" height="16"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

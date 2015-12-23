@@ -55,7 +55,7 @@
         <!--第二页-->
         <scene sceneID="EzA-Iw-iZC">
             <objects>
-                <viewController id="wZ1-Xi-HF2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="wZ1-Xi-HF2" customClass="VC2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wqF-d9-wyN"/>
                         <viewControllerLayoutGuide type="bottom" id="p8r-6W-Asf"/>
@@ -64,8 +64,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrN-UK-fxN">
-                                <rect key="frame" x="137" y="154" width="46" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UZH-K6-PCP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UZH-K6-PCP" firstAttribute="top" secondItem="OaT-So-Yfv" secondAttribute="top" id="0R0-rh-LgQ"/>
+                            <constraint firstItem="p8r-6W-Asf" firstAttribute="top" secondItem="UZH-K6-PCP" secondAttribute="bottom" id="IYZ-GM-nQS"/>
+                            <constraint firstItem="UZH-K6-PCP" firstAttribute="leading" secondItem="OaT-So-Yfv" secondAttribute="leading" id="NLe-jf-55D"/>
+                            <constraint firstAttribute="trailing" secondItem="UZH-K6-PCP" secondAttribute="trailing" id="Yhj-5O-ai9"/>
+                            <constraint firstItem="UZH-K6-PCP" firstAttribute="top" secondItem="wqF-d9-wyN" secondAttribute="bottom" id="dDV-DZ-scM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dDV-DZ-scM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="第二页" id="ofI-7j-vYp">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Dc1-fw-UeP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SrN-UK-fxN">
+                                <rect key="frame" x="258" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -73,10 +95,11 @@
                                     <segue destination="zfn-IN-N7L" kind="push" id="ht4-tA-gXB"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="第二页" id="ofI-7j-vYp"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="UZH-K6-PCP" id="Ryn-Q1-p4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wkZ-fZ-htS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

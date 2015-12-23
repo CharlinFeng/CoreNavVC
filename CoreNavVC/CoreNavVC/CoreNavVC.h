@@ -8,11 +8,23 @@
 
 #import <UIKit/UIKit.h>
 #import "UINavigationController+Appearance.h"
+#import "TipView.h"
+#import "CoreStatus.h"
+#import "UINavigationController+Plus.h"
+#import "UIViewController+scrollNavbar.h"
 
 @interface CoreNavVC : UINavigationController
+
+@property (nonatomic,strong) TipView *tipView;
 
 @property (nonatomic,strong) NSArray *hideNetworkBarControllerArray;                        //此数组内的控制器（名）不会显示无网络提示框
 
 @property (nonatomic,weak) UIView *navBgView;
+
+@property (nonatomic,assign) BOOL isShowedTipViewProperty;
+
+@property (nonatomic,strong) Reachability *readchability;
+
+@property (nonatomic,strong) NSArray *hideNetworkBarControllerArrayFull;                                //这个是最终的读取数组
 
 @end

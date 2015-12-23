@@ -11,6 +11,7 @@
 #define ios6x ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0f)
 
 @interface ToolNetWorkSolveVC ()
+
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *lineHConstraint;
 
 @end
@@ -18,6 +19,7 @@
 @implementation ToolNetWorkSolveVC
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     self.title=@"无网络解决方案";

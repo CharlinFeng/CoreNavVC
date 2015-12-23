@@ -34,8 +34,7 @@
     ToolNetWorkSolveVC *netWorkSolveVC=[[ToolNetWorkSolveVC alloc] init];
     UINavigationController *navVC=(UINavigationController *)self.vc;
     [navVC pushViewController:netWorkSolveVC animated:YES];
-    
-    
+    [self.class dismissNetWordNotiInViewController:self.vc];
 }
 
 #pragma mark  显示一个网络状态提示框
