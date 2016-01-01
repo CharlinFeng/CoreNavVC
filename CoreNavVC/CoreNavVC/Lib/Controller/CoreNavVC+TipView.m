@@ -43,8 +43,8 @@
         static NSString *const tipViewKey = @"TipViewKey";
         
         BOOL isShowed = [[NSUserDefaults standardUserDefaults] boolForKey:tipViewKey];
-        
-        [self.topViewController.view addSubview:self.tipView];
+
+        [self.view addSubview:self.tipView];
         
         self.tipView.translatesAutoresizingMaskIntoConstraints=NO;
         
@@ -52,13 +52,15 @@
         
         NSArray *c_H=[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[tipView]-0-|" options:0 metrics:nil views:views];
         NSArray *c_V=[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[tipView]-0-|" options:0 metrics:nil views:views];
-        [self.topViewController.view addConstraints:c_H];
-        [self.topViewController.view addConstraints:c_V];
+        [self.view addConstraints:c_H];
+        [self.view addConstraints:c_V];
         
         if(!isShowed){
             
-            [UIView animateWithDuration:0.5 animations:^{
+            [UIView animateWithDuration:0.8 animations:^{
                 self.tipView.alpha = 1;
+            } completion:^(BOOL finished) {
+                [self.view endEditing:YES];
             }];
             
             
