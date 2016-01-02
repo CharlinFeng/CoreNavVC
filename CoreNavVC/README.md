@@ -58,11 +58,11 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 
 <br/><br/>
 ####3.添加一个顶部视图
-您需要特别注意的是，有以下四点：
-(1).您的控制器必须是UIViewController或其子类，不能直接是UITableViewController <br/><br/>
-(2).顶部视图不可会成为tableView的tableViewHeaderView添加。框架使用runtime做了成员属性，<br/><br/>
-任意UIViewController都有一个叫topView的成员属性，直接把您的顶部视图使用这个指针引用即可。<br/><br/>
-您也不需要为这个视图添加约束，因为他是基于frame管理计算。此外，你还不需要指定frame。<br/><br/>
+您需要特别注意的是，有以下四点：<br/>
+(1).您的控制器必须是UIViewController或其子类，不能直接是UITableViewController <br/>
+(2).顶部视图不可会成为tableView的tableViewHeaderView添加。框架使用runtime做了成员属性，<br/>
+任意UIViewController都有一个叫topView的成员属性，直接把您的顶部视图使用这个指针引用即可。<br/>
+您也不需要为这个视图添加约束，因为他是基于frame管理计算。此外，你还不需要指定frame。<br/>
 你只需如下操作即可;
 
     self.topView = [HeaderTopView topView];
@@ -75,6 +75,7 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 originHeight表示您的顶部视图topView你希望有多高。
 
 ##### 特别说明，如何才能产生下拉放大效果？
+<br/>
 其实下拉放大有很多种效果，有的是直接拉imageView，但更多的app的下拉放大，您会发现拉的imageView的顶部还有很多其他控件，现实中就不是拉一个imageView这么简单。<br/>
 我在制作本框架思考了很多天，最终使用了一个比较聪明的方法，此方法可以兼容一切下拉放大效果，请注意他的本质，<br/>没并有拉任何imageView。框架内部是将刚刚您的topView执行了高度layout操作。当然topView被layout了，<br/>其内部的子控件也会相应被layout，需要产生下拉放大效果，您需要将imageView和topView的高度关联。<br/>
 同时请注意一些子控件如果不需要动态layout，请设置子控件的约束从topView的底部为标准来约束。
