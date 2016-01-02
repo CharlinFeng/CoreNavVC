@@ -78,7 +78,7 @@ originHeight表示您的顶部视图topView你希望有多高。
 ##### 特别说明，如何才能产生下拉放大效果？
 其实下拉放大有很多种效果，有的是直接拉imageView，但更多的app的下拉放大，您会发现拉的imageView的顶部还有很多其他控件，现实中就不是拉一个imageView这么简单。<br/>
 我在制作本框架思考了很多天，最终使用了一个比较聪明的方法，此方法可以兼容一切下拉放大效果，请注意他的本质，<br/>没并有拉任何imageView。框架内部是将刚刚您的topView执行了高度layout操作。当然topView被layout了，<br/>其内部的子控件也会相应被layout，需要产生下拉放大效果，您需要将imageView和topView的高度关联。<br/>
-同时请注意一些子控件如果不需要动态layout，请设置子控件的约束从topView的底部为标准来约束。
+同时请注意一些子控件如果不需要动态layout，请设置子控件的约束从topView的底部为标准来约束。<br/>
 此外：imageView的contentModel最好设置为：aspectFill
 
 
