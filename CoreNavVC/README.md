@@ -25,7 +25,9 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 >5.更好的把控导航条内部控件。<br />
 >6.增加分类更方便的增加返回功能。<br />
 >7.一键集成透明导航栏。<br />
->8.一键集成下拉放大，并实现对任意UIView的操纵，而不仅仅是UIImageView。<br />
+>8.一键集成下拉放大，并实现对任意UIView的操纵，而不仅仅是UIImageView。
+
+
 <br/><br/><br/> 
 
 使用说明
