@@ -43,18 +43,25 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 由于封装的要求，你的显示与隐藏导航条应该是统一放在一个控制器内部，并实现对称性：<br/>
 注：由于有滑动返回手势的存在，所以最好按如下方式控制导航条的隐藏与还原;
 
-    -(void)viewWillAppear:(BOOL)animated{
+        -(void)viewWillDisappear:(BOOL)animated{
+            
+            [super viewWillDisappear:animated];
+          
+            [self.navigationController showNavBarWithAnim:YES];
+        }
         
-        [super viewWillAppear:animated];
+        -(void)viewDidDisappear:(BOOL)animated{
+            
+            [super viewDidDisappear:animated];
+            
+            [self.navigationController showNavBarWithAnim:YES];
+        }
         
-        [self.navigationController showNavBarWithAnim:NO];
-    }
-    
-    //此处必写，KVO监听必须注销，否则crash
-    -(void)dealloc{
-        [self removeScrollNavbarWithScrollView:self.tableView];
-        [self.navigationController showNavBarWithAnim:YES];
-    }
+        //此处必写，KVO监听必须注销，否则crash
+        -(void)dealloc{
+            [self removeScrollNavbarWithScrollView:self.tableView];
+        }
+
 
 <br/><br/>
 ####3.添加一个顶部视图
