@@ -15,12 +15,14 @@
 -(void)hideNavBarWithAnim:(BOOL)anim{
 
     CoreNavVC *navVC = (CoreNavVC *)self;
+    navVC.navBgView.alpha = 1;
     [self setNavigationBarHidden:YES animated:anim];
 }
 
 /** 显示导航条 */
 -(void)showNavBarWithAnim:(BOOL)anim{
     CoreNavVC *navVC = (CoreNavVC *)self;
+    navVC.navBgView.alpha = 1;
     [self setNavigationBarHidden:NO animated:anim];
 }
 

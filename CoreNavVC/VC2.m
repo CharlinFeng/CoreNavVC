@@ -10,7 +10,7 @@
 #import "VC2.h"
 #import "CoreNavVC.h"
 #import "HeaderTopView.h"
-#import <objc/runtime.h>
+
 
 @interface VC2 ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -44,11 +44,29 @@
     [super viewWillAppear:animated];
     
     [self.navigationController showNavBarWithAnim:NO];
+    [self popGestureEnable:NO];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self popGestureEnable:YES];
+    });
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    [super viewWillDisappear:animated];
+  
+    [self.navigationController showNavBarWithAnim:YES];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    
+    [super viewDidDisappear:animated];
+    
+    [self.navigationController showNavBarWithAnim:YES];
 }
 
 -(void)dealloc{
     [self removeScrollNavbarWithScrollView:self.tableView];
-    [self.navigationController showNavBarWithAnim:YES];
 }
 
 

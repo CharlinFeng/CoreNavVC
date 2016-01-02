@@ -26,4 +26,7 @@
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView;
 
 
+-(void)popGestureEnable:(BOOL)enable;
+
+
 @end

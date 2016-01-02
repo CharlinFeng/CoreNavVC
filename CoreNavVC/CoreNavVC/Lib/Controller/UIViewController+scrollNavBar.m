@@ -10,6 +10,7 @@
 #import "UINavigationController+Plus.h"
 #import "CoreNavVC.h"
 #import "CategoryProperty+CoreNavVC.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface UIViewController (scrollNavbar)
 
@@ -113,8 +114,6 @@ static const char PopViewKey = '\0';
 
 /** 移除滚动效果 */
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView{
-    CoreNavVC *navVC = (CoreNavVC *)self.navigationController;
-    navVC.navBgView.alpha = 1;
     [scrollView removeObserver:self forKeyPath:ScrollViewKeyPath_CoreNavVC];
     [scrollView removeFromSuperview];
     scrollView = nil;
@@ -166,5 +165,9 @@ static const char PopViewKey = '\0';
 
 
 
+-(void)popGestureEnable:(BOOL)enable{
+
+    self.fd_interactivePopDisabled = !enable;
+}
 
 @end
