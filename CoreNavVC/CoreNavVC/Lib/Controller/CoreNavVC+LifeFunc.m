@@ -51,7 +51,7 @@
     UIView *bgView = nil;
     
     for (UIView *subView in self.navigationBar.subviews) {
-        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {bgView = subView;}
+        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {bgView = subView;bgView.backgroundColor = [UIColor clearColor];}
     }
     
     self.navBgView = bgView;

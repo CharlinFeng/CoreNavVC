@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhF-xi-FJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="500"/>
+            <point key="canvasLocation" x="301" y="486"/>
         </scene>
         <!--首页-->
         <scene sceneID="Ref-J1-icS">

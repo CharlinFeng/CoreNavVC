@@ -24,7 +24,7 @@
     
     //navbar设置背景图片:
     //BarMetrics：横竖屏模式
-    [navbarAppearance setBackgroundImage:[UIImage imageFromContextWithColor:bgColor] forBarMetrics:UIBarMetricsDefault];
+    if(bgColor != nil) [navbarAppearance setBackgroundImage:[UIImage imageFromContextWithColor:bgColor] forBarMetrics:UIBarMetricsDefault];
     
     
     //navbar设置标题文字样式:

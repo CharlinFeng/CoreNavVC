@@ -35,7 +35,7 @@
     
     self.topView = [HeaderTopView topView];
    
-    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:530 topView:self.topView originHeight:200];
+    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:10 topView:self.topView originHeight:500];
 }
 
 
