@@ -55,10 +55,10 @@
         
         if(!isShowed){
             
+            [self.view endEditing:YES];
+            
             [UIView animateWithDuration:0.8 animations:^{
                 self.tipView.alpha = 1;
-            } completion:^(BOOL finished) {
-                [self.view endEditing:YES];
             }];
             
             //保存key
