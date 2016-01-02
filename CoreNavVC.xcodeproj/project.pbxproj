@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
+		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
 		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
 		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; };
@@ -52,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8924EE661C37AB9900856531 /* HeaderTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTopView.h; sourceTree = "<group>"; };
+		8924EE671C37AB9900856531 /* HeaderTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTopView.m; sourceTree = "<group>"; };
+		8924EE691C37ABA400856531 /* HeaderTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTopView.xib; sourceTree = "<group>"; };
+		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
 		89B438941BBB7EDC009196B3 /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
@@ -130,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8924EE6B1C37C8B900856531 /* CategoryProperty */ = {
+			isa = PBXGroup;
+			children = (
+				8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */,
+			);
+			path = CategoryProperty;
+			sourceTree = "<group>";
+		};
 		89B438931BBB7EDC009196B3 /* CoreNavVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +157,7 @@
 		89B438961BBB7EDC009196B3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				8924EE6B1C37C8B900856531 /* CategoryProperty */,
 				89DB14D01C2AC90800FF6667 /* Controller */,
 				89B438971BBB7EDC009196B3 /* Category */,
 				89B4389C1BBB7EDC009196B3 /* FDFullscreenPopGesture */,
@@ -237,6 +252,9 @@
 				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
 				89DB14EB1C2AD32700FF6667 /* VC2.h */,
 				89DB14EC1C2AD32700FF6667 /* VC2.m */,
+				8924EE661C37AB9900856531 /* HeaderTopView.h */,
+				8924EE671C37AB9900856531 /* HeaderTopView.m */,
+				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
 				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
 				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
 				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
@@ -407,6 +425,7 @@
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
 				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
+				8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
@@ -438,6 +457,7 @@
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
+				8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */,
 				893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */,
 				89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */,
 				89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */,

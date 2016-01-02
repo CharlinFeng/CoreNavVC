@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CoreNavVC.h"
+#import "VC2.h"
 
 @interface ViewController ()
 
@@ -21,12 +22,13 @@
 
 }
 
-
--(void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    
-    [self.navigationController hideNavBar];
+- (IBAction)clickSction:(id)sender {
+    VC2 *vc2 = [[VC2 alloc] init];
+    [self.navigationController pushViewController:vc2 animated:YES];
 }
+
+
+
+
 
 @end

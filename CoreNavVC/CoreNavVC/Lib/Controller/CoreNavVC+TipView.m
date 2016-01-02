@@ -29,9 +29,7 @@
             
             weakSelf.tipView = nil;
         }];
-        
     };
-    
 }
 
 
@@ -62,7 +60,6 @@
             } completion:^(BOOL finished) {
                 [self.view endEditing:YES];
             }];
-            
             
             //保存key
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:tipViewKey];

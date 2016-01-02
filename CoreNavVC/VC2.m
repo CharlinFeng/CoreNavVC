@@ -9,10 +9,12 @@
 
 #import "VC2.h"
 #import "CoreNavVC.h"
+#import "HeaderTopView.h"
+#import <objc/runtime.h>
 
 @interface VC2 ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) UITableView *tableView;
 
 
 @end
@@ -21,28 +23,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.view addSubview:self.tableView];
     
     self.title = @"这是第二个控制器";
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(meauBtnClick)];
     
-    self.tableView.dataSource = self;
-    
-    self.tableView.delegate = self;
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200)];
-    headerView.backgroundColor = [UIColor brownColor];
-    self.tableView.tableHeaderView = headerView;
-    
-    [self addScrollNavbarWithScrollView:self.tableView];
+    self.topView = [HeaderTopView topView];
+   
+    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:30 topView:self.topView originHeight:200];
 }
+
+
+
 
 -(void)dealloc{
-
     [self removeScrollNavbarWithScrollView:self.tableView];
+    [self.navigationController showNavBarWithAnim:YES];
 }
+
+
 
 -(void)meauBtnClick{
 
@@ -51,12 +55,7 @@
 
 
 
--(void)viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:animated];
-    
-    [self.navigationController hideNavBar];
-}
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{return 30;}
 

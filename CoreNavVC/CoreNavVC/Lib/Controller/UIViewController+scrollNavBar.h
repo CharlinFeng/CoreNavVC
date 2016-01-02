@@ -13,11 +13,15 @@
 
 @property (nonatomic,weak) UIView *popView;
 
+@property (nonatomic,strong) UIView *topView;
+
+
 /** 展示一个PopView */
 -(void)showPopView:(UIView *)view;
 
-/** 添加滚动效果 */
--(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView;
+/** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
+-(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight topView:(UIView *)topView originHeight:(CGFloat)originHeight;
+
 /** 移除滚动效果 */
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView;
 

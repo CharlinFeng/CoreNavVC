@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhF-xi-FJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="492"/>
+            <point key="canvasLocation" x="298" y="500"/>
         </scene>
         <!--首页-->
         <scene sceneID="Ref-J1-icS">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wZ1-Xi-HF2" kind="push" id="mGD-Y3-J13"/>
+                                    <action selector="clickSction:" destination="haO-PZ-SCY" eventType="touchUpInside" id="XtS-wc-LB0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,78 +51,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEW-AQ-GaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="492"/>
-        </scene>
-        <!--第二页-->
-        <scene sceneID="EzA-Iw-iZC">
-            <objects>
-                <viewController id="wZ1-Xi-HF2" customClass="VC2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wqF-d9-wyN"/>
-                        <viewControllerLayoutGuide type="bottom" id="p8r-6W-Asf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OaT-So-Yfv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UZH-K6-PCP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="UZH-K6-PCP" firstAttribute="top" secondItem="OaT-So-Yfv" secondAttribute="top" id="0R0-rh-LgQ"/>
-                            <constraint firstItem="p8r-6W-Asf" firstAttribute="top" secondItem="UZH-K6-PCP" secondAttribute="bottom" id="IYZ-GM-nQS"/>
-                            <constraint firstItem="UZH-K6-PCP" firstAttribute="leading" secondItem="OaT-So-Yfv" secondAttribute="leading" id="NLe-jf-55D"/>
-                            <constraint firstAttribute="trailing" secondItem="UZH-K6-PCP" secondAttribute="trailing" id="Yhj-5O-ai9"/>
-                            <constraint firstItem="UZH-K6-PCP" firstAttribute="top" secondItem="wqF-d9-wyN" secondAttribute="bottom" id="dDV-DZ-scM"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="dDV-DZ-scM"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <navigationItem key="navigationItem" title="第二页" id="ofI-7j-vYp">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="Dc1-fw-UeP">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SrN-UK-fxN">
-                                <rect key="frame" x="258" y="7" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zfn-IN-N7L" kind="push" id="ht4-tA-gXB"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="UZH-K6-PCP" id="Ryn-Q1-p4u"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wkZ-fZ-htS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1041" y="492"/>
-        </scene>
-        <!--又一个页面-->
-        <scene sceneID="vIO-qx-zeX">
-            <objects>
-                <viewController id="zfn-IN-N7L" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="F0f-N0-AJQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="aVe-q5-VkZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZDm-gi-ow0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="又一个页面" id="9mT-wt-GAq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mzm-XD-WK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1430" y="492"/>
         </scene>
     </scenes>
 </document>

@@ -12,16 +12,16 @@
 @implementation UINavigationController (Plus)
 
 /** 隐藏导航条 */
--(void)hideNavBar{
+-(void)hideNavBarWithAnim:(BOOL)anim{
 
     CoreNavVC *navVC = (CoreNavVC *)self;
-    self.navigationBarHidden = YES;
+    [self setNavigationBarHidden:YES animated:anim];
 }
 
 /** 显示导航条 */
--(void)showNavBar{
+-(void)showNavBarWithAnim:(BOOL)anim{
     CoreNavVC *navVC = (CoreNavVC *)self;
-    self.navigationBarHidden = NO;
+    [self setNavigationBarHidden:NO animated:anim];
 }
 
 @end

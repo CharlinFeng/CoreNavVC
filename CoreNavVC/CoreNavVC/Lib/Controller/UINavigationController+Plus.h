@@ -11,9 +11,9 @@
 @interface UINavigationController (Plus)
 
 /** 隐藏导航条 */
--(void)hideNavBar;
+-(void)hideNavBarWithAnim:(BOOL)anim;
 
 /** 显示导航条 */
--(void)showNavBar;
+-(void)showNavBarWithAnim:(BOOL)anim;
 
 @end
