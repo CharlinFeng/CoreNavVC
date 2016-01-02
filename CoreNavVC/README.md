@@ -3,7 +3,10 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ===============
 .Objective-c<br/><br/>
 .Xcode 7
-<br/><br/>
+
+<br/><br/><br/> 
+框架演示
+===============
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/1.gif)<br /><br />
 
