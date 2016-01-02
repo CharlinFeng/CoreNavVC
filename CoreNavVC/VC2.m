@@ -39,7 +39,12 @@
 }
 
 
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    [self.navigationController showNavBarWithAnim:NO];
+}
 
 -(void)dealloc{
     [self removeScrollNavbarWithScrollView:self.tableView];
