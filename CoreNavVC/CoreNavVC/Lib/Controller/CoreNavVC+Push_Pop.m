@@ -9,7 +9,7 @@
 #import "CoreNavVC+Push_Pop.h"
 #import "CoreNavVC+Reachability.h"
 #import "CoreNavVC+TipView.h"
-#import "UIBarButtonItem+Appearance.h"
+
 
 
 
@@ -19,7 +19,7 @@
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
     if(self.viewControllers.count >= 1){
-        viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithTarget:self action:@selector(popAction) image:@"CoreNavVC.bundle/return" highImage:@"CoreNavVC.bundle/return_hl"];
+        viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem customItemWithTarget:self action:@selector(popAction) image:@"CoreNavVC.bundle/return" highImage:@"CoreNavVC.bundle/return_hl"];
         
         viewController.hidesBottomBarWhenPushed = YES;
     }

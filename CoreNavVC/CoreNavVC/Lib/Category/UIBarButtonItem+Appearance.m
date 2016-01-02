@@ -20,7 +20,7 @@
  *
  *  @return 创建完的item
  */
-+ (UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(NSString *)image highImage:(NSString *)highImage
++ (UIBarButtonItem *)customItemWithTarget:(id)target action:(SEL)action image:(NSString *)image highImage:(NSString *)highImage
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

@@ -7,6 +7,7 @@
 //
 
 #import "CoreNavVC.h"
+#import "UIBarButtonItem+Appearance.h"
 
 @interface CoreNavVC (Push_Pop)
 

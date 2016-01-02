@@ -18,8 +18,6 @@
 		89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A21BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib */; };
 		89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */; };
 		89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */; };
-		89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */; };
-		89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */; };
 		89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438AF1BBB7EDC009196B3 /* TipView.m */; };
 		89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438B01BBB7EDC009196B3 /* TipView.xib */; };
 		89BD6A821B9AEAAD00225B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A811B9AEAAD00225B4B /* main.m */; };
@@ -31,6 +29,8 @@
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
 		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
+		89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */; };
+		89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */; };
 		89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */; };
 		89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D81C2AC9DA00FF6667 /* CoreNavVC+Reachability.m */; };
 		89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14DB1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m */; };
@@ -74,10 +74,6 @@
 		89B438A31BBB7EDC009196B3 /* ToolNetWorkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolNetWorkView.h; sourceTree = "<group>"; };
 		89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolNetWorkView.m; sourceTree = "<group>"; };
 		89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolNetWorkView.xib; sourceTree = "<group>"; };
-		89B438A61BBB7EDC009196B3 /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
-		89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
-		89B438A81BBB7EDC009196B3 /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
-		89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
 		89B438AE1BBB7EDC009196B3 /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
 		89B438AF1BBB7EDC009196B3 /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
 		89B438B01BBB7EDC009196B3 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
@@ -98,6 +94,10 @@
 		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
 		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		89CCFBF71C37E3E500B6500D /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
+		89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
+		89CCFBF91C37E3E500B6500D /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
+		89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
 		89DB14D41C2AC93E00FF6667 /* CoreNavVC+TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+TipView.h"; sourceTree = "<group>"; };
 		89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+TipView.m"; sourceTree = "<group>"; };
 		89DB14D71C2AC9DA00FF6667 /* CoreNavVC+Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+Reachability.h"; sourceTree = "<group>"; };
@@ -175,6 +175,10 @@
 				89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */,
 				89B4389A1BBB7EDC009196B3 /* UIImage+NavColor.h */,
 				89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */,
+				89CCFBF71C37E3E500B6500D /* UIBarButtonItem+Appearance.h */,
+				89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */,
+				89CCFBF91C37E3E500B6500D /* UINavigationController+Appearance.h */,
+				89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -197,10 +201,6 @@
 				89B438A31BBB7EDC009196B3 /* ToolNetWorkView.h */,
 				89B438A41BBB7EDC009196B3 /* ToolNetWorkView.m */,
 				89B438A51BBB7EDC009196B3 /* ToolNetWorkView.xib */,
-				89B438A61BBB7EDC009196B3 /* UIBarButtonItem+Appearance.h */,
-				89B438A71BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m */,
-				89B438A81BBB7EDC009196B3 /* UINavigationController+Appearance.h */,
-				89B438A91BBB7EDC009196B3 /* UINavigationController+Appearance.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -448,11 +448,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89B438B91BBB7EDC009196B3 /* UIBarButtonItem+Appearance.m in Sources */,
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
 				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
-				89B438BA1BBB7EDC009196B3 /* UINavigationController+Appearance.m in Sources */,
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
+				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
@@ -466,6 +465,7 @@
 				89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */,
 				89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */,
 				89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */,
+				89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
