@@ -2,7 +2,7 @@
 CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ===============
 .Objective-c<br/><br/>
-.Xcode 7
+.Xcode 7<br/><br/>
 .时点软件内部使用
 
 <br/><br/><br/> 
