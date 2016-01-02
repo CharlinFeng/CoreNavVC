@@ -40,7 +40,7 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 
 <br/><br/>
 ####2.显示与聊天导航条
-由于封装的要求，你的显示与隐藏导航条应该是统一放在一个控制器内部，并实现对称性：
+由于封装的要求，你的显示与隐藏导航条应该是统一放在一个控制器内部，并实现对称性：<br/>
 注：由于有滑动返回手势的存在，所以最好按如下方式控制导航条的隐藏与还原;
 
     -(void)viewWillAppear:(BOOL)animated{
@@ -49,6 +49,8 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
         
         [self.navigationController showNavBarWithAnim:NO];
     }
+    
+    //此处必写，KVO监听必须注销，否则crash
     -(void)dealloc{
         [self removeScrollNavbarWithScrollView:self.tableView];
         [self.navigationController showNavBarWithAnim:YES];
@@ -57,10 +59,10 @@ CoreNavVC（关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 <br/><br/>
 ####3.添加一个顶部视图
 您需要特别注意的是，有以下四点：
-(1).您的控制器必须是UIViewController或其子类，不能直接是UITableViewController
-(2).顶部视图不可会成为tableView的tableViewHeaderView添加。框架使用runtime做了成员属性，
-任意UIViewController都有一个叫topView的成员属性，直接把您的顶部视图使用这个指针引用即可。
-您也不需要为这个视图添加约束，因为他是基于frame管理计算。此外，你还不需要指定frame。
+(1).您的控制器必须是UIViewController或其子类，不能直接是UITableViewController<br/>
+(2).顶部视图不可会成为tableView的tableViewHeaderView添加。框架使用runtime做了成员属性，<br/>
+任意UIViewController都有一个叫topView的成员属性，直接把您的顶部视图使用这个指针引用即可。<br/>
+您也不需要为这个视图添加约束，因为他是基于frame管理计算。此外，你还不需要指定frame。<br/>
 你只需如下操作即可;
 
     self.topView = [HeaderTopView topView];
