@@ -92,7 +92,6 @@ static const char PopViewKey = '\0';
     };
     
     self.popView = popView;
-    
 }
 
 

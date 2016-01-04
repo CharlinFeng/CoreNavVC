@@ -26,7 +26,7 @@
     
     [super pushViewController:viewController animated:animated];
     
-    if (self.viewControllers.count >= 1) {
+    if (self.viewControllers.count > 1) {
         
         [self checkShowedTipView];
     }
