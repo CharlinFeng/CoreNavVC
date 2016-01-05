@@ -33,9 +33,9 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(meauBtnClick)];
     
-    self.topView = [HeaderTopView topView];
+    self.nav_topView = [HeaderTopView topView];
    
-    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:10 topView:self.topView originHeight:500];
+    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:40 originHeight:160];
 }
 
 

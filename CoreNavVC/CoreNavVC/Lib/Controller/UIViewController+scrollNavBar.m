@@ -28,19 +28,19 @@ ADD_DYNAMIC_PROPERTY(NSNumber *, topViewOriginHeight, setTopViewOriginHeight)
 ADD_DYNAMIC_PROPERTY(NSNumber *, autoToggleNavbarHeight, setAutoToggleNavbarHeight)
 
 static const char CoreNavTopViewKey = '\0';
--(void)setTopView:(UIView *)topView {
+-(void)setNav_topView:(UIView *)nav_topView{
 
-    if(topView != self.topView){
+    if(nav_topView != self.nav_topView){
         
         [self willChangeValueForKey:@"CoreNavTopViewKey"]; // KVO
         
         objc_setAssociatedObject(self, &CoreNavTopViewKey,
-                                 topView, OBJC_ASSOCIATION_ASSIGN);
+                                 nav_topView, OBJC_ASSOCIATION_ASSIGN);
         [self didChangeValueForKey:@"CoreNavTopViewKey"]; // KVO
     }
 }
 
--(UIView *)topView{
+-(UIView *)nav_topView{
     return objc_getAssociatedObject(self, &CoreNavTopViewKey);
 }
 
@@ -96,7 +96,9 @@ static const char PopViewKey = '\0';
 
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
--(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight topView:(UIView *)topView originHeight:(CGFloat)originHeight{
+-(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight originHeight:(CGFloat)originHeight{
+    
+    NSAssert(self.nav_topView != nil, @"[Charlin Feng]: nav_topView must have value!");
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.autoToggleNavbarHeight = @(autoToggleNavbarHeight);
@@ -104,9 +106,9 @@ static const char PopViewKey = '\0';
     [self showPopView:self.view];
     
     //初始化frame
-    topView.frame = CGRectMake(0, -originHeight, [UIScreen mainScreen].bounds.size.width, originHeight);
+    self.nav_topView.frame = CGRectMake(0, -originHeight, [UIScreen mainScreen].bounds.size.width, originHeight);
     scrollView.contentInset = UIEdgeInsetsMake(originHeight, 0, 0, 0);
-    [scrollView addSubview:topView];
+    [scrollView addSubview:self.nav_topView];
     [scrollView addObserver:self forKeyPath:ScrollViewKeyPath_CoreNavVC options:NSKeyValueObservingOptionNew context:nil];
 }
 
@@ -121,7 +123,7 @@ static const char PopViewKey = '\0';
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
 
-    if (self.topView == nil) {return;}
+    if (self.nav_topView == nil) {return;}
     
     UIScrollView *scrollView = (UIScrollView *)object;
     
@@ -153,11 +155,11 @@ static const char PopViewKey = '\0';
         
     }else {
         
-        CGRect frame = self.topView.frame;
+        CGRect frame = self.nav_topView.frame;
         CGFloat height = - offsetY;
         frame.size.height = height;
         frame.origin.y = -height;
-        self.topView.frame = frame;
+        self.nav_topView.frame = frame;
     }
     
 }
