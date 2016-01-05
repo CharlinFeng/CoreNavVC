@@ -12,6 +12,7 @@
 #import "CoreStatus.h"
 #import "UINavigationController+Plus.h"
 #import "UIViewController+scrollNavbar.h"
+#import "UIBarButtonItem+Appearance.h"
 
 @interface CoreNavVC : UINavigationController
 
