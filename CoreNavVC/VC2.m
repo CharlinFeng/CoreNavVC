@@ -14,7 +14,7 @@
 
 @interface VC2 ()<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic,strong) UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end
@@ -24,11 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [self.view addSubview:self.tableView];
-    
+        
     self.title = @"这是第二个控制器";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(meauBtnClick)];
@@ -36,34 +34,42 @@
     self.nav_topView = [HeaderTopView topView];
    
     [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:40 originHeight:160];
+    
+    self.disablePopFunction = YES;
+    
+    NSLog(@"viewDidLoad");
 }
-
 
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     
-    [self.navigationController showNavBarWithAnim:NO];
-    [self popGestureEnable:NO];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self popGestureEnable:YES];
-    });
+    NSLog(@"viewWillAppear");
 }
+
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    NSLog(@"viewDidAppear");
+}
+
 
 -(void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillDisappear:animated];
-  
-    [self.navigationController showNavBarWithAnim:YES];
+    
+    NSLog(@"viewWillDisappear");
 }
 
 -(void)viewDidDisappear:(BOOL)animated{
     
     [super viewDidDisappear:animated];
     
-    [self.navigationController showNavBarWithAnim:YES];
+    NSLog(@"viewDidDisappear");
 }
+
 
 -(void)dealloc{
     [self removeScrollNavbarWithScrollView:self.tableView];
@@ -73,7 +79,8 @@
 
 -(void)meauBtnClick{
 
-    NSLog(@"点击了菜单");
+    NSLog(@"点击了菜单:%@");
+
 }
 
 
@@ -96,6 +103,16 @@
     
     return cell;
 }
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
+
 
 
 @end

@@ -7,12 +7,14 @@
 //
 
 #import "VCPopView.h"
+#import "UIView+CoreNavLayout.h"
 
 
 @implementation VCPopView
 
 
 +(instancetype)popView{
+    
     return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil].firstObject;
 }
 

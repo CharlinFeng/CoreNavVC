@@ -10,6 +10,8 @@
 		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
 		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
+		89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A7E55B1C473FD50057AEEF /* VC2.xib */; };
+		89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */; };
 		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
 		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; };
 		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; };
@@ -60,6 +62,9 @@
 		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
+		89A7E55B1C473FD50057AEEF /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
+		89A7E55D1C4741090057AEEF /* UIView+CoreNavLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreNavLayout.h"; sourceTree = "<group>"; };
+		89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreNavLayout.m"; sourceTree = "<group>"; };
 		89B438941BBB7EDC009196B3 /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
 		89B438951BBB7EDC009196B3 /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
 		89B438981BBB7EDC009196B3 /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
@@ -179,6 +184,8 @@
 				89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */,
 				89CCFBF91C37E3E500B6500D /* UINavigationController+Appearance.h */,
 				89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */,
+				89A7E55D1C4741090057AEEF /* UIView+CoreNavLayout.h */,
+				89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
 				89DB14EB1C2AD32700FF6667 /* VC2.h */,
 				89DB14EC1C2AD32700FF6667 /* VC2.m */,
+				89A7E55B1C473FD50057AEEF /* VC2.xib */,
 				8924EE661C37AB9900856531 /* HeaderTopView.h */,
 				8924EE671C37AB9900856531 /* HeaderTopView.m */,
 				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
@@ -423,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
+				89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */,
 				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */,
@@ -470,6 +479,7 @@
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
+				89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
 			);

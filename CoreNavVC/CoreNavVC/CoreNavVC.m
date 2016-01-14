@@ -12,6 +12,7 @@
 #import "CoreNavVC+Reachability.h"
 #import "CoreNavVC+LifeFunc.h"
 #import "CoreNavVC+Push_Pop.h"
+#import "UIView+CoreNavLayout.h"
 
 @interface CoreNavVC ()
 
@@ -42,14 +43,8 @@
         }
         [bgView addGestureRecognizer:[[UIPanGestureRecognizer alloc] init]];
         [_tipView insertSubview:bgView atIndex:0];
-        bgView.translatesAutoresizingMaskIntoConstraints=NO;
         
-        NSDictionary *views = @{@"bgView":bgView};
-        
-        NSArray *c_H=[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[bgView]-0-|" options:0 metrics:nil views:views];
-        NSArray *c_V=[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[bgView]-0-|" options:0 metrics:nil views:views];
-        [_tipView addConstraints:c_H];
-        [_tipView addConstraints:c_V];
+        [bgView layout_InSuperView_edgeinsetsZero];
         
         _tipView.alpha = 0;
     }
