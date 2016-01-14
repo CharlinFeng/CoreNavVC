@@ -9,7 +9,7 @@
 #import "CoreNavVC+Push_Pop.h"
 #import "CoreNavVC+Reachability.h"
 #import "CoreNavVC+TipView.h"
-
+#import "UIViewController+Pop.h"
 
 
 
@@ -51,6 +51,12 @@
 }
 
 -(void)popAction{
+    
+    __weak UIViewController *vc = self.topViewController;
+    
+    if(vc.popActionKeeper.PopAction != nil){vc.popActionKeeper.PopAction();return;}
+    
+    if(self.topViewController.disablePopFunction) return;
     [self popViewControllerAnimated:YES];
 }
 

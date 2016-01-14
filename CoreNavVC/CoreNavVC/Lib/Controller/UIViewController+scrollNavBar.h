@@ -11,14 +11,11 @@
 
 @interface UIViewController (scrollNavbar)
 
-@property (nonatomic,weak) UIView *popView;
-
 @property (nonatomic,strong) UIView *nav_topView;
 
-@property (nonatomic,assign) BOOL disablePopFunction;
 
-/** 添加pop返回功能 */
--(void)addPopFunctionWithAnim:(BOOL)anim;
+
+
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
 -(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight originHeight:(CGFloat)originHeight;
@@ -27,7 +24,6 @@
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView;
 
 
--(void)popGestureEnable:(BOOL)enable;
 
 
 @end

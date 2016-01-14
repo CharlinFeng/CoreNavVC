@@ -12,6 +12,7 @@
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
 		89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A7E55B1C473FD50057AEEF /* VC2.xib */; };
 		89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */; };
+		89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5611C474D640057AEEF /* UIViewController+Pop.m */; };
 		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
 		89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438991BBB7EDC009196B3 /* UIColor+NavExtend.m */; };
 		89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B4389B1BBB7EDC009196B3 /* UIImage+NavColor.m */; };
@@ -65,6 +66,8 @@
 		89A7E55B1C473FD50057AEEF /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
 		89A7E55D1C4741090057AEEF /* UIView+CoreNavLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreNavLayout.h"; sourceTree = "<group>"; };
 		89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreNavLayout.m"; sourceTree = "<group>"; };
+		89A7E5601C474D640057AEEF /* UIViewController+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Pop.h"; sourceTree = "<group>"; };
+		89A7E5611C474D640057AEEF /* UIViewController+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Pop.m"; sourceTree = "<group>"; };
 		89B438941BBB7EDC009196B3 /* CoreNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNavVC.h; sourceTree = "<group>"; };
 		89B438951BBB7EDC009196B3 /* CoreNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNavVC.m; sourceTree = "<group>"; };
 		89B438981BBB7EDC009196B3 /* UIColor+NavExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NavExtend.h"; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				89DB14E11C2ACE8100FF6667 /* UINavigationController+Plus.m */,
 				89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */,
 				89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */,
+				89A7E5601C474D640057AEEF /* UIViewController+Pop.h */,
+				89A7E5611C474D640057AEEF /* UIViewController+Pop.m */,
 				89DB14E61C2AD16200FF6667 /* VCPopView.h */,
 				89DB14E71C2AD16200FF6667 /* VCPopView.m */,
 				89DB14E91C2AD16C00FF6667 /* VCPopView.xib */,
@@ -481,6 +486,7 @@
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
 				89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
+				89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

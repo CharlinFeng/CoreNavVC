@@ -10,7 +10,6 @@
 #import "UINavigationController+Plus.h"
 #import "CoreNavVC.h"
 #import "CategoryProperty+CoreNavVC.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "UIView+CoreNavLayout.h"
 
 @interface UIViewController (scrollNavbar)
@@ -18,6 +17,8 @@
 @property (nonatomic,copy) NSNumber *topViewOriginHeight, *autoToggleNavbarHeight;
 
 @property (nonatomic,strong) UIView *nav_topContentView;
+
+
 
 @end
 
@@ -32,23 +33,7 @@ ADD_DYNAMIC_PROPERTY(NSNumber *, autoToggleNavbarHeight, setAutoToggleNavbarHeig
 ADD_DYNAMIC_PROPERTY(UIView *, nav_topContentView, setNav_topContentView)
 
 
-static const char CoreNavCanPopKey = '\0';
 
--(void)setDisablePopFunction:(BOOL)disablePopFunction{
-
-    if(disablePopFunction != self.disablePopFunction){
-        
-        [self willChangeValueForKey:@"CoreNavCanPopKey"]; // KVO
-        
-        objc_setAssociatedObject(self, &CoreNavCanPopKey,
-                                 @(disablePopFunction), OBJC_ASSOCIATION_ASSIGN);
-        [self didChangeValueForKey:@"CoreNavCanPopKey"]; // KVO
-    }
-}
-
--(BOOL)disablePopFunction{
-    return [objc_getAssociatedObject(self, &CoreNavCanPopKey) boolValue];
-}
 
 
 
@@ -72,64 +57,10 @@ static const char CoreNavTopViewKey = '\0';
 
 
 
-static const char PopViewKey = '\0';
-
--(void)setPopView:(UIView *)popView{
-
-    if(popView != self.popView){
-
-        [self willChangeValueForKey:@"PopViewKey"]; // KVO
-        
-        objc_setAssociatedObject(self, &PopViewKey,
-                                 popView, OBJC_ASSOCIATION_ASSIGN);
-        [self didChangeValueForKey:@"PopViewKey"]; // KVO
-    }
-}
-
--(UIView *)popView{
-    return objc_getAssociatedObject(self, &PopViewKey);
-}
 
 
-/** 添加pop返回功能 */
--(void)addPopFunctionWithAnim:(BOOL)anim{
-    
-    if(self.popView != nil) return;
-    NSLog(@"---------------");
-    //创建一个PopView
-    VCPopView *popView = [VCPopView popView];
-    
-    CGFloat wh = 35;
-    CGFloat x = 4.5;
-    CGFloat y = 23.8;
-    if([UIScreen mainScreen].bounds.size.width > 375) {x = 8; y = 24.5;};
-    popView.frame = CGRectMake(x, y, wh, wh);
-    
-    popView.layer.cornerRadius = wh / 2;
-    popView.layer.masksToBounds = YES;
-    
-    [self.view addSubview:popView];
-    
-    if(anim){
-    
-        popView.alpha=0;
-        
-        [UIView animateWithDuration:0.25 animations:^{
-            popView.alpha = 1;
-        }];
-    }
-    
-    __weak typeof(self) weakSelf=self;
-    
-    popView.PopActioinBlock = ^{
-        
-        if(!self.disablePopFunction){
-            [weakSelf.navigationController popViewControllerAnimated:YES];
-        }
-    };
-    
-    self.popView = popView;
-}
+
+
 
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
@@ -209,9 +140,7 @@ static const char PopViewKey = '\0';
 
 
 
--(void)popGestureEnable:(BOOL)enable{
 
-    self.fd_interactivePopDisabled = !enable;
-}
+
 
 @end

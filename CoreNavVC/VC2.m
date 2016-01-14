@@ -32,12 +32,19 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(meauBtnClick)];
     
     self.nav_topView = [HeaderTopView topView];
-   
+    //不需要再嵌套了
     [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:40 originHeight:160];
     
     self.disablePopFunction = YES;
-    
+ 
     NSLog(@"viewDidLoad");
+    __weak typeof(self) weakSelf=self;
+//    self.PopAction = ^{
+//    
+//        NSLog(@"点击了返回按钮");
+//        
+//        [self.navigationController popViewControllerAnimated:YES];
+//    };
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -45,7 +52,10 @@
     [super viewWillAppear:animated];
     
     NSLog(@"viewWillAppear");
+    
+    [self addPopFunctionWithAnim:YES];
 }
+
 
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -53,6 +63,8 @@
     [super viewDidAppear:animated];
     
     NSLog(@"viewDidAppear");
+    
+    
 }
 
 
@@ -108,7 +120,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor whiteColor];
+    vc.view.backgroundColor = [UIColor blackColor];
     [self.navigationController pushViewController:vc animated:YES];
 
 }
