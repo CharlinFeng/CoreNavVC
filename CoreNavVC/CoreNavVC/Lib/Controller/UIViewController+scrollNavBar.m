@@ -82,7 +82,7 @@ static const char CoreNavTopViewKey = '\0';
     [self.nav_topView layout_InSuperView_edgeinsetsZero];
     
     scrollView.contentInset = UIEdgeInsetsMake(originHeight, 0, 0, 0);
-    [scrollView addSubview:self.nav_topContentView];
+    [scrollView insertSubview:self.nav_topContentView atIndex:0];
     [scrollView addObserver:self forKeyPath:ScrollViewKeyPath_CoreNavVC options:NSKeyValueObservingOptionNew context:nil];
 }
 
@@ -109,9 +109,9 @@ static const char CoreNavTopViewKey = '\0';
     
     CGFloat realOffset = offsetY + self.topViewOriginHeight.floatValue;
     
-    if (realOffset > self.autoToggleNavbarHeight.floatValue){
+    CGFloat p = realOffset / maxOffsetY;
     
-        CGFloat p = realOffset / maxOffsetY;
+    if (realOffset > self.autoToggleNavbarHeight.floatValue){
     
         [self.navigationController showNavBarWithAnim:NO];
         
@@ -125,7 +125,12 @@ static const char CoreNavTopViewKey = '\0';
         navVC.navBgView.alpha = 0;
     }
     
-    if(offsetY >= -self.topViewOriginHeight.floatValue) {
+    if(offsetY > -self.topViewOriginHeight.floatValue) {
+
+        CGRect frame = self.nav_topContentView.frame;
+        CGFloat height = - offsetY;
+        frame.origin.y = offsetY - p * 36;
+        self.nav_topContentView.frame = frame;
         
     }else {
         
