@@ -13,7 +13,7 @@
 
 @property (nonatomic,strong) UIView *nav_topView;
 
-
+@property (nonatomic,assign) BOOL enableParallax;
 
 
 

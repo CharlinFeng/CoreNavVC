@@ -37,6 +37,7 @@
     
     self.disablePopFunction = YES;
  
+
     NSLog(@"viewDidLoad");
     __weak typeof(self) weakSelf=self;
 //    self.PopAction = ^{

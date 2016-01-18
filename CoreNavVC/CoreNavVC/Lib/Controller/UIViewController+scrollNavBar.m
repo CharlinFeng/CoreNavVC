@@ -127,10 +127,12 @@ static const char CoreNavTopViewKey = '\0';
     
     if(offsetY > -self.topViewOriginHeight.floatValue) {
 
-        CGRect frame = self.nav_topContentView.frame;
-        CGFloat height = - offsetY;
-        frame.origin.y = offsetY - p * 36;
-        self.nav_topContentView.frame = frame;
+        if(self.enableParallax){
+            CGRect frame = self.nav_topContentView.frame;
+            CGFloat height = - offsetY;
+            frame.origin.y = offsetY - p * 36;
+            self.nav_topContentView.frame = frame;
+        }
         
     }else {
         
@@ -146,6 +148,22 @@ static const char CoreNavTopViewKey = '\0';
 
 
 
+static const char CoreNavEnableParallax = '\0';
 
+-(void)setEnableParallax:(BOOL)enableParallax{
+    
+    if(enableParallax != self.enableParallax){
+        
+        [self willChangeValueForKey:@"CoreNavEnableParallax"]; // KVO
+        
+        objc_setAssociatedObject(self, &CoreNavEnableParallax,
+                                 @(enableParallax), OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"CoreNavEnableParallax"]; // KVO
+    }
+}
+
+-(BOOL)enableParallax{
+    return [objc_getAssociatedObject(self, &CoreNavEnableParallax) boolValue];
+}
 
 @end
