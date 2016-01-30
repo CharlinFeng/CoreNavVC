@@ -7,7 +7,6 @@
 //
 
 #import "UIViewController+scrollNavbar.h"
-#import "UINavigationController+Plus.h"
 #import "CoreNavVC.h"
 #import "CategoryProperty+CoreNavVC.h"
 #import "UIView+CoreNavLayout.h"
@@ -40,7 +39,7 @@ ADD_DYNAMIC_PROPERTY(UIView *, nav_topContentView, setNav_topContentView)
 
 static const char CoreNavTopViewKey = '\0';
 -(void)setNav_topView:(UIView *)nav_topView{
-
+    
     if(nav_topView != self.nav_topView){
         
         [self willChangeValueForKey:@"CoreNavTopViewKey"]; // KVO
@@ -71,7 +70,7 @@ static const char CoreNavTopViewKey = '\0';
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.autoToggleNavbarHeight = @(autoToggleNavbarHeight);
     self.topViewOriginHeight = @(originHeight);
- 
+    
     //初始化frame
     self.nav_topContentView = [[UIView alloc] initWithFrame:CGRectMake(0, -originHeight, [UIScreen mainScreen].bounds.size.width, originHeight)];
     
@@ -89,6 +88,9 @@ static const char CoreNavTopViewKey = '\0';
 
 /** 移除滚动效果 */
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView{
+    
+    CoreNavVC *navVC = (CoreNavVC *)self.navigationController;
+    [navVC showNavBarWithAnim:YES];
     [scrollView removeObserver:self forKeyPath:ScrollViewKeyPath_CoreNavVC];
     [scrollView removeFromSuperview];
     scrollView = nil;
@@ -96,10 +98,14 @@ static const char CoreNavTopViewKey = '\0';
 
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-
+    
+    if(!self.isViewDidAppear) {return;}
+    
     if (self.nav_topView == nil) {return;}
     
     UIScrollView *scrollView = (UIScrollView *)object;
+    
+    if(scrollView == nil){return;}
     
     CGFloat offsetY = scrollView.contentOffset.y;
     
@@ -111,9 +117,9 @@ static const char CoreNavTopViewKey = '\0';
     
     CGFloat p = realOffset / maxOffsetY;
     
-    if (realOffset > self.autoToggleNavbarHeight.floatValue){
-    
-        [self.navigationController showNavBarWithAnim:NO];
+    if (realOffset >= self.autoToggleNavbarHeight.floatValue){
+        
+        [self.navigationController setNavigationBarHidden:YES animated:NO];
         
         navVC.navBgView.alpha = p;
         
@@ -121,12 +127,12 @@ static const char CoreNavTopViewKey = '\0';
         
     }else{
         
-        [self.navigationController hideNavBarWithAnim:NO];
+        [self.navigationController setNavigationBarHidden:YES animated:NO];
         navVC.navBgView.alpha = 0;
     }
     
     if(offsetY > -self.topViewOriginHeight.floatValue) {
-
+        
         if(self.enableParallax){
             CGRect frame = self.nav_topContentView.frame;
             CGFloat height = - offsetY;
@@ -164,6 +170,27 @@ static const char CoreNavEnableParallax = '\0';
 
 -(BOOL)enableParallax{
     return [objc_getAssociatedObject(self, &CoreNavEnableParallax) boolValue];
+}
+
+
+
+
+static const char CoreNavIsViewDidAppear = '\0';
+
+-(void)setIsViewDidAppear:(BOOL)isViewDidAppear{
+    
+    if(isViewDidAppear != self.isViewDidAppear){
+        
+        [self willChangeValueForKey:@"CoreNavIsViewDidAppear"]; // KVO
+        
+        objc_setAssociatedObject(self, &CoreNavIsViewDidAppear,
+                                 @(isViewDidAppear), OBJC_ASSOCIATION_ASSIGN);
+        [self didChangeValueForKey:@"CoreNavIsViewDidAppear"]; // KVO
+    }
+}
+
+-(BOOL)isViewDidAppear{
+    return [objc_getAssociatedObject(self, &CoreNavIsViewDidAppear) boolValue];
 }
 
 @end

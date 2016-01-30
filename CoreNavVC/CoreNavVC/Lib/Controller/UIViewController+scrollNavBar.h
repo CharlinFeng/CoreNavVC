@@ -15,6 +15,8 @@
 
 @property (nonatomic,assign) BOOL enableParallax;
 
+@property (nonatomic,assign) BOOL isViewDidAppear;
+
 
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
