@@ -56,7 +56,7 @@
             <connections>
                 <outletCollection property="gestureRecognizers" destination="Wcn-OA-HXg" appends="YES" id="HN1-iB-4wg"/>
             </connections>
-            <point key="canvasLocation" x="546" y="306"/>
+            <point key="canvasLocation" x="750" y="363"/>
         </view>
         <tapGestureRecognizer id="Wcn-OA-HXg">
             <connections>

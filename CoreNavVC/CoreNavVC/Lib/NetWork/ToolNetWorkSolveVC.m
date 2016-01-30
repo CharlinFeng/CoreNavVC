@@ -7,6 +7,7 @@
 //
 
 #import "ToolNetWorkSolveVC.h"
+#import "ToolNetWorkView.h"
 
 #define ios6x ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0f)
 
@@ -30,6 +31,21 @@
     
     self.edgesForExtendedLayout=UIRectEdgeNone;
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    [ToolNetWorkView dismissNetWordNotiInViewController:self.navigationController];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    [ToolNetWorkView dismissNetWordNotiInViewController:self.navigationController];
+}
+
 
 
 @end

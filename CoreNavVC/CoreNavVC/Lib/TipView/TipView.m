@@ -8,6 +8,7 @@
 
 #import "TipView.h"
 
+
 @implementation TipView
 
 -(void)awakeFromNib{
@@ -22,12 +23,8 @@
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
 }
 
-
-- (IBAction)clickBtn:(id)sender {
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     if(self.ClickDismissBtnBlock != nil) self.ClickDismissBtnBlock();
 }
-
-
-
 
 @end
