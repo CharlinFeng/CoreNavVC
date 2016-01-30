@@ -117,9 +117,9 @@ static const char CoreNavTopViewKey = '\0';
     
     CGFloat p = realOffset / maxOffsetY;
     
-    if (realOffset >= self.autoToggleNavbarHeight.floatValue){
+    if (realOffset > self.autoToggleNavbarHeight.floatValue){
         
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
+        [self.navigationController setNavigationBarHidden:NO animated:NO];
         
         navVC.navBgView.alpha = p;
         
