@@ -27,6 +27,15 @@
     [self.navigationController pushViewController:vc2 animated:YES];
 }
 
+-(CGPoint)RotationAnimatedTransitioningProtocol_anchorPoint{
+
+    return CGPointMake(0, 0);
+}
+
+-(BOOL)RotationAnimatedTransitioningProtocol_isClockWise{
+    return YES;
+}
+
 
 
 

@@ -9,6 +9,8 @@
 #import "CoreNavVC+LifeFunc.h"
 #import "CoreNavVC+Reachability.h"
 #import "CoreNavVC+TipView.h"
+#import "CoreNavVC+Push_Pop.h"
+
 
 @implementation CoreNavVC (LifeFunc)
 
@@ -28,6 +30,8 @@
     [self handleTipView];
     
     [self netWorkStatusChange];
+    
+    [self customPushPopPrepare];
 }
 
 

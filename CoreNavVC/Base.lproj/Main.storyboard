@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A4310" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mj-ip-RiK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Mj-ip-RiK">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--App NavVC-->
@@ -44,13 +44,69 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="首页" id="EDd-5K-c5n"/>
+                    <navigationItem key="navigationItem" title="首页" id="EDd-5K-c5n">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aO9-yQ-Xrt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2eO-9x-zb5">
+                                <rect key="frame" x="269" y="7" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" red="1" green="0.28235294119999998" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aZN-n2-DUn" kind="push" id="Np1-Zi-Ke0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEW-AQ-GaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="492"/>
+        </scene>
+        <!--红色页面-->
+        <scene sceneID="yaC-hn-dSu">
+            <objects>
+                <viewController id="aZN-n2-DUn" customClass="RotateVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="68G-2r-ARj"/>
+                        <viewControllerLayoutGuide type="bottom" id="cUn-pU-Hom"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GLV-Gf-5h4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sWt-SF-auv">
+                                <rect key="frame" x="0.0" y="537" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w1B-f1-f7l">
+                                <rect key="frame" x="271" y="537" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yQ-Yy-41v">
+                                <rect key="frame" x="271" y="0.0" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEv-TO-TkV">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.28235294119999998" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eEv-TO-TkV" firstAttribute="top" secondItem="GLV-Gf-5h4" secondAttribute="top" id="B7Z-Yd-2YY"/>
+                            <constraint firstItem="4yQ-Yy-41v" firstAttribute="top" secondItem="GLV-Gf-5h4" secondAttribute="top" id="ITo-Tm-foY"/>
+                            <constraint firstItem="cUn-pU-Hom" firstAttribute="top" secondItem="sWt-SF-auv" secondAttribute="bottom" id="YEB-6s-RTp"/>
+                            <constraint firstItem="sWt-SF-auv" firstAttribute="leading" secondItem="GLV-Gf-5h4" secondAttribute="leading" id="dmR-8W-iUF"/>
+                            <constraint firstAttribute="trailing" secondItem="w1B-f1-f7l" secondAttribute="trailing" id="fMi-3S-Bpo"/>
+                            <constraint firstAttribute="trailing" secondItem="4yQ-Yy-41v" secondAttribute="trailing" id="i74-MR-B9s"/>
+                            <constraint firstItem="eEv-TO-TkV" firstAttribute="leading" secondItem="GLV-Gf-5h4" secondAttribute="leading" id="vCx-aK-A3y"/>
+                            <constraint firstItem="cUn-pU-Hom" firstAttribute="top" secondItem="w1B-f1-f7l" secondAttribute="bottom" id="whz-G0-dTl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="红色页面" id="fw3-gR-pKN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54G-yA-ObK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="486"/>
         </scene>
     </scenes>
 </document>

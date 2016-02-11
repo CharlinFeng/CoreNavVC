@@ -11,4 +11,7 @@
 
 @interface CoreNavVC (Push_Pop)
 
+-(void)customPushPopPrepare;
+
+
 @end

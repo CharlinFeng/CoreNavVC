@@ -44,6 +44,8 @@
 		89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EC1C2AD32700FF6667 /* VC2.m */; };
 		89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */; };
 		89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */; };
+		89FEF7A61C6C705C00C66E08 /* RotationAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */; };
+		89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7A81C6C76AD00C66E08 /* RotateVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,10 @@
 		89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+scrollNavBar.h"; sourceTree = "<group>"; };
 		89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+scrollNavBar.m"; sourceTree = "<group>"; };
 		89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreNavVC.bundle; sourceTree = "<group>"; };
+		89FEF7A41C6C705C00C66E08 /* RotationAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAnimatedTransitioning.h; sourceTree = "<group>"; };
+		89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAnimatedTransitioning.m; sourceTree = "<group>"; };
+		89FEF7A71C6C76AD00C66E08 /* RotateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateVC.h; sourceTree = "<group>"; };
+		89FEF7A81C6C76AD00C66E08 /* RotateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 				89B4389F1BBB7EDC009196B3 /* NetWork */,
 				89B438AB1BBB7EDC009196B3 /* Resource */,
 				89B438AD1BBB7EDC009196B3 /* TipView */,
+				89FEF7A31C6C700600C66E08 /* CustomPushPop */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -263,6 +270,8 @@
 				89DB14EB1C2AD32700FF6667 /* VC2.h */,
 				89DB14EC1C2AD32700FF6667 /* VC2.m */,
 				89A7E55B1C473FD50057AEEF /* VC2.xib */,
+				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
+				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
 				8924EE661C37AB9900856531 /* HeaderTopView.h */,
 				8924EE671C37AB9900856531 /* HeaderTopView.m */,
 				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
@@ -351,6 +360,15 @@
 				89DB14E91C2AD16C00FF6667 /* VCPopView.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		89FEF7A31C6C700600C66E08 /* CustomPushPop */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7A41C6C705C00C66E08 /* RotationAnimatedTransitioning.h */,
+				89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */,
+			);
+			path = CustomPushPop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,9 +481,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
+				89FEF7A61C6C705C00C66E08 /* RotationAnimatedTransitioning.m in Sources */,
 				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
+				89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,

@@ -35,7 +35,7 @@
     //不需要再嵌套了
     [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:40 originHeight:160];
     
-    self.disablePopFunction = YES;
+//    self.disablePopFunction = YES;
  
 
     NSLog(@"viewDidLoad");

@@ -14,6 +14,15 @@
 #import "UIViewController+scrollNavbar.h"
 #import "UIBarButtonItem+Appearance.h"
 #import "UIViewController+Pop.h"
+#import "RotationAnimatedTransitioning.h"
+
+typedef enum{
+    
+    NavTypeNone = 0,
+    NavTypePush,
+    NavTypePop
+    
+} NavType;
 
 @interface CoreNavVC : UINavigationController
 
@@ -28,5 +37,9 @@
 @property (nonatomic,strong) Reachability *readchability;
 
 @property (nonatomic,strong) NSArray *hideNetworkBarControllerArrayFull;                                //这个是最终的读取数组
+
+@property (nonatomic,assign) NavType navType;
+
+@property (nonatomic,strong) RotationAnimatedTransitioning *at;
 
 @end

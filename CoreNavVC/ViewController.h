@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RotationAnimatedTransitioning.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<RotationAnimatedTransitioningProtocol>
 
 
 @end

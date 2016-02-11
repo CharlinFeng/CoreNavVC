@@ -63,5 +63,15 @@
     return _hideNetworkBarControllerArrayFull;
 }
 
+-(RotationAnimatedTransitioning *)at{
+
+    if(_at == nil){
+    
+        _at = [[RotationAnimatedTransitioning alloc] init];
+        _at.navVC = self;
+    }
+    
+    return _at;
+}
 
 @end

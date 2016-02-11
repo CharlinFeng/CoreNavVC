@@ -10,13 +10,64 @@
 #import "CoreNavVC+Reachability.h"
 #import "CoreNavVC+TipView.h"
 #import "UIViewController+Pop.h"
+#import "RotationAnimatedTransitioning.h"
 
+@interface CoreNavVC ()<UINavigationControllerDelegate>
+
+@end
 
 
 @implementation CoreNavVC (Push_Pop)
 
 
+-(void)customPushPopPrepare{
+
+    self.delegate = self;
+}
+
+
+/** 自定义转场动画 */
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                  animationControllerForOperation:(UINavigationControllerOperation)operation
+                                               fromViewController:(UIViewController *)fromVC
+                                                 toViewController:(UIViewController *)toVC
+{
+ 
+    if(
+       
+       [fromVC conformsToProtocol:@protocol(RotationAnimatedTransitioningProtocol)]
+       &&
+       [toVC conformsToProtocol:@protocol(RotationAnimatedTransitioningProtocol)]
+       
+       ){
+    
+        return self.at;
+    }
+        
+    return nil;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    self.navType = NavTypePush;
     
     if(self.viewControllers.count >= 1){
         viewController.navigationItem.leftBarButtonItem=[UIBarButtonItem customItemWithTarget:self action:@selector(popAction) image:@"CoreNavVC.bundle/return" highImage:@"CoreNavVC.bundle/return_hl"];
@@ -37,6 +88,8 @@
 
 
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    
+    self.navType = NavTypePop;
     
     UIViewController *vc = [super popViewControllerAnimated:animated];
     
