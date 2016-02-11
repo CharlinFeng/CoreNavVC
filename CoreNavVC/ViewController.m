@@ -9,8 +9,13 @@
 #import "ViewController.h"
 #import "CoreNavVC.h"
 #import "VC2.h"
+#import "ShowVC.h"
+#import "RotateVC.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *listImageV;
+
 
 @end
 
@@ -27,16 +32,26 @@
     [self.navigationController pushViewController:vc2 animated:YES];
 }
 
--(CGPoint)RotationAnimatedTransitioningProtocol_anchorPoint{
 
-    return CGPointMake(0, 0);
+
+
+- (IBAction)showActioin:(id)sender {
+
+
+    
+    ShowVC *showVC = [[ShowVC alloc] initWithNibName:@"ShowVC" bundle:nil];
+    
+    [self.navigationController pushViewController:showVC animated:YES];
+    
 }
 
--(BOOL)RotationAnimatedTransitioningProtocol_isClockWise{
-    return YES;
+
+
+
+
+-(UIView *)PinterestAnimatedTransitioningProtocol_PinterestView{
+
+    return self.listImageV;
 }
-
-
-
 
 @end

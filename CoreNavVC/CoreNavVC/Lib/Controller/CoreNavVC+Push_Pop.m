@@ -12,6 +12,7 @@
 #import "UIViewController+Pop.h"
 #import "RotationAnimatedTransitioning.h"
 
+
 @interface CoreNavVC ()<UINavigationControllerDelegate>
 
 @end
@@ -40,8 +41,18 @@
        [toVC conformsToProtocol:@protocol(RotationAnimatedTransitioningProtocol)]
        
        ){
-    
+        
         return self.at;
+        
+    }else if(
+        
+        [fromVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
+        &&
+        [toVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
+        
+        ){
+        
+        return self.pt;
     }
         
     return nil;

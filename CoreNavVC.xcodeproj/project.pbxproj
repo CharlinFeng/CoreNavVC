@@ -44,8 +44,11 @@
 		89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EC1C2AD32700FF6667 /* VC2.m */; };
 		89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */; };
 		89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */; };
-		89FEF7A61C6C705C00C66E08 /* RotationAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */; };
 		89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7A81C6C76AD00C66E08 /* RotateVC.m */; };
+		89FEF7AF1C6CA12300C66E08 /* ShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7AD1C6CA12300C66E08 /* ShowVC.m */; };
+		89FEF7B01C6CA12300C66E08 /* ShowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */; };
+		89FEF7B61C6CA37D00C66E08 /* RotationAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7B51C6CA37D00C66E08 /* RotationAnimatedTransitioning.m */; };
+		89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7B81C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,10 +129,15 @@
 		89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+scrollNavBar.h"; sourceTree = "<group>"; };
 		89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+scrollNavBar.m"; sourceTree = "<group>"; };
 		89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreNavVC.bundle; sourceTree = "<group>"; };
-		89FEF7A41C6C705C00C66E08 /* RotationAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAnimatedTransitioning.h; sourceTree = "<group>"; };
-		89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAnimatedTransitioning.m; sourceTree = "<group>"; };
 		89FEF7A71C6C76AD00C66E08 /* RotateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateVC.h; sourceTree = "<group>"; };
 		89FEF7A81C6C76AD00C66E08 /* RotateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateVC.m; sourceTree = "<group>"; };
+		89FEF7AC1C6CA12300C66E08 /* ShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowVC.h; sourceTree = "<group>"; };
+		89FEF7AD1C6CA12300C66E08 /* ShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowVC.m; sourceTree = "<group>"; };
+		89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowVC.xib; sourceTree = "<group>"; };
+		89FEF7B41C6CA37D00C66E08 /* RotationAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAnimatedTransitioning.h; sourceTree = "<group>"; };
+		89FEF7B51C6CA37D00C66E08 /* RotationAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAnimatedTransitioning.m; sourceTree = "<group>"; };
+		89FEF7B71C6CA3A900C66E08 /* PinterestAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestAnimatedTransitioning.h; sourceTree = "<group>"; };
+		89FEF7B81C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestAnimatedTransitioning.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +186,7 @@
 				89B4389F1BBB7EDC009196B3 /* NetWork */,
 				89B438AB1BBB7EDC009196B3 /* Resource */,
 				89B438AD1BBB7EDC009196B3 /* TipView */,
-				89FEF7A31C6C700600C66E08 /* CustomPushPop */,
+				89FEF7B11C6CA37D00C66E08 /* CustomPushPop */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -267,14 +275,8 @@
 				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
 				89BD6A861B9AEAAD00225B4B /* ViewController.h */,
 				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
-				89DB14EB1C2AD32700FF6667 /* VC2.h */,
-				89DB14EC1C2AD32700FF6667 /* VC2.m */,
-				89A7E55B1C473FD50057AEEF /* VC2.xib */,
-				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
-				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
-				8924EE661C37AB9900856531 /* HeaderTopView.h */,
-				8924EE671C37AB9900856531 /* HeaderTopView.m */,
-				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
+				89FEF7AA1C6CA0F000C66E08 /* PullScale */,
+				89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */,
 				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
 				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
 				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
@@ -362,13 +364,56 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		89FEF7A31C6C700600C66E08 /* CustomPushPop */ = {
+		89FEF7AA1C6CA0F000C66E08 /* PullScale */ = {
 			isa = PBXGroup;
 			children = (
-				89FEF7A41C6C705C00C66E08 /* RotationAnimatedTransitioning.h */,
-				89FEF7A51C6C705C00C66E08 /* RotationAnimatedTransitioning.m */,
+				89DB14EB1C2AD32700FF6667 /* VC2.h */,
+				89DB14EC1C2AD32700FF6667 /* VC2.m */,
+				89A7E55B1C473FD50057AEEF /* VC2.xib */,
+				8924EE661C37AB9900856531 /* HeaderTopView.h */,
+				8924EE671C37AB9900856531 /* HeaderTopView.m */,
+				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
+			);
+			name = PullScale;
+			sourceTree = "<group>";
+		};
+		89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
+				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
+				89FEF7AC1C6CA12300C66E08 /* ShowVC.h */,
+				89FEF7AD1C6CA12300C66E08 /* ShowVC.m */,
+				89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */,
+			);
+			name = CustomTransition;
+			sourceTree = "<group>";
+		};
+		89FEF7B11C6CA37D00C66E08 /* CustomPushPop */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7B21C6CA37D00C66E08 /* Pinterest */,
+				89FEF7B31C6CA37D00C66E08 /* Rotation */,
 			);
 			path = CustomPushPop;
+			sourceTree = "<group>";
+		};
+		89FEF7B21C6CA37D00C66E08 /* Pinterest */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7B71C6CA3A900C66E08 /* PinterestAnimatedTransitioning.h */,
+				89FEF7B81C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m */,
+			);
+			path = Pinterest;
+			sourceTree = "<group>";
+		};
+		89FEF7B31C6CA37D00C66E08 /* Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7B41C6CA37D00C66E08 /* RotationAnimatedTransitioning.h */,
+				89FEF7B51C6CA37D00C66E08 /* RotationAnimatedTransitioning.m */,
+			);
+			path = Rotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
+				89FEF7B01C6CA12300C66E08 /* ShowVC.xib in Resources */,
 				89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */,
 				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
@@ -481,11 +527,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
-				89FEF7A61C6C705C00C66E08 /* RotationAnimatedTransitioning.m in Sources */,
 				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
 				89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */,
+				89FEF7AF1C6CA12300C66E08 /* ShowVC.m in Sources */,
+				89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
@@ -504,6 +551,7 @@
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
+				89FEF7B61C6CA37D00C66E08 /* RotationAnimatedTransitioning.m in Sources */,
 				89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
 				89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */,

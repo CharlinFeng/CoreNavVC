@@ -15,6 +15,7 @@
 #import "UIBarButtonItem+Appearance.h"
 #import "UIViewController+Pop.h"
 #import "RotationAnimatedTransitioning.h"
+#import "PinterestAnimatedTransitioning.h"
 
 typedef enum{
     
@@ -41,5 +42,6 @@ typedef enum{
 @property (nonatomic,assign) NavType navType;
 
 @property (nonatomic,strong) RotationAnimatedTransitioning *at;
+@property (nonatomic,strong) PinterestAnimatedTransitioning *pt;
 
 @end

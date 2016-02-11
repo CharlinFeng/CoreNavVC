@@ -14,10 +14,6 @@
 
 
 
-
-
-
-
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     
     return 1;
@@ -74,14 +70,15 @@
     animView.layer.anchorPoint =  anchorPoint;
     CGRect bounds = [[UIScreen mainScreen] bounds];
     animView.layer.position = CGPointMake(bounds.size.width * anchorPoint.x, bounds.size.height * anchorPoint.y);
+    
     NSInteger i = isClockWise ? -1 : 1;
-    NSLog(@"-----%i",i);
+    
     CGAffineTransform tranform_begin = isPush ? CGAffineTransformMakeRotation(M_PI_4 * 2 * i) : CGAffineTransformIdentity;
     
     CGAffineTransform tranform_end = isPush ? CGAffineTransformIdentity : CGAffineTransformMakeRotation(M_PI_2 * i);
     
     animView.transform = tranform_begin;
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         animView.transform = tranform_end;
     } completion:^(BOOL finished) {
         if(completeAction != nil) completeAction();

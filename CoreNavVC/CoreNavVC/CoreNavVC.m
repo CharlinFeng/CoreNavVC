@@ -74,4 +74,15 @@
     return _at;
 }
 
+-(PinterestAnimatedTransitioning *)pt{
+
+    if(_pt == nil){
+    
+        _pt = [[PinterestAnimatedTransitioning alloc] init];
+        _pt.navVC = self;
+    }
+
+    return _pt;
+}
+
 @end

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RotationAnimatedTransitioning.h"
+#import "PinterestAnimatedTransitioning.h"
 
-@interface ViewController : UIViewController<RotationAnimatedTransitioningProtocol>
+@interface ViewController : UIViewController<PinterestAnimatedTransitioningProtocol>
 
 
 @end

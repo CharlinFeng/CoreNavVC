@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--App NavVC-->
@@ -35,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-1H-qwm">
-                                <rect key="frame" x="137" y="149" width="46" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -43,8 +44,42 @@
                                     <action selector="clickSction:" destination="haO-PZ-SCY" eventType="touchUpInside" id="XtS-wc-LB0"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-mu-UIH">
+                                <rect key="frame" x="0.0" y="484" width="320" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="j9r-uC-H7a">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="j9r-uC-H7a" secondAttribute="height" multiplier="16:9" id="1Bj-Qf-fYF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA3-Ue-IwM">
+                                        <rect key="frame" x="270" y="7" width="30" height="30"/>
+                                        <state key="normal" title="展示">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showActioin:" destination="haO-PZ-SCY" eventType="touchUpInside" id="cha-So-uYC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87145353618420518" green="0.30329975328947367" blue="0.71109169407894723" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="j9r-uC-H7a" firstAttribute="leading" secondItem="OMK-mu-UIH" secondAttribute="leading" id="6wP-10-4y3"/>
+                                    <constraint firstAttribute="height" constant="44" id="SEk-sW-d8C"/>
+                                    <constraint firstAttribute="trailing" secondItem="TA3-Ue-IwM" secondAttribute="trailing" constant="20" id="bSM-z2-CPR"/>
+                                    <constraint firstItem="TA3-Ue-IwM" firstAttribute="centerY" secondItem="OMK-mu-UIH" secondAttribute="centerY" id="lWi-dA-PKq"/>
+                                    <constraint firstItem="j9r-uC-H7a" firstAttribute="top" secondItem="OMK-mu-UIH" secondAttribute="top" id="mt6-IQ-PoD"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9r-uC-H7a" secondAttribute="bottom" id="xh0-Yn-hH8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OMK-mu-UIH" firstAttribute="leading" secondItem="GVx-qx-33i" secondAttribute="leading" id="1z8-rW-2aT"/>
+                            <constraint firstAttribute="trailing" secondItem="OMK-mu-UIH" secondAttribute="trailing" id="CVc-EW-dNw"/>
+                            <constraint firstItem="SEP-id-iyk" firstAttribute="top" secondItem="OMK-mu-UIH" secondAttribute="bottom" constant="40" id="keH-Ar-IWh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="EDd-5K-c5n">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="aO9-yQ-Xrt">
@@ -60,6 +95,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="listImageV" destination="j9r-uC-H7a" id="hzU-C5-zMm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEW-AQ-GaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,4 +147,7 @@
             <point key="canvasLocation" x="1061" y="486"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="2052" height="1248"/>
+    </resources>
 </document>
