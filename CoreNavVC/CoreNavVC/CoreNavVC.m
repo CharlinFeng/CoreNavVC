@@ -85,4 +85,15 @@
     return _pt;
 }
 
+-(ShapeLayerAnimatedTransitioning *)st{
+
+    if(_st == nil){
+    
+        _st = [[ShapeLayerAnimatedTransitioning alloc] init];
+        _st.navVC = self;
+    }
+
+    return _st;
+}
+
 @end

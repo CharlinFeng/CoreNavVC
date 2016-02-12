@@ -78,7 +78,10 @@
     CGAffineTransform tranform_end = isPush ? CGAffineTransformIdentity : CGAffineTransformMakeRotation(M_PI_2 * i);
     
     animView.transform = tranform_begin;
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    
+    NSTimeInterval duration = [self transitionDuration:nil];
+    
+    [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         animView.transform = tranform_end;
     } completion:^(BOOL finished) {
         if(completeAction != nil) completeAction();

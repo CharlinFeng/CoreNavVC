@@ -10,6 +10,10 @@
 		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
 		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
+		896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */; };
+		896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */; };
+		896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */; };
+		896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C61C6D9383003D477F /* CALayer+Transition.m */; };
 		89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A7E55B1C473FD50057AEEF /* VC2.xib */; };
 		89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */; };
 		89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5611C474D640057AEEF /* UIViewController+Pop.m */; };
@@ -68,6 +72,13 @@
 		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
+		896CA3BA1C6D6DD3003D477F /* ShapeLayerDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerDetailVC.h; sourceTree = "<group>"; };
+		896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerDetailVC.m; sourceTree = "<group>"; };
+		896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeLayerDetailVC.xib; sourceTree = "<group>"; };
+		896CA3C01C6D710A003D477F /* ShapeLayerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerAnimatedTransitioning.m; sourceTree = "<group>"; };
+		896CA3C51C6D9383003D477F /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
+		896CA3C61C6D9383003D477F /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
 		89A7E55B1C473FD50057AEEF /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
 		89A7E55D1C4741090057AEEF /* UIView+CoreNavLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreNavLayout.h"; sourceTree = "<group>"; };
 		89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreNavLayout.m"; sourceTree = "<group>"; };
@@ -164,6 +175,53 @@
 				8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */,
 			);
 			path = CategoryProperty;
+			sourceTree = "<group>";
+		};
+		896CA3B81C6D6D7D003D477F /* Pinterest */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7AC1C6CA12300C66E08 /* ShowVC.h */,
+				89FEF7AD1C6CA12300C66E08 /* ShowVC.m */,
+				89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */,
+			);
+			name = Pinterest;
+			sourceTree = "<group>";
+		};
+		896CA3B91C6D6D92003D477F /* ShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				896CA3BA1C6D6DD3003D477F /* ShapeLayerDetailVC.h */,
+				896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */,
+				896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */,
+			);
+			name = ShapeLayer;
+			sourceTree = "<group>";
+		};
+		896CA3BF1C6D710A003D477F /* ShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				896CA3C01C6D710A003D477F /* ShapeLayerAnimatedTransitioning.h */,
+				896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */,
+			);
+			path = ShapeLayer;
+			sourceTree = "<group>";
+		};
+		896CA3C31C6D720E003D477F /* Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
+				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
+			);
+			name = Rotate;
+			sourceTree = "<group>";
+		};
+		896CA3C41C6D9383003D477F /* CoreTransition */ = {
+			isa = PBXGroup;
+			children = (
+				896CA3C51C6D9383003D477F /* CALayer+Transition.h */,
+				896CA3C61C6D9383003D477F /* CALayer+Transition.m */,
+			);
+			path = CoreTransition;
 			sourceTree = "<group>";
 		};
 		89B438931BBB7EDC009196B3 /* CoreNavVC */ = {
@@ -316,6 +374,7 @@
 		89BD6AA61B9AEACC00225B4B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				896CA3C41C6D9383003D477F /* CoreTransition */,
 				89BD6AC71B9AEB5B00225B4B /* CoreStatus */,
 			);
 			path = Framework;
@@ -380,11 +439,9 @@
 		89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
-				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
-				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
-				89FEF7AC1C6CA12300C66E08 /* ShowVC.h */,
-				89FEF7AD1C6CA12300C66E08 /* ShowVC.m */,
-				89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */,
+				896CA3B91C6D6D92003D477F /* ShapeLayer */,
+				896CA3C31C6D720E003D477F /* Rotate */,
+				896CA3B81C6D6D7D003D477F /* Pinterest */,
 			);
 			name = CustomTransition;
 			sourceTree = "<group>";
@@ -392,6 +449,7 @@
 		89FEF7B11C6CA37D00C66E08 /* CustomPushPop */ = {
 			isa = PBXGroup;
 			children = (
+				896CA3BF1C6D710A003D477F /* ShapeLayer */,
 				89FEF7B21C6CA37D00C66E08 /* Pinterest */,
 				89FEF7B31C6CA37D00C66E08 /* Rotation */,
 			);
@@ -507,6 +565,7 @@
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
+				896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */,
 				89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */,
 				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
 			);
@@ -527,7 +586,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
+				896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */,
 				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
+				896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */,
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
 				89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */,
@@ -548,6 +609,7 @@
 				89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */,
 				89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
+				896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,

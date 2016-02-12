@@ -73,11 +73,25 @@
                                     <constraint firstAttribute="bottom" secondItem="j9r-uC-H7a" secondAttribute="bottom" id="xh0-Yn-hH8"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnL-7Y-7Yx">
+                                <rect key="frame" x="34" y="302" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.35184518914473523" green="0.32712273848684115" blue="0.67393092105263153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HDJ-bk-6Cw"/>
+                                    <constraint firstAttribute="width" constant="60" id="hhB-gc-R3N"/>
+                                </constraints>
+                                <state key="normal" image="1"/>
+                                <connections>
+                                    <action selector="shapeLayerAction:" destination="haO-PZ-SCY" eventType="touchUpInside" id="HTZ-qT-Rsc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OMK-mu-UIH" firstAttribute="leading" secondItem="GVx-qx-33i" secondAttribute="leading" id="1z8-rW-2aT"/>
                             <constraint firstAttribute="trailing" secondItem="OMK-mu-UIH" secondAttribute="trailing" id="CVc-EW-dNw"/>
+                            <constraint firstItem="EnL-7Y-7Yx" firstAttribute="top" secondItem="Xo5-uW-kUt" secondAttribute="bottom" constant="238" id="JnU-kZ-ExX"/>
+                            <constraint firstItem="EnL-7Y-7Yx" firstAttribute="leading" secondItem="GVx-qx-33i" secondAttribute="leading" constant="34" id="TMs-SY-79P"/>
                             <constraint firstItem="SEP-id-iyk" firstAttribute="top" secondItem="OMK-mu-UIH" secondAttribute="bottom" constant="40" id="keH-Ar-IWh"/>
                         </constraints>
                     </view>
@@ -96,6 +110,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btn" destination="EnL-7Y-7Yx" id="ooX-KL-CzP"/>
                         <outlet property="listImageV" destination="j9r-uC-H7a" id="hzU-C5-zMm"/>
                     </connections>
                 </viewController>

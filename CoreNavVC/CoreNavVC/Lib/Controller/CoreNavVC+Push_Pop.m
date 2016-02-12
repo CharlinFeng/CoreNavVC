@@ -45,14 +45,24 @@
         return self.at;
         
     }else if(
-        
-        [fromVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
-        &&
-        [toVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
-        
-        ){
+             
+             [fromVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
+             &&
+             [toVC conformsToProtocol:@protocol(PinterestAnimatedTransitioningProtocol)]
+             
+             ){
         
         return self.pt;
+        
+    }else if(
+             
+             [fromVC conformsToProtocol:@protocol(ShapeLayerAnimatedTransitioningProtocol)]
+             &&
+             [toVC conformsToProtocol:@protocol(ShapeLayerAnimatedTransitioningProtocol)]
+             
+             ){
+        
+        return self.st;
     }
         
     return nil;

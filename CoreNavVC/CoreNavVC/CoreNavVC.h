@@ -16,6 +16,7 @@
 #import "UIViewController+Pop.h"
 #import "RotationAnimatedTransitioning.h"
 #import "PinterestAnimatedTransitioning.h"
+#import "ShapeLayerAnimatedTransitioning.h"
 
 typedef enum{
     
@@ -43,5 +44,6 @@ typedef enum{
 
 @property (nonatomic,strong) RotationAnimatedTransitioning *at;
 @property (nonatomic,strong) PinterestAnimatedTransitioning *pt;
+@property (nonatomic,strong) ShapeLayerAnimatedTransitioning *st;
 
 @end

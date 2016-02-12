@@ -11,10 +11,14 @@
 #import "VC2.h"
 #import "ShowVC.h"
 #import "RotateVC.h"
+#import "ShapeLayerDetailVC.h"
+#import "CALayer+Transition.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *listImageV;
+
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 
 @end
@@ -24,7 +28,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    self.btn.layer.cornerRadius = 30;
+    self.btn.layer.masksToBounds = YES;
 }
 
 - (IBAction)clickSction:(id)sender {
@@ -52,6 +57,39 @@
 -(UIView *)PinterestAnimatedTransitioningProtocol_PinterestView{
 
     return self.listImageV;
+}
+
+
+- (IBAction)shapeLayerAction:(id)sender {
+    
+    NSLog(@"点击");
+    
+    ShapeLayerDetailVC *svc = [[ShapeLayerDetailVC alloc] initWithNibName:@"ShapeLayerDetailVC" bundle:nil];
+
+    [self.navigationController pushViewController:svc animated:YES];
+
+}
+
+
+
+-(void)ShapeLayerAnimatedTransitioningProtocol_WillPop{
+
+    NSLog(@"将要");
+}
+
+-(void)ShapeLayerAnimatedTransitioningProtocol_DidPop{
+
+    NSLog(@"已经");
+}
+
+-(UIView *)ShapeLayerAnimatedTransitioningProtocol_SouceView{
+
+    return self.btn;
+}
+
+-(CGFloat)ShapeLayerAnimatedTransitioningProtocol_MaxRadius_p{
+
+    return 0.6;
 }
 
 @end

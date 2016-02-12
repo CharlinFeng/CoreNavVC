@@ -98,7 +98,9 @@
     endView.hidden = YES;
     toVc.view.alpha = 0;
     
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    NSTimeInterval duration = [self transitionDuration:nil];
+    
+    [UIView animateWithDuration:duration delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         
         sourceImageView_temp.frame = destinationFrame;
         toVc.view.alpha = 1;

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PinterestAnimatedTransitioning.h"
+#import "CoreNavVC.h"
 
-@interface ViewController : UIViewController<PinterestAnimatedTransitioningProtocol>
+@interface ViewController : UIViewController<ShapeLayerAnimatedTransitioningProtocol>
 
 
 @end
