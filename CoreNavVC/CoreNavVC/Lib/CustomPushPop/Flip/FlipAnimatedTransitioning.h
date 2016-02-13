@@ -10,16 +10,16 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol PinterestAnimatedTransitioningProtocol <NSObject>
+@protocol FlipAnimatedTransitioningProtocol <NSObject>
 
 @required
--(UIView *)PinterestAnimatedTransitioningProtocol_PinterestView;
--(CGRect)PinterestAnimatedTransitioningProtocol_DestinationConvertToWindowFrame;
+-(UIView *)FlipAnimatedTransitioningProtocol_PinterestView;
+-(CGRect)FlipAnimatedTransitioningProtocol_DestinationConvertToWindowFrame;
 
 @end
 
 
-@interface PinterestAnimatedTransitioning : NSObject<UIViewControllerAnimatedTransitioning>
+@interface FlipAnimatedTransitioning : NSObject<UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic,weak) UINavigationController *navVC;
 

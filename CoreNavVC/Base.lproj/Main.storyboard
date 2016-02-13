@@ -85,6 +85,13 @@
                                     <action selector="shapeLayerAction:" destination="haO-PZ-SCY" eventType="touchUpInside" id="HTZ-qT-Rsc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aek-Yk-547">
+                                <rect key="frame" x="95" y="217" width="30" height="30"/>
+                                <state key="normal" title="详情"/>
+                                <connections>
+                                    <action selector="flipAction:" destination="haO-PZ-SCY" eventType="touchUpInside" id="CRw-Wr-2r8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -92,6 +99,8 @@
                             <constraint firstAttribute="trailing" secondItem="OMK-mu-UIH" secondAttribute="trailing" id="CVc-EW-dNw"/>
                             <constraint firstItem="EnL-7Y-7Yx" firstAttribute="top" secondItem="Xo5-uW-kUt" secondAttribute="bottom" constant="238" id="JnU-kZ-ExX"/>
                             <constraint firstItem="EnL-7Y-7Yx" firstAttribute="leading" secondItem="GVx-qx-33i" secondAttribute="leading" constant="34" id="TMs-SY-79P"/>
+                            <constraint firstItem="Aek-Yk-547" firstAttribute="leading" secondItem="GVx-qx-33i" secondAttribute="leading" constant="95" id="emc-bz-6k9"/>
+                            <constraint firstItem="Aek-Yk-547" firstAttribute="top" secondItem="Xo5-uW-kUt" secondAttribute="bottom" constant="153" id="kMJ-FG-Jcr"/>
                             <constraint firstItem="SEP-id-iyk" firstAttribute="top" secondItem="OMK-mu-UIH" secondAttribute="bottom" constant="40" id="keH-Ar-IWh"/>
                         </constraints>
                     </view>

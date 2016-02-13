@@ -1,18 +1,18 @@
 //
-//  ShapeLayerDetailVC.m
+//  FlipVC.m
 //  CoreNavVC
 //
-//  Created by 冯成林 on 16/2/12.
+//  Created by 冯成林 on 16/2/13.
 //  Copyright © 2016年 冯成林. All rights reserved.
 //
 
-#import "ShapeLayerDetailVC.h"
+#import "FlipVC.h"
 
-@interface ShapeLayerDetailVC ()
+@interface FlipVC ()
 
 @end
 
-@implementation ShapeLayerDetailVC
+@implementation FlipVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

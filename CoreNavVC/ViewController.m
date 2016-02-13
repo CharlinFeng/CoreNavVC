@@ -13,6 +13,10 @@
 #import "RotateVC.h"
 #import "ShapeLayerDetailVC.h"
 #import "CALayer+Transition.h"
+#import "FlipVC.h"
+
+
+
 
 @interface ViewController ()
 
@@ -30,6 +34,8 @@
 
     self.btn.layer.cornerRadius = 30;
     self.btn.layer.masksToBounds = YES;
+    
+//    self.view.tag = 1;
 }
 
 - (IBAction)clickSction:(id)sender {
@@ -91,5 +97,26 @@
 
     return 0.6;
 }
+
+- (IBAction)flipAction:(id)sender {
+    
+    FlipVC *flipVC = [[FlipVC alloc] initWithNibName:@"FlipVC" bundle:nil];
+    
+    [self.navigationController pushViewController:flipVC animated:YES];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

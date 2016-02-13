@@ -96,4 +96,15 @@
     return _st;
 }
 
+-(FlipAnimatedTransitioning *)ft{
+
+    if(_ft == nil){
+    
+        _ft = [[FlipAnimatedTransitioning alloc] init];
+        _ft.navVC = self;
+    }
+    
+    return _ft;
+}
+
 @end

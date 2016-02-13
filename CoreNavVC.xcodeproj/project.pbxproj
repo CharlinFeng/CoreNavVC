@@ -10,6 +10,9 @@
 		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
 		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
+		894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */; };
+		894CB0BA1C6EB7620047DBC1 /* FlipVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B81C6EB7620047DBC1 /* FlipVC.m */; };
+		894CB0BB1C6EB7620047DBC1 /* FlipVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894CB0B91C6EB7620047DBC1 /* FlipVC.xib */; };
 		896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */; };
 		896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */; };
 		896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */; };
@@ -72,6 +75,11 @@
 		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
+		894CB0B31C6EB6840047DBC1 /* FlipAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipAnimatedTransitioning.h; sourceTree = "<group>"; };
+		894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimatedTransitioning.m; sourceTree = "<group>"; };
+		894CB0B71C6EB7620047DBC1 /* FlipVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipVC.h; sourceTree = "<group>"; };
+		894CB0B81C6EB7620047DBC1 /* FlipVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipVC.m; sourceTree = "<group>"; };
+		894CB0B91C6EB7620047DBC1 /* FlipVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipVC.xib; sourceTree = "<group>"; };
 		896CA3BA1C6D6DD3003D477F /* ShapeLayerDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerDetailVC.h; sourceTree = "<group>"; };
 		896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerDetailVC.m; sourceTree = "<group>"; };
 		896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeLayerDetailVC.xib; sourceTree = "<group>"; };
@@ -175,6 +183,25 @@
 				8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */,
 			);
 			path = CategoryProperty;
+			sourceTree = "<group>";
+		};
+		894CB0B21C6EB6840047DBC1 /* Flip */ = {
+			isa = PBXGroup;
+			children = (
+				894CB0B31C6EB6840047DBC1 /* FlipAnimatedTransitioning.h */,
+				894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */,
+			);
+			path = Flip;
+			sourceTree = "<group>";
+		};
+		894CB0B61C6EB74A0047DBC1 /* Flip */ = {
+			isa = PBXGroup;
+			children = (
+				894CB0B71C6EB7620047DBC1 /* FlipVC.h */,
+				894CB0B81C6EB7620047DBC1 /* FlipVC.m */,
+				894CB0B91C6EB7620047DBC1 /* FlipVC.xib */,
+			);
+			name = Flip;
 			sourceTree = "<group>";
 		};
 		896CA3B81C6D6D7D003D477F /* Pinterest */ = {
@@ -439,6 +466,7 @@
 		89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
+				894CB0B61C6EB74A0047DBC1 /* Flip */,
 				896CA3B91C6D6D92003D477F /* ShapeLayer */,
 				896CA3C31C6D720E003D477F /* Rotate */,
 				896CA3B81C6D6D7D003D477F /* Pinterest */,
@@ -449,6 +477,7 @@
 		89FEF7B11C6CA37D00C66E08 /* CustomPushPop */ = {
 			isa = PBXGroup;
 			children = (
+				894CB0B21C6EB6840047DBC1 /* Flip */,
 				896CA3BF1C6D710A003D477F /* ShapeLayer */,
 				89FEF7B21C6CA37D00C66E08 /* Pinterest */,
 				89FEF7B31C6CA37D00C66E08 /* Rotation */,
@@ -567,6 +596,7 @@
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
 				896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */,
 				89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */,
+				894CB0BB1C6EB7620047DBC1 /* FlipVC.xib in Resources */,
 				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,10 +628,12 @@
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
+				894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */,
 				8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */,
 				893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */,
 				89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */,
 				89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */,
+				894CB0BA1C6EB7620047DBC1 /* FlipVC.m in Sources */,
 				89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */,
 				89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */,

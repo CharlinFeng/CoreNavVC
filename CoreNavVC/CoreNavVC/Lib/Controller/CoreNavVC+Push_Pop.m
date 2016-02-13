@@ -63,6 +63,15 @@
              ){
         
         return self.st;
+    }else if(
+             
+             [fromVC conformsToProtocol:@protocol(FlipAnimatedTransitioningProtocol)]
+             &&
+             [toVC conformsToProtocol:@protocol(FlipAnimatedTransitioningProtocol)]
+             
+             ){
+        
+        return self.ft;
     }
         
     return nil;

@@ -17,6 +17,7 @@
 #import "RotationAnimatedTransitioning.h"
 #import "PinterestAnimatedTransitioning.h"
 #import "ShapeLayerAnimatedTransitioning.h"
+#import "FlipAnimatedTransitioning.h"
 
 typedef enum{
     
@@ -45,5 +46,6 @@ typedef enum{
 @property (nonatomic,strong) RotationAnimatedTransitioning *at;
 @property (nonatomic,strong) PinterestAnimatedTransitioning *pt;
 @property (nonatomic,strong) ShapeLayerAnimatedTransitioning *st;
+@property (nonatomic,strong) FlipAnimatedTransitioning *ft;
 
 @end
