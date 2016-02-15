@@ -26,7 +26,7 @@
 
 -(CGPoint)RotationAnimatedTransitioningProtocol_anchorPoint{
 
-    return CGPointMake(0, 1);
+    return CGPointMake(1, 0);
 }
 
 -(BOOL)RotationAnimatedTransitioningProtocol_isClockWise{

@@ -12,9 +12,8 @@
 
 @protocol ShapeLayerAnimatedTransitioningProtocol <NSObject>
 
-@required
--(UIView *)ShapeLayerAnimatedTransitioningProtocol_SouceView;
 @optional
+-(UIView *)ShapeLayerAnimatedTransitioningProtocol_SouceView;
 -(CGFloat)ShapeLayerAnimatedTransitioningProtocol_MaxRadius_p;
 -(void)ShapeLayerAnimatedTransitioningProtocol_WillPop;
 -(void)ShapeLayerAnimatedTransitioningProtocol_DidPop;

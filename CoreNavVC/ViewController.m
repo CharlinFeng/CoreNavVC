@@ -35,7 +35,7 @@
     self.btn.layer.cornerRadius = 30;
     self.btn.layer.masksToBounds = YES;
     
-//    self.view.tag = 1;
+    self.view.tag = 1;
 }
 
 - (IBAction)clickSction:(id)sender {
@@ -64,6 +64,7 @@
 
     return self.listImageV;
 }
+
 
 
 - (IBAction)shapeLayerAction:(id)sender {
@@ -104,8 +105,6 @@
     
     [self.navigationController pushViewController:flipVC animated:YES];
 }
-
-
 
 
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CoreNavVC.h"
 
-@interface ViewController : UIViewController<FlipAnimatedTransitioningProtocol>
+@interface ViewController : UIViewController
 
 
 @end
