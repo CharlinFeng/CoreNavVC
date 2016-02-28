@@ -84,6 +84,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
         Class class = [self class];
         
         SEL originalSelector = @selector(viewWillAppear:);
+        
         SEL swizzledSelector = @selector(fd_viewWillAppear:);
         
         Method originalMethod = class_getInstanceMethod(class, originalSelector);
@@ -95,6 +96,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
         } else {
             method_exchangeImplementations(originalMethod, swizzledMethod);
         }
+        
     });
 }
 
@@ -207,6 +209,7 @@ typedef void (^_FDViewControllerWillAppearInjectBlock)(UIViewController *viewCon
     }
     return delegate;
 }
+
 
 - (UIPanGestureRecognizer *)fd_fullscreenPopGestureRecognizer
 {

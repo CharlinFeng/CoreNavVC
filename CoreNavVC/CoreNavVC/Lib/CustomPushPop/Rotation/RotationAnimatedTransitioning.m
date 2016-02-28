@@ -34,10 +34,9 @@
     
     
     if(isPush){
+        
         [[transitionContext containerView] addSubview:fromVc.view];
         [[transitionContext containerView] addSubview:toVc.view];
-        
-        
         
     }else{
         [[transitionContext containerView] addSubview:toVc.view];

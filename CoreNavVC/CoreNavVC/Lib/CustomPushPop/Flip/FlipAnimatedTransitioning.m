@@ -9,11 +9,17 @@
 #import "FlipAnimatedTransitioning.h"
 #import "CoreNavVC.h"
 
+@interface FlipAnimatedTransitioning ()
+
+@property (nonatomic,strong) UIView *v1,*v2;
+
+@end
+
 @implementation FlipAnimatedTransitioning
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     
-    return .5;
+    return 0.5;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
@@ -41,7 +47,7 @@
     CGFloat item1_w = isVerti ? finalWidth : finalWidth * 0.5f;
     CGFloat item1_h = isVerti ? finalHeight * 0.5f : finalHeight;
     CGRect item1Frame = CGRectMake(item1_x, item1_y, item1_w, item1_h);
-
+    
     CGAffineTransform transform_Item1_from = CGAffineTransformIdentity;
     CGAffineTransform transform_Item1_to = CGAffineTransformIdentity;
     CGAffineTransform transform_Item2_from = CGAffineTransformIdentity;
@@ -73,43 +79,51 @@
     }
     
     //先做上下切割
-    UIView *item1ItemView = [animView resizableSnapshotViewFromRect:item1Frame afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
-    item1ItemView.frame = item1Frame;
-    [containerView addSubview:item1ItemView];
     
-    CGRect item2Frame = isVerti ? CGRectMake(item1_x, item1_h, item1_w, item1_h) : CGRectMake(item1_w, item1_y, item1_w, item1_h);
-    UIView *item2ItemView = [animView resizableSnapshotViewFromRect:item2Frame afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
-    item2ItemView.frame = item2Frame;
-    [containerView addSubview:item2ItemView];
+    if(isPush){
+        UIView *item1ItemView = [animView resizableSnapshotViewFromRect:item1Frame afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
+        item1ItemView.frame = item1Frame;
+        self.v1 = item1ItemView;
+    }
+    [containerView addSubview:self.v1];
+    
+    if(isPush){
+        CGRect item2Frame = isVerti ? CGRectMake(item1_x, item1_h, item1_w, item1_h) : CGRectMake(item1_w, item1_y, item1_w, item1_h);
+        UIView *item2ItemView = [animView resizableSnapshotViewFromRect:item2Frame afterScreenUpdates:NO withCapInsets:UIEdgeInsetsZero];
+        item2ItemView.frame = item2Frame;
+        self.v2 = item2ItemView;
+    }
+    
+    [containerView addSubview:self.v2];
     
     //执行动画
     NSTimeInterval duratioin = [self transitionDuration:nil];
-    item1ItemView.transform = transform_Item1_from;
-    item2ItemView.transform = transform_Item2_from;
+    self.v1.transform = transform_Item1_from;
+    self.v2.transform = transform_Item2_from;
     [UIView animateWithDuration:duratioin animations:^{
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-        item1ItemView.transform = transform_Item1_to;
-        item2ItemView.transform = transform_Item2_to;
+        self.v1.transform = transform_Item1_to;
+        self.v2.transform = transform_Item2_to;
     } completion:^(BOOL finished) {
-        item1ItemView.transform = CGAffineTransformIdentity;
-        item2ItemView.transform = CGAffineTransformIdentity;
-        [item1ItemView removeFromSuperview];
-        [item2ItemView removeFromSuperview];
+        self.v1.transform = CGAffineTransformIdentity;
+        self.v2.transform = CGAffineTransformIdentity;
+        [self.v1 removeFromSuperview];
+        [self.v2 removeFromSuperview];
         [transitionContext completeTransition:YES];
     }];
-//    [UIView animateWithDuration:duratioin delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.8 options:UIViewAnimationOptionCurveEaseOut animations:^{
-//        
-//        item1ItemView.transform = transform_Item1_to;
-//        item2ItemView.transform = transform_Item2_to;
-//        
-//    } completion:^(BOOL finished) {
-//        
-//        item1ItemView.transform = CGAffineTransformIdentity;
-//        item2ItemView.transform = CGAffineTransformIdentity;
-//        [item1ItemView removeFromSuperview];
-//        [item2ItemView removeFromSuperview];
-//        [transitionContext completeTransition:YES];
-//    }];
+    //    [UIView animateWithDuration:duratioin delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.8 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    //
+    //        item1ItemView.transform = transform_Item1_to;
+    //        item2ItemView.transform = transform_Item2_to;
+    //
+    //    } completion:^(BOOL finished) {
+    //
+    //        item1ItemView.transform = CGAffineTransformIdentity;
+    //        item2ItemView.transform = CGAffineTransformIdentity;
+    //        [item1ItemView removeFromSuperview];
+    //        [item2ItemView removeFromSuperview];
+    //        [transitionContext completeTransition:YES];
+    //    }];
 }
 
 @end

@@ -97,6 +97,8 @@
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
+    NSLog(@"pushViewController");
+    
     self.navType = NavTypePush;
     
     if(self.viewControllers.count >= 1){
@@ -118,6 +120,8 @@
 
 
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    
+    NSLog(@"popViewControllerAnimated");
     
     self.navType = NavTypePop;
     

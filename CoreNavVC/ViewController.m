@@ -36,11 +36,21 @@
     self.btn.layer.masksToBounds = YES;
     
     self.view.tag = 1;
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
 }
 
 - (IBAction)clickSction:(id)sender {
+    
+    
+    
     VC2 *vc2 = [[VC2 alloc] init];
-    [self.navigationController pushViewController:vc2 animated:YES];
+    
 }
 
 

@@ -12,9 +12,6 @@
 
 @protocol FlipAnimatedTransitioningProtocol <NSObject>
 
-@required
--(UIView *)FlipAnimatedTransitioningProtocol_PinterestView;
--(CGRect)FlipAnimatedTransitioningProtocol_DestinationConvertToWindowFrame;
 
 @end
 
