@@ -116,12 +116,11 @@
 }
 
 
-
-
-
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated{
     
     NSLog(@"popViewControllerAnimated");
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NavigationControllerWillPopNoti" object:self];
     
     self.navType = NavTypePop;
     
