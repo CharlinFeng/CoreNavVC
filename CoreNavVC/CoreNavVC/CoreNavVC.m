@@ -28,23 +28,23 @@
         
         _tipView = [TipView tipView];
         
-        UIView *bgView = nil;
+//        UIView *bgView = nil;
+//        
+//        if([UIDevice currentDevice].systemVersion.floatValue >=16.0){
+//        
+//            UIVisualEffectView *blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+//            bgView = blurView;
+//            
+//        }else{
+//            
+//            UIToolbar *toolBar = [[UIToolbar alloc] init];
+//            toolBar.barStyle = UIBarStyleBlack;
+//            bgView = toolBar;
+//        }
+//        [bgView addGestureRecognizer:[[UIPanGestureRecognizer alloc] init]];
+//        [_tipView insertSubview:bgView atIndex:0];
         
-        if([UIDevice currentDevice].systemVersion.floatValue >=16.0){
-        
-            UIVisualEffectView *blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
-            bgView = blurView;
-            
-        }else{
-            
-            UIToolbar *toolBar = [[UIToolbar alloc] init];
-            toolBar.barStyle = UIBarStyleBlack;
-            bgView = toolBar;
-        }
-        [bgView addGestureRecognizer:[[UIPanGestureRecognizer alloc] init]];
-        [_tipView insertSubview:bgView atIndex:0];
-        
-        [bgView layout_InSuperView_edgeinsetsZero];
+//        [bgView layout_InSuperView_edgeinsetsZero];
         
         _tipView.alpha = 0;
     }

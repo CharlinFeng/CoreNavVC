@@ -52,7 +52,7 @@
         NSArray *c_V=[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[tipView]-0-|" options:0 metrics:nil views:views];
         [self.view addConstraints:c_H];
         [self.view addConstraints:c_V];
-        
+        isShowed = NO;
         if(!isShowed){
             
             [self.view endEditing:YES];
