@@ -34,7 +34,7 @@ CoreNavVC  --成都时点软件4年精华无私奉献开源
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/01.png)<br/>
 
-    [self navBarAppearanceWithBgColor:[UIColor redColor] textColor:[UIColor whiteColor] titleFontPoint:18 itemFontPoint:15];
+    [self navBarAppearanceWithBgColor:[UIColor blackColor] textColor:YeahColor titleFontPoint:18 itemFontPoint:15];
 
 其中，BgColor是指导航条的背景色，textColor指文字颜色，titleFontPoint为titleLabel的文字大小，itemFontPoint为左右label文字大小。
 
