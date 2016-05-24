@@ -1,5 +1,5 @@
 
-CoreNavVC  --时点4年精华奉献
+CoreNavVC  --成都时点软件4年精华无私奉献开源
 ==========
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
