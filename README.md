@@ -1,6 +1,7 @@
 
-CoreNavVC  --成都时点软件4年精华无私奉献开源
+CoreNavVC  （连载中）
 ==========
+### 成都时点软件4年精华无私奉献开源
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://cocoapod-badges.herokuapp.com/p/HanekeSwift/badge.png)](http://cocoadocs.org/docsets/HanekeSwift)
@@ -30,6 +31,7 @@ CoreNavVC  --成都时点软件4年精华无私奉献开源
 
 提示：在一切开始前，请自定义您的导航控制器比如AppNavVC，继承自CoreNavVC
 
+<br/><br/>
 ##### 1.一句代码定制导航条样式
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/01.png)<br/>
@@ -38,7 +40,7 @@ CoreNavVC  --成都时点软件4年精华无私奉献开源
 
 其中，BgColor是指导航条的背景色，textColor指文字颜色，titleFontPoint为titleLabel的文字大小，itemFontPoint为左右label文字大小。
 
-
+<br/><br/>
 ##### 2.PopGesture
 
 注：本功能是集成了FDPopGesture，但对源码做了一定的改动<br/>
