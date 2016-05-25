@@ -63,8 +63,15 @@ CoreNavVC  （连载中）
         
 
 <br/><br/>
-##### 2.自动处理Tabbar
+##### 3.自动处理Tabbar
 你会发现，框架已经自动处理了在Push与Pop过程中tabbar的自动隐藏与显示，应该就是你直接想要的效果。
 
 
+<br/><br/>
+##### 3.仿QQ无网络实时检测
+
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/3.gif)<br/>
+你无需任何操作，框架已经全自动处理了网络实时监控。
+
+<br/><br/>
 #### 未完待续，敬请期待
