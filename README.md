@@ -68,7 +68,7 @@ CoreNavVC  （连载中）
 
 
 <br/><br/>
-##### 3.仿QQ无网络实时检测
+##### 4.仿QQ无网络实时检测
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/3.gif)<br/>
 你无需任何操作，框架已经全自动处理了网络实时监控。（你可以断开Mac的Wifi测试）<br/>
@@ -77,13 +77,13 @@ CoreNavVC  （连载中）
 
 
 <br/><br/>
-##### 4.bgView的处理
+##### 5.bgView的处理
 这个是一个细节，你需要了解的，在navBar的内部，其实是有很多层，navBar和Tabbar与Toolbar机制不完全一样，单从半透明模糊效果来说，navBar和Tabbar内部有一个BlurView，在BlurView下面还有一个bgView，框架已经将这个bgView完全透明化。方便我们做出一些想要的NavBar颜色出来。如果你想了解细节，可以搜索findBgView方法。
 
 
 
 <br/><br/>
-##### 5.拦截Pop返回事件
+##### 6.拦截Pop返回事件
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/4.gif)<br/>
 
 你只需直接实现PopAction的Block即可（Runtime）。
