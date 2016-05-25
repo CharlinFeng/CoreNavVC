@@ -54,7 +54,7 @@ CoreNavVC  （连载中）
 （1）手势提示视图已自动处理，你无需处理。<br/>
 （2）禁用手势直接在VC调用：<br/>
 
-        [self popGestureEnable:YES]; //Runtime
+        [self popGestureEnable:NO]; //Runtime
         
 
  (3)启用手势直接在VC调用：<br/>
@@ -62,7 +62,9 @@ CoreNavVC  （连载中）
         [self popGestureEnable:YES]; //Runtime
         
 
-
+<br/><br/>
+##### 2.自动处理Tabbar
+你会发现，框架已经自动处理了在Push与Pop过程中tabbar的自动隐藏与显示，应该就是你直接想要的效果。
 
 
 #### 未完待续，敬请期待
