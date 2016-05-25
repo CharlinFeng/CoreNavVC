@@ -87,6 +87,7 @@ CoreNavVC  （连载中）
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/4.gif)<br/>
 
 你只需直接实现PopAction的Block即可（Runtime）。
+
         self.PopAction = ^{
             //do sth
         };
