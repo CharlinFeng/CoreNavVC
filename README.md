@@ -96,7 +96,7 @@ CoreNavVC  （连载中）
 注意：<br/>
 > 1.此功能一般是保存资料，下单付款页面应用较多。<br/>
 > 2.特别强调，你需要配置刚刚的PopGesture，因为这个pop被拦截，但PopGesture仍然是可用的，另忘了禁用与开启PopGesture。<br/>
-<br/><br/>
+<br/>
 
 
 
