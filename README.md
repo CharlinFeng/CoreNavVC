@@ -54,12 +54,12 @@ CoreNavVC  （连载中）
 （1）手势提示视图已自动处理，你无需处理。<br/>
 （2）禁用手势直接在VC调用：<br/>
 
-        [self popGestureEnable:NO]; //Runtime
+        [self popGestureEnable:NO]; //VC Runtime
         
 
  (3)启用手势直接在VC调用：<br/>
  
-        [self popGestureEnable:YES]; //Runtime
+        [self popGestureEnable:YES]; //VC Runtime
         
 
 <br/><br/>
@@ -86,7 +86,7 @@ CoreNavVC  （连载中）
 ##### 6.拦截Pop返回事件
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/4.gif)<br/>
 
-你只需直接实现PopAction的Block即可（Runtime）。
+你只需直接实现VC的PopAction的Block即可（VC Runtime）。
 
         self.PopAction = ^{
             //do sth
