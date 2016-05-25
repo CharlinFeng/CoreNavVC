@@ -15,7 +15,7 @@ CoreNavVC  （连载中）
 
 <br/><br/><br/>
 
-### 一.为什么要开源？
+## 一.为什么要开源？
 开源是一种精神，时点软件感谢大家长期的支持与厚爱，无私开源奉献给大家，希望继续能支持我们：(成都时点软件冯成林在中国开发者排行榜单中OC排名国内11位，Swfit排名位于第10位，感谢大家支持！[总榜http://githuber.cn/rank](http://githuber.cn/rank)， [Objective-C排行榜](http://githuber.cn/search?language=Objective-C)，[Swfit排行榜](http://githuber.cn/search?language=Swift))<br/>
 > (1). 本框架是Charlin Feng项目必备的基础类框架。<br/>
 > (2). 此框架已经在我自己的10多个正式项目中全面使用。<br/>
@@ -27,7 +27,7 @@ CoreNavVC  （连载中）
 
 <br/><br/><br/>
 
-### 二.基础篇
+## 二.基础篇
 
 提示：在一切开始前，请自定义您的导航控制器比如AppNavVC，继承自CoreNavVC
 
@@ -102,7 +102,7 @@ CoreNavVC  （连载中）
 
 <br/><br/><br/>
 
-### 二.扩展篇
+## 三.扩展篇
 
 
 #### 一大波炫酷功能正在路上，连载中，未完待续，敬请期待！！！
