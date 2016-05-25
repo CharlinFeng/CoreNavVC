@@ -10,6 +10,11 @@
 		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
 		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
+		894626361CF3FB6700D74800 /* HomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626351CF3FB6700D74800 /* HomeTVC.m */; };
+		894626391CF3FDDF00D74800 /* FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626381CF3FDDF00D74800 /* FooterView.m */; };
+		8946263E1CF3FE2800D74800 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8946263D1CF3FE2800D74800 /* FooterView.xib */; };
+		894626421CF4013200D74800 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626401CF4013200D74800 /* HomeCell.m */; };
+		894626431CF4013200D74800 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894626411CF4013200D74800 /* HomeCell.xib */; };
 		894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */; };
 		894CB0BA1C6EB7620047DBC1 /* FlipVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B81C6EB7620047DBC1 /* FlipVC.m */; };
 		894CB0BB1C6EB7620047DBC1 /* FlipVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894CB0B91C6EB7620047DBC1 /* FlipVC.xib */; };
@@ -32,7 +37,6 @@
 		89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89B438B01BBB7EDC009196B3 /* TipView.xib */; };
 		89BD6A821B9AEAAD00225B4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A811B9AEAAD00225B4B /* main.m */; };
 		89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A841B9AEAAD00225B4B /* AppDelegate.m */; };
-		89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A871B9AEAAD00225B4B /* ViewController.m */; };
 		89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6A891B9AEAAD00225B4B /* Main.storyboard */; };
 		89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */; };
 		89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6A8E1B9AEAAD00225B4B /* LaunchScreen.xib */; };
@@ -75,6 +79,14 @@
 		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
+		894626341CF3FB6700D74800 /* HomeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTVC.h; sourceTree = "<group>"; };
+		894626351CF3FB6700D74800 /* HomeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTVC.m; sourceTree = "<group>"; };
+		894626371CF3FDDF00D74800 /* FooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterView.h; sourceTree = "<group>"; };
+		894626381CF3FDDF00D74800 /* FooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooterView.m; sourceTree = "<group>"; };
+		8946263D1CF3FE2800D74800 /* FooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		8946263F1CF4013200D74800 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		894626401CF4013200D74800 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		894626411CF4013200D74800 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		894CB0B31C6EB6840047DBC1 /* FlipAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipAnimatedTransitioning.h; sourceTree = "<group>"; };
 		894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimatedTransitioning.m; sourceTree = "<group>"; };
 		894CB0B71C6EB7620047DBC1 /* FlipVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipVC.h; sourceTree = "<group>"; };
@@ -114,8 +126,6 @@
 		89BD6A811B9AEAAD00225B4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89BD6A831B9AEAAD00225B4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89BD6A841B9AEAAD00225B4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		89BD6A861B9AEAAD00225B4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		89BD6A871B9AEAAD00225B4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		89BD6A8A1B9AEAAD00225B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89BD6A8F1B9AEAAD00225B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -183,6 +193,30 @@
 				8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */,
 			);
 			path = CategoryProperty;
+			sourceTree = "<group>";
+		};
+		8946263B1CF3FDF000D74800 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				894626341CF3FB6700D74800 /* HomeTVC.h */,
+				894626351CF3FB6700D74800 /* HomeTVC.m */,
+				8946263F1CF4013200D74800 /* HomeCell.h */,
+				894626401CF4013200D74800 /* HomeCell.m */,
+				894626411CF4013200D74800 /* HomeCell.xib */,
+				894626371CF3FDDF00D74800 /* FooterView.h */,
+				894626381CF3FDDF00D74800 /* FooterView.m */,
+				8946263D1CF3FE2800D74800 /* FooterView.xib */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		8946263C1CF3FDFC00D74800 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
+				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		894CB0B21C6EB6840047DBC1 /* Flip */ = {
@@ -356,17 +390,10 @@
 			children = (
 				89B438931BBB7EDC009196B3 /* CoreNavVC */,
 				89BD6AA61B9AEACC00225B4B /* Framework */,
-				89BD6A831B9AEAAD00225B4B /* AppDelegate.h */,
-				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
-				89BD6A861B9AEAAD00225B4B /* ViewController.h */,
-				89BD6A871B9AEAAD00225B4B /* ViewController.m */,
 				89FEF7AA1C6CA0F000C66E08 /* PullScale */,
 				89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */,
-				893FC0AA1C259D0B00BA59BD /* AppNavVC.h */,
-				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
-				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
-				89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */,
-				89BD6A8E1B9AEAAD00225B4B /* LaunchScreen.xib */,
+				8946263C1CF3FDFC00D74800 /* Common */,
+				8946263B1CF3FDF000D74800 /* Project */,
 				89BD6A7F1B9AEAAD00225B4B /* Supporting Files */,
 			);
 			path = CoreNavVC;
@@ -375,6 +402,11 @@
 		89BD6A7F1B9AEAAD00225B4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89BD6A891B9AEAAD00225B4B /* Main.storyboard */,
+				89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */,
+				89BD6A8E1B9AEAAD00225B4B /* LaunchScreen.xib */,
+				89BD6A831B9AEAAD00225B4B /* AppDelegate.h */,
+				89BD6A841B9AEAAD00225B4B /* AppDelegate.m */,
 				89BD6A801B9AEAAD00225B4B /* Info.plist */,
 				89BD6A811B9AEAAD00225B4B /* main.m */,
 			);
@@ -589,9 +621,11 @@
 				89FEF7B01C6CA12300C66E08 /* ShowVC.xib in Resources */,
 				89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */,
 				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
+				894626431CF4013200D74800 /* HomeCell.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
+				8946263E1CF3FE2800D74800 /* FooterView.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
 				896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */,
@@ -621,12 +655,13 @@
 				896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */,
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
+				894626421CF4013200D74800 /* HomeCell.m in Sources */,
 				89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */,
+				894626391CF3FDDF00D74800 /* FooterView.m in Sources */,
 				89FEF7AF1C6CA12300C66E08 /* ShowVC.m in Sources */,
 				89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
-				89BD6A881B9AEAAD00225B4B /* ViewController.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
 				894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */,
 				8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */,
@@ -641,6 +676,7 @@
 				89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */,
 				89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
+				894626361CF3FB6700D74800 /* HomeTVC.m in Sources */,
 				896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "CoreNavVC.h"
+#define YeahColor [UIColor colorWithRed:123.0/255. green:1 blue:1 alpha:1]
 
 @interface AppNavVC : CoreNavVC
 

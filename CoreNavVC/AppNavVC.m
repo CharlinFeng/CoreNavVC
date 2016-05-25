@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationBar.barStyle = UIBarStyleDefault;
 //    self.navigationBar.barTintColor = [UIColor redColor];
-    [self navBarAppearanceWithBgColor:[UIColor redColor] textColor:[UIColor whiteColor] titleFontPoint:18 itemFontPoint:15];
+    [self navBarAppearanceWithBgColor:[UIColor blackColor] textColor:YeahColor titleFontPoint:18 itemFontPoint:15];
+   
 }
 
 
