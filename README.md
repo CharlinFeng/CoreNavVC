@@ -71,7 +71,7 @@ CoreNavVC  （连载中）
 ##### 3.仿QQ无网络实时检测
 
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/3.gif)<br/>
-你无需任何操作，框架已经全自动处理了网络实时监控。
-
+你无需任何操作，框架已经全自动处理了网络实时监控。（你可以断开Mac的Wifi测试）<br/>
+温馨提示：网络解决方案里面有时点软件落款，别忘了修改，小心扣工资！
 <br/><br/>
 #### 一大波炫酷功能正在路上，连载中，未完待续，敬请期待！！！
