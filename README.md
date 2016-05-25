@@ -41,11 +41,11 @@ CoreNavVC  --成都时点软件4年精华无私奉献开源
 
 ##### 2.PopGesture
 
-注：本功能是集成了FDPopGesture，但对源码做了一定的改动
+注：本功能是集成了FDPopGesture，但对源码做了一定的改动<br/>
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/2.gif)<br/>
 
->. 全自动的PopGesture
->. 自动判断显示PopGesture提示视图
+>. 全自动的PopGesture<br/>
+>. 自动判断显示PopGesture提示视图<br/>
 
 
 
