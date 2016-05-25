@@ -10,6 +10,7 @@
 #import "FooterView.h"
 #import "HomeCell.h"
 #import "AppNavVC.h"
+#import "PopBackVC.h"
 
 @interface HomeTVC ()
 
@@ -23,7 +24,7 @@
     
     [super viewDidLoad];
     
-    self.dataList = @[@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）"];
+    self.dataList = @[@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）",@"拦截Pop返回事件"];
     
     self.tableView.tableFooterView = [UIView new];
     
@@ -66,12 +67,22 @@
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    UIViewController *nextVC = nil;
+    
     if (indexPath.row == 1){
     
         UIViewController *vc = [UIViewController new];
+        
         vc.view.backgroundColor = [UIColor blackColor];
-        [self.navigationController pushViewController:vc animated:YES];
+        nextVC = vc;
+    }else if (indexPath.row == 3){
+    
+        PopBackVC *vc = [PopBackVC new];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        nextVC = vc;
     }
+    nextVC.title = self.dataList[indexPath.row];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 @end

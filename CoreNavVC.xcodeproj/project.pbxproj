@@ -43,6 +43,7 @@
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
 		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
 		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
+		89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CBE0CE1CF5531B00760009 /* PopBackVC.m */; };
 		89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */; };
 		89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */; };
 		89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */; };
@@ -136,6 +137,8 @@
 		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
 		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		89CBE0CD1CF5531B00760009 /* PopBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBackVC.h; sourceTree = "<group>"; };
+		89CBE0CE1CF5531B00760009 /* PopBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBackVC.m; sourceTree = "<group>"; };
 		89CCFBF71C37E3E500B6500D /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
 		89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
 		89CCFBF91C37E3E500B6500D /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 			children = (
 				894626341CF3FB6700D74800 /* HomeTVC.h */,
 				894626351CF3FB6700D74800 /* HomeTVC.m */,
+				89CBE0CD1CF5531B00760009 /* PopBackVC.h */,
+				89CBE0CE1CF5531B00760009 /* PopBackVC.m */,
 				8946263F1CF4013200D74800 /* HomeCell.h */,
 				894626401CF4013200D74800 /* HomeCell.m */,
 				894626411CF4013200D74800 /* HomeCell.xib */,
@@ -676,6 +681,7 @@
 				89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */,
 				89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */,
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
+				89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */,
 				894626361CF3FB6700D74800 /* HomeTVC.m in Sources */,
 				896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
