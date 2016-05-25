@@ -48,8 +48,9 @@ CoreNavVC  （连载中）
 
 >. 全自动的PopGesture<br/>
 >. 自动判断并显示PopGesture提示视图<br/>
+
 <br/>
-以下是本功能的一些使用细节：
+以下是本功能的一些使用细节：<br/>
 （1）手势提示视图已自动处理，你无需处理。<br/>
 （2）禁用手势直接在VC调用：
         [self popGestureEnable:YES]; //Runtime
