@@ -1,5 +1,5 @@
 
-CoreNavVC  （连载中）
+CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
 ### 成都时点软件4年精华无私奉献开源
 
