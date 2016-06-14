@@ -13,7 +13,7 @@
 
 @interface UIViewController (scrollNavbar)
 
-@property (nonatomic,copy) NSNumber *topViewOriginHeight, *autoToggleNavbarHeight;
+@property (nonatomic,strong) NSNumber *topViewOriginHeight, *autoToggleNavbarHeight;
 
 @property (nonatomic,strong) UIView *nav_topContentView;
 
@@ -26,14 +26,45 @@ static NSString const *ScrollViewKeyPath_CoreNavVC = @"contentOffset";
 
 @implementation UIViewController (scrollNavbar)
 
-
 ADD_DYNAMIC_PROPERTY(NSNumber *, topViewOriginHeight, setTopViewOriginHeight)
 ADD_DYNAMIC_PROPERTY(NSNumber *, autoToggleNavbarHeight, setAutoToggleNavbarHeight)
 ADD_DYNAMIC_PROPERTY(UIView *, nav_topContentView, setNav_topContentView)
 
+ADD_DYNAMIC_PROPERTY_CGFloat(CGFloat, offsetYP, setOffsetYP)
+ADD_DYNAMIC_PROPERTY_CGFloat(CGFloat, parallaxValue, setParallaxValue)
 
 
 
+-(void)viewWillAppear_scrollNavbar{
+    
+    self.isViewDidAppear = YES;
+    
+    if (self.offsetYP <= 0){self.navigationController.navigationBar.alpha=0;return;}
+    if (self.offsetYP >= 1){self.navigationController.navigationBar.alpha=1;return;}
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.navigationController.navigationBar.alpha = 0;
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    
+        [UIView animateWithDuration:0.25 animations:^{
+            self.navigationController.navigationBar.alpha = self.offsetYP;
+        }];
+    });
+}
+
+
+
+-(void)viewWillDisappear_scrollNavbar{
+    
+    self.isViewDidAppear = NO;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+    
+        self.navigationController.navigationBar.alpha = 1;
+    }];
+}
 
 
 
@@ -64,12 +95,14 @@ static const char CoreNavTopViewKey = '\0';
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
 -(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight originHeight:(CGFloat)originHeight{
-    
+  
     NSAssert(self.nav_topView != nil, @"[Charlin Feng]: nav_topView must have value!");
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.extendedLayoutIncludesOpaqueBars = YES;
     self.autoToggleNavbarHeight = @(autoToggleNavbarHeight);
     self.topViewOriginHeight = @(originHeight);
+    [self addPopFunctionWithAnim:YES];
     
     //初始化frame
     self.nav_topContentView = [[UIView alloc] initWithFrame:CGRectMake(0, -originHeight, [UIScreen mainScreen].bounds.size.width, originHeight)];
@@ -98,7 +131,7 @@ static const char CoreNavTopViewKey = '\0';
 
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    
+   
     if(!self.isViewDidAppear) {return;}
     
     if (self.nav_topView == nil) {return;}
@@ -111,32 +144,31 @@ static const char CoreNavTopViewKey = '\0';
     
     CGFloat maxOffsetY = 250;
     
-    CoreNavVC *navVC = (CoreNavVC *)self.navigationController;
-    
     CGFloat realOffset = offsetY + self.topViewOriginHeight.floatValue;
+    
+    
     
     CGFloat p = realOffset / maxOffsetY;
     
-    if (realOffset > self.autoToggleNavbarHeight.floatValue){
-        
-        [self.navigationController setNavigationBarHidden:NO animated:NO];
-        
-        navVC.navBgView.alpha = p;
-        
-        self.popView.hidden = p > 0.5;
-        
-    }else{
-        
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
-        navVC.navBgView.alpha = 0;
-    }
+    self.offsetYP = p;
+    
+    CoreNavVC *navVC = (CoreNavVC *)self.navigationController;
+    
+    navVC.navigationBar.alpha = p;
+    self.popView.hidden = NO;
+
+    self.popView.hidden = p > 0.5;
+
+    if (realOffset > maxOffsetY) {return;}
+    
+    CGFloat parallaxValue_temp = self.parallaxValue;
+    if (parallaxValue_temp == 0) {parallaxValue_temp = 120;}
     
     if(offsetY > -self.topViewOriginHeight.floatValue) {
         
         if(self.enableParallax){
             CGRect frame = self.nav_topContentView.frame;
-            CGFloat height = - offsetY;
-            frame.origin.y = offsetY - p * 36;
+            frame.origin.y = offsetY - p * parallaxValue_temp;
             self.nav_topContentView.frame = frame;
         }
         

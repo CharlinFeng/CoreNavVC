@@ -11,6 +11,7 @@
 #import "HomeCell.h"
 #import "AppNavVC.h"
 #import "PopBackVC.h"
+#import "ZoomScaleVC.h"
 
 @interface HomeTVC ()
 
@@ -24,7 +25,7 @@
     
     [super viewDidLoad];
     
-    self.dataList = @[@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）",@"拦截Pop返回事件"];
+    self.dataList = @[@"-----------（1）基础篇-----------",@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）",@"拦截Pop返回事件",@"",@"-----------（2）扩展篇-----------",@"下拉放大与动态透明导航条"];
     
     self.tableView.tableFooterView = [UIView new];
     
@@ -36,7 +37,7 @@
     self.tableView.separatorColor = [UIColor whiteColor];
     self.tableView.rowHeight = 80;
     self.tabBarController.tabBar.tintColor = YeahColor;
-    
+    self.extendedLayoutIncludesOpaqueBars = YES;
 }
 
 
@@ -69,19 +70,27 @@
 
     UIViewController *nextVC = nil;
     
-    if (indexPath.row == 1){
+    
+    
+    if (indexPath.row == 2){
     
         UIViewController *vc = [UIViewController new];
         
         vc.view.backgroundColor = [UIColor blackColor];
         nextVC = vc;
-    }else if (indexPath.row == 3){
+    }else if (indexPath.row == 4){
     
         PopBackVC *vc = [PopBackVC new];
         vc.view.backgroundColor = [UIColor whiteColor];
         nextVC = vc;
+    }else if (indexPath.row == 7){
+        
+        ZoomScaleVC *vc = [[ZoomScaleVC alloc] initWithNibName:@"ZoomScaleVC" bundle:nil];
+        
+        nextVC = vc;
     }
     nextVC.title = self.dataList[indexPath.row];
+    
     [self.navigationController pushViewController:nextVC animated:YES];
 }
 

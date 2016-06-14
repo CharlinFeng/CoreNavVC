@@ -16,8 +16,8 @@
 
 
 -(void)navBarAppearanceWithBgColor:(UIColor *)bgColor textColor:(UIColor *)textColor titleFontPoint:(CGFloat)titleFontPoint itemFontPoint:(CGFloat)itemFontPoint{
-    
-    if(textColor==nil) textColor=[UIColor whiteColor];
+   
+    if(textColor==nil) textColor=[UIColor blackColor];
     
     //取出navbar条的全局外观
     UINavigationBar *navbarAppearance=[UINavigationBar appearance];
@@ -25,7 +25,6 @@
     //navbar设置背景图片:
     //BarMetrics：横竖屏模式
     if(bgColor != nil) [navbarAppearance setBackgroundImage:[UIImage imageFromContextWithColor:bgColor] forBarMetrics:UIBarMetricsDefault];
-    
     
     //navbar设置标题文字样式:
     //字体：

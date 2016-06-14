@@ -17,7 +17,7 @@
 
 @property (nonatomic,assign) BOOL isViewDidAppear;
 
-
+@property (nonatomic,assign) CGFloat offsetYP,parallaxValue;
 
 /** 添加滚动效果: 创建的topview不需要指定frame，内部算 */
 -(void)addScrollNavbarWithScrollView:(UIScrollView *)scrollView autoToggleNavbarHeight:(CGFloat)autoToggleNavbarHeight originHeight:(CGFloat)originHeight;
@@ -25,7 +25,9 @@
 /** 移除滚动效果 */
 -(void)removeScrollNavbarWithScrollView:(UIScrollView *)scrollView;
 
+-(void)viewWillAppear_scrollNavbar;
 
+-(void)viewWillDisappear_scrollNavbar;
 
 
 @end

@@ -40,7 +40,6 @@
     [super viewDidAppear:animated];
     
     if(self.navBgView != nil) return;
-    
     [self findBgView];
 }
 
@@ -51,12 +50,29 @@
 }
 
 -(void)findBgView{
-    
+    return;
     UIView *bgView = nil;
     
     for (UIView *subView in self.navigationBar.subviews) {
-        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {bgView = subView;bgView.backgroundColor = [UIColor clearColor];}
+        
+        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
+            
+            //            [subView removeFromSuperview];
+            bgView = subView;bgView.backgroundColor = [UIColor clearColor];
+        }
     }
+    
+//    
+//    for (UIView *subView in self.navigationBar.subviews) {
+//        
+//        if ([subView isKindOfClass:NSClassFromString(@"_UINavigationBarBackground")]) {
+//            
+//            [subView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//                NSLog(@"%@",obj);
+//            }];
+//            
+//        }
+//    }
     
     self.navBgView = bgView;
 }

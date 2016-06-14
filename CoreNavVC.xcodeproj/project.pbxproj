@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8924EE671C37AB9900856531 /* HeaderTopView.m */; };
-		8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8924EE691C37ABA400856531 /* HeaderTopView.xib */; };
 		893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 893FC0AB1C259D0B00BA59BD /* AppNavVC.m */; };
 		894626361CF3FB6700D74800 /* HomeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626351CF3FB6700D74800 /* HomeTVC.m */; };
 		894626391CF3FDDF00D74800 /* FooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626381CF3FDDF00D74800 /* FooterView.m */; };
@@ -16,13 +14,11 @@
 		894626421CF4013200D74800 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626401CF4013200D74800 /* HomeCell.m */; };
 		894626431CF4013200D74800 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894626411CF4013200D74800 /* HomeCell.xib */; };
 		894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */; };
-		894CB0BA1C6EB7620047DBC1 /* FlipVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B81C6EB7620047DBC1 /* FlipVC.m */; };
-		894CB0BB1C6EB7620047DBC1 /* FlipVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894CB0B91C6EB7620047DBC1 /* FlipVC.xib */; };
-		896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */; };
-		896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */; };
 		896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */; };
 		896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C61C6D9383003D477F /* CALayer+Transition.m */; };
-		89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A7E55B1C473FD50057AEEF /* VC2.xib */; };
+		89A018521D0DAB9E00FF8CEA /* ZoomScaleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A018511D0DAB9E00FF8CEA /* ZoomScaleVC.xib */; };
+		89A018561D0DADC300FF8CEA /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A018551D0DADC300FF8CEA /* TopView.m */; };
+		89A0185A1D0DADE700FF8CEA /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A018591D0DADE700FF8CEA /* TopView.xib */; };
 		89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */; };
 		89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5611C474D640057AEEF /* UIViewController+Pop.m */; };
 		89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B438951BBB7EDC009196B3 /* CoreNavVC.m */; };
@@ -46,6 +42,7 @@
 		89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CBE0CE1CF5531B00760009 /* PopBackVC.m */; };
 		89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */; };
 		89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */; };
+		89D153B01D0D0B6900B26CA7 /* ZoomScaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D153AF1D0D0B6900B26CA7 /* ZoomScaleVC.m */; };
 		89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */; };
 		89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14D81C2AC9DA00FF6667 /* CoreNavVC+Reachability.m */; };
 		89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14DB1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m */; };
@@ -53,12 +50,8 @@
 		89DB14E21C2ACE8100FF6667 /* UINavigationController+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14E11C2ACE8100FF6667 /* UINavigationController+Plus.m */; };
 		89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14E71C2AD16200FF6667 /* VCPopView.m */; };
 		89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DB14E91C2AD16C00FF6667 /* VCPopView.xib */; };
-		89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EC1C2AD32700FF6667 /* VC2.m */; };
 		89DB14F01C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */; };
 		89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */; };
-		89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7A81C6C76AD00C66E08 /* RotateVC.m */; };
-		89FEF7AF1C6CA12300C66E08 /* ShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7AD1C6CA12300C66E08 /* ShowVC.m */; };
-		89FEF7B01C6CA12300C66E08 /* ShowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */; };
 		89FEF7B61C6CA37D00C66E08 /* RotationAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7B51C6CA37D00C66E08 /* RotationAnimatedTransitioning.m */; };
 		89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FEF7B81C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m */; };
 /* End PBXBuildFile section */
@@ -74,9 +67,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8924EE661C37AB9900856531 /* HeaderTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTopView.h; sourceTree = "<group>"; };
-		8924EE671C37AB9900856531 /* HeaderTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTopView.m; sourceTree = "<group>"; };
-		8924EE691C37ABA400856531 /* HeaderTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTopView.xib; sourceTree = "<group>"; };
 		8924EE6C1C37C8D000856531 /* CategoryProperty+CoreNavVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryProperty+CoreNavVC.h"; sourceTree = "<group>"; };
 		893FC0AA1C259D0B00BA59BD /* AppNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavVC.h; sourceTree = "<group>"; };
 		893FC0AB1C259D0B00BA59BD /* AppNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavVC.m; sourceTree = "<group>"; };
@@ -90,17 +80,14 @@
 		894626411CF4013200D74800 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		894CB0B31C6EB6840047DBC1 /* FlipAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipAnimatedTransitioning.h; sourceTree = "<group>"; };
 		894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimatedTransitioning.m; sourceTree = "<group>"; };
-		894CB0B71C6EB7620047DBC1 /* FlipVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipVC.h; sourceTree = "<group>"; };
-		894CB0B81C6EB7620047DBC1 /* FlipVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipVC.m; sourceTree = "<group>"; };
-		894CB0B91C6EB7620047DBC1 /* FlipVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipVC.xib; sourceTree = "<group>"; };
-		896CA3BA1C6D6DD3003D477F /* ShapeLayerDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerDetailVC.h; sourceTree = "<group>"; };
-		896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerDetailVC.m; sourceTree = "<group>"; };
-		896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShapeLayerDetailVC.xib; sourceTree = "<group>"; };
 		896CA3C01C6D710A003D477F /* ShapeLayerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerAnimatedTransitioning.h; sourceTree = "<group>"; };
 		896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerAnimatedTransitioning.m; sourceTree = "<group>"; };
 		896CA3C51C6D9383003D477F /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
 		896CA3C61C6D9383003D477F /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
-		89A7E55B1C473FD50057AEEF /* VC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
+		89A018511D0DAB9E00FF8CEA /* ZoomScaleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomScaleVC.xib; sourceTree = "<group>"; };
+		89A018541D0DADC300FF8CEA /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		89A018551D0DADC300FF8CEA /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		89A018591D0DADE700FF8CEA /* TopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
 		89A7E55D1C4741090057AEEF /* UIView+CoreNavLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CoreNavLayout.h"; sourceTree = "<group>"; };
 		89A7E55E1C4741090057AEEF /* UIView+CoreNavLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CoreNavLayout.m"; sourceTree = "<group>"; };
 		89A7E5601C474D640057AEEF /* UIViewController+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Pop.h"; sourceTree = "<group>"; };
@@ -143,6 +130,8 @@
 		89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
 		89CCFBF91C37E3E500B6500D /* UINavigationController+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Appearance.h"; sourceTree = "<group>"; };
 		89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Appearance.m"; sourceTree = "<group>"; };
+		89D153AE1D0D0B6900B26CA7 /* ZoomScaleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomScaleVC.h; sourceTree = "<group>"; };
+		89D153AF1D0D0B6900B26CA7 /* ZoomScaleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomScaleVC.m; sourceTree = "<group>"; };
 		89DB14D41C2AC93E00FF6667 /* CoreNavVC+TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+TipView.h"; sourceTree = "<group>"; };
 		89DB14D51C2AC93E00FF6667 /* CoreNavVC+TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreNavVC+TipView.m"; sourceTree = "<group>"; };
 		89DB14D71C2AC9DA00FF6667 /* CoreNavVC+Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreNavVC+Reachability.h"; sourceTree = "<group>"; };
@@ -156,16 +145,9 @@
 		89DB14E61C2AD16200FF6667 /* VCPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPopView.h; sourceTree = "<group>"; };
 		89DB14E71C2AD16200FF6667 /* VCPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPopView.m; sourceTree = "<group>"; };
 		89DB14E91C2AD16C00FF6667 /* VCPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCPopView.xib; sourceTree = "<group>"; };
-		89DB14EB1C2AD32700FF6667 /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
-		89DB14EC1C2AD32700FF6667 /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
 		89DB14EE1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+scrollNavBar.h"; sourceTree = "<group>"; };
 		89DB14EF1C2AD8AD00FF6667 /* UIViewController+scrollNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+scrollNavBar.m"; sourceTree = "<group>"; };
 		89DF027D1C1BD0690068C719 /* CoreNavVC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreNavVC.bundle; sourceTree = "<group>"; };
-		89FEF7A71C6C76AD00C66E08 /* RotateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateVC.h; sourceTree = "<group>"; };
-		89FEF7A81C6C76AD00C66E08 /* RotateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateVC.m; sourceTree = "<group>"; };
-		89FEF7AC1C6CA12300C66E08 /* ShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowVC.h; sourceTree = "<group>"; };
-		89FEF7AD1C6CA12300C66E08 /* ShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowVC.m; sourceTree = "<group>"; };
-		89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowVC.xib; sourceTree = "<group>"; };
 		89FEF7B41C6CA37D00C66E08 /* RotationAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAnimatedTransitioning.h; sourceTree = "<group>"; };
 		89FEF7B51C6CA37D00C66E08 /* RotationAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAnimatedTransitioning.m; sourceTree = "<group>"; };
 		89FEF7B71C6CA3A900C66E08 /* PinterestAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestAnimatedTransitioning.h; sourceTree = "<group>"; };
@@ -201,16 +183,8 @@
 		8946263B1CF3FDF000D74800 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				894626341CF3FB6700D74800 /* HomeTVC.h */,
-				894626351CF3FB6700D74800 /* HomeTVC.m */,
-				89CBE0CD1CF5531B00760009 /* PopBackVC.h */,
-				89CBE0CE1CF5531B00760009 /* PopBackVC.m */,
-				8946263F1CF4013200D74800 /* HomeCell.h */,
-				894626401CF4013200D74800 /* HomeCell.m */,
-				894626411CF4013200D74800 /* HomeCell.xib */,
-				894626371CF3FDDF00D74800 /* FooterView.h */,
-				894626381CF3FDDF00D74800 /* FooterView.m */,
-				8946263D1CF3FE2800D74800 /* FooterView.xib */,
+				89D153AD1D0D0B4100B26CA7 /* Two */,
+				89D153AC1D0D0B3C00B26CA7 /* One */,
 			);
 			name = Project;
 			sourceTree = "<group>";
@@ -233,36 +207,6 @@
 			path = Flip;
 			sourceTree = "<group>";
 		};
-		894CB0B61C6EB74A0047DBC1 /* Flip */ = {
-			isa = PBXGroup;
-			children = (
-				894CB0B71C6EB7620047DBC1 /* FlipVC.h */,
-				894CB0B81C6EB7620047DBC1 /* FlipVC.m */,
-				894CB0B91C6EB7620047DBC1 /* FlipVC.xib */,
-			);
-			name = Flip;
-			sourceTree = "<group>";
-		};
-		896CA3B81C6D6D7D003D477F /* Pinterest */ = {
-			isa = PBXGroup;
-			children = (
-				89FEF7AC1C6CA12300C66E08 /* ShowVC.h */,
-				89FEF7AD1C6CA12300C66E08 /* ShowVC.m */,
-				89FEF7AE1C6CA12300C66E08 /* ShowVC.xib */,
-			);
-			name = Pinterest;
-			sourceTree = "<group>";
-		};
-		896CA3B91C6D6D92003D477F /* ShapeLayer */ = {
-			isa = PBXGroup;
-			children = (
-				896CA3BA1C6D6DD3003D477F /* ShapeLayerDetailVC.h */,
-				896CA3BB1C6D6DD3003D477F /* ShapeLayerDetailVC.m */,
-				896CA3BC1C6D6DD3003D477F /* ShapeLayerDetailVC.xib */,
-			);
-			name = ShapeLayer;
-			sourceTree = "<group>";
-		};
 		896CA3BF1C6D710A003D477F /* ShapeLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,15 +216,6 @@
 			path = ShapeLayer;
 			sourceTree = "<group>";
 		};
-		896CA3C31C6D720E003D477F /* Rotate */ = {
-			isa = PBXGroup;
-			children = (
-				89FEF7A71C6C76AD00C66E08 /* RotateVC.h */,
-				89FEF7A81C6C76AD00C66E08 /* RotateVC.m */,
-			);
-			name = Rotate;
-			sourceTree = "<group>";
-		};
 		896CA3C41C6D9383003D477F /* CoreTransition */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +223,16 @@
 				896CA3C61C6D9383003D477F /* CALayer+Transition.m */,
 			);
 			path = CoreTransition;
+			sourceTree = "<group>";
+		};
+		89A018531D0DADAF00FF8CEA /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				89A018541D0DADC300FF8CEA /* TopView.h */,
+				89A018551D0DADC300FF8CEA /* TopView.m */,
+				89A018591D0DADE700FF8CEA /* TopView.xib */,
+			);
+			name = Top;
 			sourceTree = "<group>";
 		};
 		89B438931BBB7EDC009196B3 /* CoreNavVC */ = {
@@ -395,8 +340,6 @@
 			children = (
 				89B438931BBB7EDC009196B3 /* CoreNavVC */,
 				89BD6AA61B9AEACC00225B4B /* Framework */,
-				89FEF7AA1C6CA0F000C66E08 /* PullScale */,
-				89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */,
 				8946263C1CF3FDFC00D74800 /* Common */,
 				8946263B1CF3FDF000D74800 /* Project */,
 				89BD6A7F1B9AEAAD00225B4B /* Supporting Files */,
@@ -463,6 +406,34 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		89D153AC1D0D0B3C00B26CA7 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				894626341CF3FB6700D74800 /* HomeTVC.h */,
+				894626351CF3FB6700D74800 /* HomeTVC.m */,
+				89CBE0CD1CF5531B00760009 /* PopBackVC.h */,
+				89CBE0CE1CF5531B00760009 /* PopBackVC.m */,
+				8946263F1CF4013200D74800 /* HomeCell.h */,
+				894626401CF4013200D74800 /* HomeCell.m */,
+				894626411CF4013200D74800 /* HomeCell.xib */,
+				894626371CF3FDDF00D74800 /* FooterView.h */,
+				894626381CF3FDDF00D74800 /* FooterView.m */,
+				8946263D1CF3FE2800D74800 /* FooterView.xib */,
+			);
+			name = One;
+			sourceTree = "<group>";
+		};
+		89D153AD1D0D0B4100B26CA7 /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				89A018531D0DADAF00FF8CEA /* Top */,
+				89D153AE1D0D0B6900B26CA7 /* ZoomScaleVC.h */,
+				89D153AF1D0D0B6900B26CA7 /* ZoomScaleVC.m */,
+				89A018511D0DAB9E00FF8CEA /* ZoomScaleVC.xib */,
+			);
+			name = Two;
+			sourceTree = "<group>";
+		};
 		89DB14D01C2AC90800FF6667 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,30 +456,6 @@
 				89DB14E91C2AD16C00FF6667 /* VCPopView.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		89FEF7AA1C6CA0F000C66E08 /* PullScale */ = {
-			isa = PBXGroup;
-			children = (
-				89DB14EB1C2AD32700FF6667 /* VC2.h */,
-				89DB14EC1C2AD32700FF6667 /* VC2.m */,
-				89A7E55B1C473FD50057AEEF /* VC2.xib */,
-				8924EE661C37AB9900856531 /* HeaderTopView.h */,
-				8924EE671C37AB9900856531 /* HeaderTopView.m */,
-				8924EE691C37ABA400856531 /* HeaderTopView.xib */,
-			);
-			name = PullScale;
-			sourceTree = "<group>";
-		};
-		89FEF7AB1C6CA0FF00C66E08 /* CustomTransition */ = {
-			isa = PBXGroup;
-			children = (
-				894CB0B61C6EB74A0047DBC1 /* Flip */,
-				896CA3B91C6D6D92003D477F /* ShapeLayer */,
-				896CA3C31C6D720E003D477F /* Rotate */,
-				896CA3B81C6D6D7D003D477F /* Pinterest */,
-			);
-			name = CustomTransition;
 			sourceTree = "<group>";
 		};
 		89FEF7B11C6CA37D00C66E08 /* CustomPushPop */ = {
@@ -623,20 +570,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B438B81BBB7EDC009196B3 /* ToolNetWorkView.xib in Resources */,
-				89FEF7B01C6CA12300C66E08 /* ShowVC.xib in Resources */,
-				89A7E55C1C473FD50057AEEF /* VC2.xib in Resources */,
 				89DB14EA1C2AD16C00FF6667 /* VCPopView.xib in Resources */,
 				894626431CF4013200D74800 /* HomeCell.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
-				8924EE6A1C37ABA500856531 /* HeaderTopView.xib in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
 				8946263E1CF3FE2800D74800 /* FooterView.xib in Resources */,
+				89A0185A1D0DADE700FF8CEA /* TopView.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
 				89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */,
-				896CA3BE1C6D6DD3003D477F /* ShapeLayerDetailVC.xib in Resources */,
 				89DF027E1C1BD0690068C719 /* CoreNavVC.bundle in Resources */,
-				894CB0BB1C6EB7620047DBC1 /* FlipVC.xib in Resources */,
 				89B438BD1BBB7EDC009196B3 /* TipView.xib in Resources */,
+				89A018521D0DAB9E00FF8CEA /* ZoomScaleVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,19 +605,14 @@
 				89DB14DC1C2ACA3A00FF6667 /* CoreNavVC+LifeFunc.m in Sources */,
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
 				894626421CF4013200D74800 /* HomeCell.m in Sources */,
-				89FEF7A91C6C76AD00C66E08 /* RotateVC.m in Sources */,
 				894626391CF3FDDF00D74800 /* FooterView.m in Sources */,
-				89FEF7AF1C6CA12300C66E08 /* ShowVC.m in Sources */,
 				89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,
 				89B438B51BBB7EDC009196B3 /* ToolNetWorkSolveVC.m in Sources */,
 				894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */,
-				8924EE681C37AB9900856531 /* HeaderTopView.m in Sources */,
 				893FC0AC1C259D0B00BA59BD /* AppNavVC.m in Sources */,
 				89DB14D61C2AC93E00FF6667 /* CoreNavVC+TipView.m in Sources */,
-				89DB14ED1C2AD32700FF6667 /* VC2.m in Sources */,
-				894CB0BA1C6EB7620047DBC1 /* FlipVC.m in Sources */,
 				89B438B71BBB7EDC009196B3 /* ToolNetWorkView.m in Sources */,
 				89B438B41BBB7EDC009196B3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				89DB14E81C2AD16200FF6667 /* VCPopView.m in Sources */,
@@ -683,13 +622,14 @@
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
 				89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */,
 				894626361CF3FB6700D74800 /* HomeTVC.m in Sources */,
-				896CA3BD1C6D6DD3003D477F /* ShapeLayerDetailVC.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
 				89FEF7B61C6CA37D00C66E08 /* RotationAnimatedTransitioning.m in Sources */,
 				89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */,
 				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
+				89A018561D0DADC300FF8CEA /* TopView.m in Sources */,
+				89D153B01D0D0B6900B26CA7 /* ZoomScaleVC.m in Sources */,
 				89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */,
 				89BD6A821B9AEAAD00225B4B /* main.m in Sources */,
 			);
