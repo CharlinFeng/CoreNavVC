@@ -104,7 +104,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 
 ## 三.扩展篇
 <br/>
-####  1.任意View的下拉放大
+####  1.任意View的下拉放大（支持ScrollView，tableview，CollectionView）
 <br/>
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/5.gif)<br/>
 <br/>
@@ -119,7 +119,19 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 >1. 需要定制一个view，view最好是autolayout布局。且view内部应该有一个imageView子控件。
 >2. 下拉放大的视觉效果应该是imageView产生的，imageView的高度上应该和父类高度有关联
 >3. imageView的contentModel最好是设置为AspectFill，并且clipsToBounds.
-### 特别注意：下拉放大产生的本质是scrollView动态修改了view的高度，并且触发了view的layoutsubviews。
+<br/>
+
+使用方法如下，请直接在控制器中操作：
+
+    //安装 （基于Runtime，请将下拉放大的view直接传递给runtime生成的成员变量nav_topView中即可）
+    self.nav_topView = [[NSBundle mainBundle] loadNibNamed:@"TopView" owner:nil options:nil].lastObject;
+    [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:240 originHeight:200];
+
+### 特别注意：
+>1.下拉放大产生的本质是scrollView动态修改了view的高度，并且触发了view的layoutsubviews。
+>2.同时请注意下拉放大的view请不要记录成员变量，不需要你手动添加到scrollview中.
+>3.基于Runtime，请将下拉放大的view直接传递给runtime生成的成员变量nav_topView中即可
+>4.ScrollView表示需要传入页面中引起下拉放大的scrollview，originHeight表示nav_topView你想要的高度，autoToggleNavbarHeight表示引起导航条由透明到不透明开始变化反应的临界值。
 
 <br/><br/>
 ####  2.PopBtn 一键添加Pop按钮
@@ -128,7 +140,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 在app中，经常会出现有的页面因为顶部有大图，或者有幻灯，或者有视频，或者其他原因隐藏了导航条，需要手动添加一个PopBtn的情况，这同样是一种和导航控制器有关的一种需求。请在控制器直接执行以下方法即可：
 
     /** 添加pop返回功能 */
-    [self addPopFunctionWithAnim:YES];
+    [self addPopFunctionWithAnim:YES]; //参数表示是否需要动画
 
 
 
