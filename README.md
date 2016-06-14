@@ -106,7 +106,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 <br/>
 ####  1.任意View的下拉放大
 <br/>
-![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/01.png)<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/5.gif)<br/>
 <br/>
 
 ##### （1）特别说明：其他Github上面有很多关于下拉放大的写法，我ppur也写过一个OC版本的（[CorePullScale](https://github.com/CharlinFeng/CorePullScale)）,不过这样做一般有很多问题：
@@ -123,6 +123,8 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 
 <br/><br/>
 ####  2.PopBtn 一键添加Pop按钮
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/6.png)<br/>
 在app中，经常会出现有的页面因为顶部有大图，或者有幻灯，或者有视频，或者其他原因隐藏了导航条，需要手动添加一个PopBtn的情况，这同样是一种和导航控制器有关的一种需求。请在控制器直接执行以下方法即可：
 
     /** 添加pop返回功能 */
