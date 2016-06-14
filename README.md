@@ -109,17 +109,17 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/5.gif)<br/>
 <br/>
 
-##### （1）特别说明：其他Github上面有很多关于下拉放大的写法，我ppur也写过一个OC版本的（[CorePullScale](https://github.com/CharlinFeng/CorePullScale)）,不过这样做一般有很多问题：
+##### （1）特别说明：其他Github上面有很多关于下拉放大的写法，我之前也写过一个OC版本的（[CorePullScale](https://github.com/CharlinFeng/CorePullScale)）,不过这样做一般有很多问题：
 >1. 框架零散，下拉放大其实还是属于我个人认为的导航控制器的一种封装，因为一般下拉放大会关联动态改变导航条的样式，透明度等。<br/>
 >2. 最致命的是一般写的下拉放大是只考虑如何放大一个imageView,比如有的app的我的页面，他顶部确实有一个头像，不过在imageView上面还有很多其他控件，如用户昵称，年龄，私信等等其他控件。那么单纯实现一个imageView的下拉放大，将仅仅是一个意义不大的功能。
 
 <br/>
-所以本框架的下拉放大，重点是在解决如何集成在合理的位置，同时如果将下拉放大上升到任意View都可以支付下拉放大的需求空间，让下拉放大可以容纳更多的子控件。极大的让需求变化无限可能。
+所以本框架的下拉放大，重点是在解决如何集成在合理的位置，同时如果将下拉放大上升到任意View都可以支持下拉放大的需求空间，让下拉放大可以容纳更多的子控件。极大的让需求变化无限可能。
 ##### （2）使用细节，想要实现任意View的下拉放大，来自我自己想到的一个想法，当前你如果要实现这个效果，除了使用框架，还必须要注意以下细节，才能出现下拉放大效果，否则可能会达不到你想要的效果。<br/>
 >1. 需要定制一个view，view最好是autolayout布局。且view内部应该有一个imageView子控件。
 >2. 下拉放大的视觉效果应该是imageView产生的，imageView的高度上应该和父类高度有关联
 >3. imageView的contentModel最好是设置为AspectFill，并且clipsToBounds.
->4.查看框架演示中，如果想要控件子控件在view中位置固定，直接正确设置对应的autolayout即可。
+>4. 查看框架演示中，如果想要控件子控件在view中位置固定，直接正确设置对应的autolayout即可。
 <br/>
 
 使用方法如下，请直接在控制器中操作：
@@ -169,12 +169,6 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 ####  3.动态修改导航条透明度
 <br/>
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/6.gif)<br/>
-注：已经自动实现
-
-<br/><br/>
-####  4.与PopGesture的兼容
-<br/>
-![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/7.gif)<br/>
 注：已经自动实现
 
 <br/><br/>
