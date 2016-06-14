@@ -102,7 +102,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 
 <br/><br/><br/>
 
-## 三.扩展篇
+## 三.扩展篇（灵感来自淘宝iPhone版商品详情）
 <br/>
 ####  1.任意View的下拉放大（支持ScrollView，tableview，CollectionView）
 <br/>
@@ -134,6 +134,27 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 >3.基于Runtime，请将下拉放大的view直接传递给runtime生成的成员变量nav_topView中即可<br/>
 >4.ScrollView表示需要传入页面中引起下拉放大的scrollview，originHeight表示nav_topView你想要的高度，autoToggleNavbarHeight表示引起导航条由透明到不透明开始变化反应的临界值。
 
+### 其他重要事项说明：
+框架考虑了众多因素，同时这些功能在我自己项目中已经使用了几年，且经历了10来个版本迭代，一切是为了解耦。同时考虑了与我自己其他框架的兼容以及很多各种各样的其他问题，所以框架你还需要做以下操作：
+
+    -(void)viewWillAppear:(BOOL)animated{
+        
+        [super viewWillAppear:animated];
+        [self viewWillAppear_scrollNavbar]; //调用代码1
+    }
+    -(void)viewWillDisappear:(BOOL)animated{
+        
+        [super viewWillDisappear:animated];
+        [self viewWillDisappear_scrollNavbar];//调用代码2
+    }
+    -(void)dealloc{
+        [self removeScrollNavbarWithScrollView:self.tableView];//调用代码3
+    }
+
+注意：
+>1.如果不调用代码1，你会发现没有下拉放大效果。<br/>
+>2.如果不调用代码2，你会发现在push下级页面会发生非常多的bug。<br/>
+>3.如果不调用代码3，你会发现pop的时侯，程序崩溃，因为框架内部使用了通知与KVO。<br/>
 
 <br/><br/>
 ####  2.PopBtn 一键添加Pop按钮
@@ -148,19 +169,37 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 ####  3.动态修改导航条透明度
 <br/>
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/6.gif)<br/>
-注：上述下拉放大的代码已经自动实现
+注：已经自动实现
 
 <br/><br/>
 ####  4.与PopGesture的兼容
 <br/>
 ![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/7.gif)<br/>
-注：上述下拉放大的代码已经自动实现
+注：已经自动实现
 
+<br/><br/>
+####  4.与PopGesture的兼容
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/7.gif)<br/>
+注：已经自动实现
 
+<br/><br/>
+####  5.仿淘宝商品详情上拉视差（Runtime）
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/8.gif)<br/>
+注：默认是无视差效果，即上下滚动步调与tableview的offset一致
+
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/9.gif)<br/>
+注：开启视差效果，即上下滚动步调与tableview的offset不一致。（可配置）
+开启视差：
+
+    self.enableParallax = YES; //开启视差
+    self.parallaxValue = 100; //视差值，建议100-250
 
 
 <br/><br/><br/>
-## 四.炫酷篇
+## 四.炫酷篇 （多达4-5种炫酷特效，一键调用实现，请持续关注！）
 
 
 #### 一大波炫酷功能正在路上，连载中，未完待续，敬请期待！！！
