@@ -119,6 +119,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 >1. 需要定制一个view，view最好是autolayout布局。且view内部应该有一个imageView子控件。
 >2. 下拉放大的视觉效果应该是imageView产生的，imageView的高度上应该和父类高度有关联
 >3. imageView的contentModel最好是设置为AspectFill，并且clipsToBounds.
+>4.查看框架演示中，如果想要控件子控件在view中位置固定，直接正确设置对应的autolayout即可。
 <br/>
 
 使用方法如下，请直接在控制器中操作：
@@ -128,10 +129,11 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
     [self addScrollNavbarWithScrollView:self.tableView autoToggleNavbarHeight:240 originHeight:200];
 
 ### 特别注意：
->1.下拉放大产生的本质是scrollView动态修改了view的高度，并且触发了view的layoutsubviews。
->2.同时请注意下拉放大的view请不要记录成员变量，不需要你手动添加到scrollview中.
->3.基于Runtime，请将下拉放大的view直接传递给runtime生成的成员变量nav_topView中即可
+>1.下拉放大产生的本质是scrollView动态修改了view的高度，并且触发了view的layoutsubviews。<br/>
+>2.同时请注意下拉放大的view请不要记录成员变量，不需要你手动添加到scrollview中.<br/>
+>3.基于Runtime，请将下拉放大的view直接传递给runtime生成的成员变量nav_topView中即可<br/>
 >4.ScrollView表示需要传入页面中引起下拉放大的scrollview，originHeight表示nav_topView你想要的高度，autoToggleNavbarHeight表示引起导航条由透明到不透明开始变化反应的临界值。
+
 
 <br/><br/>
 ####  2.PopBtn 一键添加Pop按钮
@@ -141,6 +143,19 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 
     /** 添加pop返回功能 */
     [self addPopFunctionWithAnim:YES]; //参数表示是否需要动画
+
+<br/><br/>
+####  3.动态修改导航条透明度
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/6.gif)<br/>
+注：上述下拉放大的代码已经自动实现
+
+<br/><br/>
+####  4.与PopGesture的兼容
+<br/>
+![image](https://github.com/CharlinFeng/Resource/blob/master/CoreNavVC/7.gif)<br/>
+注：上述下拉放大的代码已经自动实现
+
 
 
 
