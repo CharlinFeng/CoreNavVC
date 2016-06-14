@@ -3,10 +3,10 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 ==========
 ### 成都时点软件4年精华无私奉献开源
 
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)]
-[![Platform](https://cocoapod-badges.herokuapp.com/p/HanekeSwift/badge.png)]
-[![Build Status](https://travis-ci.org/Haneke/HanekeSwift.svg?branch=master)]
-[![Join the chat at https://gitter.im/Haneke/HanekeSwift](https://badges.gitter.im/Haneke/HanekeSwift.svg)]
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
+![Platform](https://cocoapod-badges.herokuapp.com/p/HanekeSwift/badge.png)
+![Build Status](https://travis-ci.org/Haneke/HanekeSwift.svg?branch=master)
+![Join the chat at https://gitter.im/Haneke/HanekeSwift](https://badges.gitter.im/Haneke/HanekeSwift.svg)
 <br/>
 
 #### .Xcode 4
