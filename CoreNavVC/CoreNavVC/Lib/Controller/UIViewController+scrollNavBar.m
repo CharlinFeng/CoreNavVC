@@ -39,6 +39,11 @@ ADD_DYNAMIC_PROPERTY_CGFloat(CGFloat, parallaxValue, setParallaxValue)
     
     self.isViewDidAppear = YES;
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self addPopFunctionWithAnim:YES];
+    });
+    
     if (self.offsetYP <= 0){self.navigationController.navigationBar.alpha=0;return;}
     if (self.offsetYP >= 1){self.navigationController.navigationBar.alpha=1;return;}
     
@@ -102,7 +107,7 @@ static const char CoreNavTopViewKey = '\0';
     self.extendedLayoutIncludesOpaqueBars = YES;
     self.autoToggleNavbarHeight = @(autoToggleNavbarHeight);
     self.topViewOriginHeight = @(originHeight);
-    [self addPopFunctionWithAnim:YES];
+    
     
     //初始化frame
     self.nav_topContentView = [[UIView alloc] initWithFrame:CGRectMake(0, -originHeight, [UIScreen mainScreen].bounds.size.width, originHeight)];
