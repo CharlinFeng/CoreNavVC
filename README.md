@@ -1,7 +1,7 @@
 
 CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
-### 成都时点软件4年精华无私奉献开源
+### 成都时点软件4年精华无私奉献开源（注意查看上面commits数量）
 
 ![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
 ![Platform](https://cocoapod-badges.herokuapp.com/p/HanekeSwift/badge.png)
