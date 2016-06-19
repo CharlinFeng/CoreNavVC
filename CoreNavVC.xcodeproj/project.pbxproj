@@ -16,6 +16,8 @@
 		894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */; };
 		896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */; };
 		896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C61C6D9383003D477F /* CALayer+Transition.m */; };
+		898453331D16B8F600926089 /* RotationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 898453311D16B8F600926089 /* RotationVC.m */; };
+		898453341D16B8F600926089 /* RotationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898453321D16B8F600926089 /* RotationVC.xib */; };
 		89A018521D0DAB9E00FF8CEA /* ZoomScaleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A018511D0DAB9E00FF8CEA /* ZoomScaleVC.xib */; };
 		89A018561D0DADC300FF8CEA /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A018551D0DADC300FF8CEA /* TopView.m */; };
 		89A0185A1D0DADE700FF8CEA /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A018591D0DADE700FF8CEA /* TopView.xib */; };
@@ -84,6 +86,9 @@
 		896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerAnimatedTransitioning.m; sourceTree = "<group>"; };
 		896CA3C51C6D9383003D477F /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
 		896CA3C61C6D9383003D477F /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
+		898453301D16B8F600926089 /* RotationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationVC.h; sourceTree = "<group>"; };
+		898453311D16B8F600926089 /* RotationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationVC.m; sourceTree = "<group>"; };
+		898453321D16B8F600926089 /* RotationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotationVC.xib; sourceTree = "<group>"; };
 		89A018511D0DAB9E00FF8CEA /* ZoomScaleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZoomScaleVC.xib; sourceTree = "<group>"; };
 		89A018541D0DADC300FF8CEA /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
 		89A018551D0DADC300FF8CEA /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 		8946263B1CF3FDF000D74800 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				8984532E1D16B8C600926089 /* Three */,
 				89D153AD1D0D0B4100B26CA7 /* Two */,
 				89D153AC1D0D0B3C00B26CA7 /* One */,
 			);
@@ -223,6 +229,16 @@
 				896CA3C61C6D9383003D477F /* CALayer+Transition.m */,
 			);
 			path = CoreTransition;
+			sourceTree = "<group>";
+		};
+		8984532E1D16B8C600926089 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				898453301D16B8F600926089 /* RotationVC.h */,
+				898453311D16B8F600926089 /* RotationVC.m */,
+				898453321D16B8F600926089 /* RotationVC.xib */,
+			);
+			name = Three;
 			sourceTree = "<group>";
 		};
 		89A018531D0DADAF00FF8CEA /* Top */ = {
@@ -574,6 +590,7 @@
 				894626431CF4013200D74800 /* HomeCell.xib in Resources */,
 				89BD6A8B1B9AEAAD00225B4B /* Main.storyboard in Resources */,
 				89B438B61BBB7EDC009196B3 /* ToolNetWorkSolveVC.xib in Resources */,
+				898453341D16B8F600926089 /* RotationVC.xib in Resources */,
 				8946263E1CF3FE2800D74800 /* FooterView.xib in Resources */,
 				89A0185A1D0DADE700FF8CEA /* TopView.xib in Resources */,
 				89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */,
@@ -606,6 +623,7 @@
 				89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */,
 				894626421CF4013200D74800 /* HomeCell.m in Sources */,
 				894626391CF3FDDF00D74800 /* FooterView.m in Sources */,
+				898453331D16B8F600926089 /* RotationVC.m in Sources */,
 				89FEF7B91C6CA3A900C66E08 /* PinterestAnimatedTransitioning.m in Sources */,
 				89B438B11BBB7EDC009196B3 /* CoreNavVC.m in Sources */,
 				89B438BC1BBB7EDC009196B3 /* TipView.m in Sources */,

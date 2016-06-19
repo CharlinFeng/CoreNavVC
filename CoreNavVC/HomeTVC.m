@@ -12,6 +12,7 @@
 #import "AppNavVC.h"
 #import "PopBackVC.h"
 #import "ZoomScaleVC.h"
+#import "RotationVC.h"
 
 @interface HomeTVC ()
 
@@ -25,7 +26,7 @@
     
     [super viewDidLoad];
     
-    self.dataList = @[@"-----------（1）基础篇-----------",@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）",@"拦截Pop返回事件",@"",@"-----------（2）扩展篇-----------",@"下拉放大与动态透明导航条"];
+    self.dataList = @[@"-----------（1）基础篇-----------",@"一键定制NavBar",@"PopGesture",@"仿QQ无网络检测（断开WIFI）",@"拦截Pop返回事件",@"",@"-----------（2）扩展篇-----------",@"下拉放大与动态透明导航条",@"",@"-----------（3）炫酷篇-----------",@"一键旋转转场动画（仿酷狗）"];
     
     self.tableView.tableFooterView = [UIView new];
     
@@ -88,10 +89,24 @@
         ZoomScaleVC *vc = [[ZoomScaleVC alloc] initWithNibName:@"ZoomScaleVC" bundle:nil];
         
         nextVC = vc;
+    }else if (indexPath.row == 10){
+        
+        RotationVC *vc = [[RotationVC alloc] initWithNibName:@"RotationVC" bundle:nil];
+        
+        nextVC = vc;
     }
+    
     nextVC.title = self.dataList[indexPath.row];
     
     [self.navigationController pushViewController:nextVC animated:YES];
 }
+
+-(CGPoint)RotationAnimatedTransitioningProtocol_anchorPoint{
+    return CGPointMake(1, 1);
+}
+-(BOOL)RotationAnimatedTransitioningProtocol_isClockWise{
+    return YES;
+}
+
 
 @end

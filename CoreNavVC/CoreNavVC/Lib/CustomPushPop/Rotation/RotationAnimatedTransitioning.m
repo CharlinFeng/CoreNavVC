@@ -23,20 +23,24 @@
     
     CoreNavVC *navVC = (CoreNavVC *)self.navVC;
     
-    UIViewController<RotationAnimatedTransitioningProtocol> * fromVc = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController<RotationAnimatedTransitioningProtocol> * toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    CGRect finalFrameForVc = [transitionContext finalFrameForViewController:toVc];
+    UIViewController<RotationAnimatedTransitioningProtocol> *fromVc = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController<RotationAnimatedTransitioningProtocol> *toVc = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
+    
+    CGRect finalFrameForVc = [transitionContext finalFrameForViewController:toVc];
+
     fromVc.view.frame = finalFrameForVc;
     toVc.view.frame = finalFrameForVc;
     
     BOOL isPush = navVC.navType == NavTypePush;
     
     
+    
     if(isPush){
         
         [[transitionContext containerView] addSubview:fromVc.view];
         [[transitionContext containerView] addSubview:toVc.view];
+        
         
     }else{
         [[transitionContext containerView] addSubview:toVc.view];
