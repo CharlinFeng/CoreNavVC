@@ -9,7 +9,7 @@ CoreNavVC  （连载中，关注[信息公告牌](https://github.com/CharlinFeng
 ![Join the chat at https://gitter.im/Haneke/HanekeSwift](https://badges.gitter.im/Haneke/HanekeSwift.svg)
 <br/>
 
-#### .Xcode 4
+#### .Xcode 7.3
 #### .iOS7，如果不使用自定义转场动画，最低可以支持到iOS6
 #### .OC，Swift完美支持
 
