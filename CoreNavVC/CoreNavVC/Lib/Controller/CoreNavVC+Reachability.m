@@ -40,7 +40,7 @@
         return;
     }
     
-    if([CoreStatus isNETWORKEnable]){
+    if([CoreStatus isNetworkEnable]){
         
         [self dismissNetWorkBar];
         

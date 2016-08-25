@@ -13,6 +13,8 @@
 		8946263E1CF3FE2800D74800 /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8946263D1CF3FE2800D74800 /* FooterView.xib */; };
 		894626421CF4013200D74800 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 894626401CF4013200D74800 /* HomeCell.m */; };
 		894626431CF4013200D74800 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894626411CF4013200D74800 /* HomeCell.xib */; };
+		8946397E1D6E95CA00EEBE08 /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 894639751D6E95CA00EEBE08 /* CoreStatus.m */; };
+		8946397F1D6E95CA00EEBE08 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8946397B1D6E95CA00EEBE08 /* Reachability.m */; };
 		894CB0B51C6EB6840047DBC1 /* FlipAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */; };
 		896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C11C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m */; };
 		896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 896CA3C61C6D9383003D477F /* CALayer+Transition.m */; };
@@ -39,8 +41,6 @@
 		89BD6A8D1B9AEAAD00225B4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6A8C1B9AEAAD00225B4B /* Images.xcassets */; };
 		89BD6A901B9AEAAD00225B4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BD6A8E1B9AEAAD00225B4B /* LaunchScreen.xib */; };
 		89BD6A9C1B9AEAAD00225B4B /* CoreNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */; };
-		89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */; };
-		89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BD6ACC1B9AEB5B00225B4B /* Reachability.m */; };
 		89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CBE0CE1CF5531B00760009 /* PopBackVC.m */; };
 		89CCFBFB1C37E3E500B6500D /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBF81C37E3E500B6500D /* UIBarButtonItem+Appearance.m */; };
 		89CCFBFC1C37E3E500B6500D /* UINavigationController+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCFBFA1C37E3E500B6500D /* UINavigationController+Appearance.m */; };
@@ -80,6 +80,13 @@
 		8946263F1CF4013200D74800 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		894626401CF4013200D74800 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		894626411CF4013200D74800 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		894639741D6E95CA00EEBE08 /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatus.h; sourceTree = "<group>"; };
+		894639751D6E95CA00EEBE08 /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
+		894639771D6E95CA00EEBE08 /* CoreNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNetworkStatus.h; sourceTree = "<group>"; };
+		894639781D6E95CA00EEBE08 /* CoreStatusProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusProtocol.h; sourceTree = "<group>"; };
+		8946397A1D6E95CA00EEBE08 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8946397B1D6E95CA00EEBE08 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8946397D1D6E95CA00EEBE08 /* CoreStatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatusSingleton.h; sourceTree = "<group>"; };
 		894CB0B31C6EB6840047DBC1 /* FlipAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipAnimatedTransitioning.h; sourceTree = "<group>"; };
 		894CB0B41C6EB6840047DBC1 /* FlipAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimatedTransitioning.m; sourceTree = "<group>"; };
 		896CA3C01C6D710A003D477F /* ShapeLayerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLayerAnimatedTransitioning.h; sourceTree = "<group>"; };
@@ -125,10 +132,6 @@
 		89BD6A951B9AEAAD00225B4B /* CoreNavVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreNavVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BD6A9A1B9AEAAD00225B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BD6A9B1B9AEAAD00225B4B /* CoreNavVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreNavVCTests.m; sourceTree = "<group>"; };
-		89BD6AC81B9AEB5B00225B4B /* CoreStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreStatus.h; sourceTree = "<group>"; };
-		89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreStatus.m; sourceTree = "<group>"; };
-		89BD6ACB1B9AEB5B00225B4B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		89BD6ACC1B9AEB5B00225B4B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		89CBE0CD1CF5531B00760009 /* PopBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopBackVC.h; sourceTree = "<group>"; };
 		89CBE0CE1CF5531B00760009 /* PopBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopBackVC.m; sourceTree = "<group>"; };
 		89CCFBF71C37E3E500B6500D /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
@@ -202,6 +205,44 @@
 				893FC0AB1C259D0B00BA59BD /* AppNavVC.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		894639731D6E95CA00EEBE08 /* CoreStatus */ = {
+			isa = PBXGroup;
+			children = (
+				894639741D6E95CA00EEBE08 /* CoreStatus.h */,
+				894639751D6E95CA00EEBE08 /* CoreStatus.m */,
+				894639761D6E95CA00EEBE08 /* Lib */,
+			);
+			path = CoreStatus;
+			sourceTree = "<group>";
+		};
+		894639761D6E95CA00EEBE08 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				894639771D6E95CA00EEBE08 /* CoreNetworkStatus.h */,
+				894639781D6E95CA00EEBE08 /* CoreStatusProtocol.h */,
+				894639791D6E95CA00EEBE08 /* Reachability */,
+				8946397C1D6E95CA00EEBE08 /* Singleton */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		894639791D6E95CA00EEBE08 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8946397A1D6E95CA00EEBE08 /* Reachability.h */,
+				8946397B1D6E95CA00EEBE08 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		8946397C1D6E95CA00EEBE08 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				8946397D1D6E95CA00EEBE08 /* CoreStatusSingleton.h */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 		894CB0B21C6EB6840047DBC1 /* Flip */ = {
@@ -397,29 +438,10 @@
 		89BD6AA61B9AEACC00225B4B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				894639731D6E95CA00EEBE08 /* CoreStatus */,
 				896CA3C41C6D9383003D477F /* CoreTransition */,
-				89BD6AC71B9AEB5B00225B4B /* CoreStatus */,
 			);
 			path = Framework;
-			sourceTree = "<group>";
-		};
-		89BD6AC71B9AEB5B00225B4B /* CoreStatus */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6AC81B9AEB5B00225B4B /* CoreStatus.h */,
-				89BD6AC91B9AEB5B00225B4B /* CoreStatus.m */,
-				89BD6ACA1B9AEB5B00225B4B /* Reachability */,
-			);
-			path = CoreStatus;
-			sourceTree = "<group>";
-		};
-		89BD6ACA1B9AEB5B00225B4B /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				89BD6ACB1B9AEB5B00225B4B /* Reachability.h */,
-				89BD6ACC1B9AEB5B00225B4B /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		89D153AC1D0D0B3C00B26CA7 /* One */ = {
@@ -615,7 +637,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BD6ACE1B9AEB5B00225B4B /* Reachability.m in Sources */,
 				896CA3C71C6D9383003D477F /* CALayer+Transition.m in Sources */,
 				89DB14DF1C2ACB4600FF6667 /* CoreNavVC+Push_Pop.m in Sources */,
 				896CA3C21C6D710A003D477F /* ShapeLayerAnimatedTransitioning.m in Sources */,
@@ -640,12 +661,13 @@
 				89B438B21BBB7EDC009196B3 /* UIColor+NavExtend.m in Sources */,
 				89CBE0CF1CF5531B00760009 /* PopBackVC.m in Sources */,
 				894626361CF3FB6700D74800 /* HomeTVC.m in Sources */,
+				8946397F1D6E95CA00EEBE08 /* Reachability.m in Sources */,
+				8946397E1D6E95CA00EEBE08 /* CoreStatus.m in Sources */,
 				89BD6A851B9AEAAD00225B4B /* AppDelegate.m in Sources */,
 				89B438B31BBB7EDC009196B3 /* UIImage+NavColor.m in Sources */,
 				89DB14D91C2AC9DA00FF6667 /* CoreNavVC+Reachability.m in Sources */,
 				89FEF7B61C6CA37D00C66E08 /* RotationAnimatedTransitioning.m in Sources */,
 				89A7E55F1C4741090057AEEF /* UIView+CoreNavLayout.m in Sources */,
-				89BD6ACD1B9AEB5B00225B4B /* CoreStatus.m in Sources */,
 				89A018561D0DADC300FF8CEA /* TopView.m in Sources */,
 				89D153B01D0D0B6900B26CA7 /* ZoomScaleVC.m in Sources */,
 				89A7E5621C474D640057AEEF /* UIViewController+Pop.m in Sources */,
@@ -731,7 +753,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "471da9a4-398e-49ab-a66d-bbbd0cf153e5";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -769,7 +791,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "471da9a4-398e-49ab-a66d-bbbd0cf153e5";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
